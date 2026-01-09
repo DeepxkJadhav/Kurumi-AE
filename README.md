@@ -2,77 +2,74 @@
   <img src="./assets/kurumi-tokisaki-date-a-live.gif" width="380" alt="Kurumi laughing GIF">
 </p>
 
-## ✦ Overview
+<p align="center">
+  <img src="./assets/kurumi-laugh.gif" width="420" alt="Kurumi Tokisaki">
+</p>
 
-<strong>Kurumi</strong> is not a desktop assistant, chatbot, or animated pet.  
-She operates as a **background presence**, appearing and reacting based on environmental signals rather than direct user input.
+<h1 align="center">Kurumi-AE</h1>
 
-The system prioritizes:
-- autonomy over obedience  
-- silence over noise  
-- emergence over constant visibility  
-
----
-
-## ✦ Features
-
-<ul>
-  <li><span style="color:#ff5fa2;">Transparent overlay</span> with always-on-top rendering</li>
-  <li><span style="color:#ff5fa2;">Context awareness</span> (applications, inactivity, time)</li>
-  <li><span style="color:#ff5fa2;">Non-repetitive behavior</span> driven by internal state</li>
-  <li><span style="color:#ff5fa2;">Optional voice output</span> via TTS</li>
-  <li><span style="color:#ff5fa2;">Minimal configuration</span> after installation</li>
-</ul>
+<p align="center">
+  <i>
+    An autonomous desktop presence.<br>
+    Subtle. Context-aware. Unscripted.
+  </i>
+</p>
 
 ---
 
-## ✦ System Requirements
+## About
 
-```text
-OS        : Windows 10 / 11
-Python    : 3.10+
-Graphics  : Integrated GPU sufficient
-Internet  : Optional (AI / TTS extensions)
+**Kurumi-AE** is an experimental desktop entity designed to exist quietly within the system environment.  
+She is not a chatbot, not a virtual pet, and not a command-driven assistant.
 
-✦ Installation
-1. Clone Repository
-git clone https://github.com/your-username/kurumi-desktop.git
-cd kurumi-desktop
+Kurumi observes context, reacts selectively, and manifests only when conditions align.  
+Silence is intentional. Presence is deliberate.
 
-2. Create Virtual Environment (Recommended)
-python -m venv .venv
-.venv\Scripts\activate
+---
 
-3. Install Dependencies
+## Characteristics
+
+- Transparent desktop overlay  
+- Non-repetitive, state-driven behavior  
+- Minimal user interaction  
+- Optional voice output  
+- Designed for atmosphere, not productivity  
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/DeepxkJadhav/Kurumi-AE
+cd Kurumi-AE
 pip install -r requirements.txt
-
-✦ Running Kurumi
 python main.py
 
 
-Kurumi will initialize silently.
-Delayed appearance is intentional.
+Kurumi may not appear immediately.
+This is expected.
 
-✦ Configuration
-
-Behavior tuning is handled via config.py:
-
-sensitivity thresholds
-
-manifestation probability
-
-voice enable/disable
-
-idle tolerance
-
-No recompilation required.
-
-✦ Project Status
-<span style="color:#9aa0ff;"> Experimental — focused on behavioral realism and presentation quality. </span>
-✦ Disclaimer
-
-Kurumi is a software construct.
-Any perceived personality is the result of probabilistic behavior and design.
-
-<p align="center" style="color:#6f73ff;"> — designed to feel present, not persistent — </p>
+---
 ```
+## Status
+
+Experimental project focused on behavioral realism and presentation quality.
+
+---
+
+<p align="center">
+  — designed to feel present, not persistent —
+</p>
+
+```
+```
+---
+
+### Important (so it works)
+
+* Put the GIF here:
+  `Kurumi-AE/assets/kurumi-laugh.gif`
+* Commit & push
+* View on **github.com repo page**, not local preview
+
+
