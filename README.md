@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/kurumi-laugh.gif" width="500" alt="Kurumi laughing GIF">
+  <img src="./assets/kurumi-tokisaki-date-a-live.gif" width="500" alt="Kurumi laughing GIF">
 </p>
 
 ## ✦ Overview
