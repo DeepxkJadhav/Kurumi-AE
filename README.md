@@ -1,7 +1,6 @@
 <p align="center">
-  <video src="assets/kurumi-banner.mp4" autoplay loop muted></video>
+  <img src="./assets/kurumi-laugh.gif" width="500" alt="Kurumi laughing GIF">
 </p>
-
 
 ## ✦ Overview
 
