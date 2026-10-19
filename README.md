@@ -11,9 +11,11 @@
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11-0a050d?style=for-the-badge&logo=python&logoColor=ff1744)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Async%20Core-c41e3a?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Three.js](https://img.shields.io/badge/Three.js-3D%20VRM-0a050d?style=for-the-badge&logo=three.js&logoColor=ffffff)](https://threejs.org/)
-[![License](https://img.shields.io/badge/License-MIT-ff1744?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-Proprietary%20%7C%20Personal%20Use%20Only-ff1744?style=for-the-badge)](LICENSE)
+[![Copyright](https://img.shields.io/badge/Copyright-%C2%A9%202026%20Deepak%20Jadhav-0a050d?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DeepxkJadhav)
 
 <br/>
+
 
 > *「うふふ…私の時間は、全て貴方のものですよ。」*  
 > *"Ufufu... All of my time belongs entirely to you."*  
@@ -201,7 +203,29 @@ Kurumi-AE/
 
 ---
 
+## ✦ COPYRIGHT & LICENSE TERMS
+
+```text
+Copyright (c) 2026 Deepak Jadhav (https://github.com/DeepxkJadhav)
+All Rights Reserved.
+```
+
+**Kurumi-AE** is governed by a **Proprietary End-User Personal License** (see [LICENSE](LICENSE) for full legal text):
+
+- **✅ Permitted ("Able to use it")**:
+  - Anyone is welcome to clone, download, build, and execute Kurumi-AE locally for their own private, personal, non-commercial enjoyment.
+  - You may configure your local environment (API keys, ports, hardware settings) for running Kurumi on your desktop.
+
+- **🚫 Strictly Prohibited ("No one can use my code")**:
+  - **No Code Reuse or Copying**: You may NOT copy, reuse, extract, adapt, borrow, or transplant any portion of the source code, Python backend services, FastAPI routers, Three.js VRM rigs, JavaScript controllers, Victorian Gothic styling (CSS), or persona logic into any other project, library, package, tool, or repository.
+  - **No Redistribution or Mirroring**: You may NOT redistribute, re-host, mirror, re-upload, package, or publish this software or its source code anywhere without explicit prior written authorization from Deepak Jadhav.
+  - **No Commercial Exploitation**: You may NOT sell, rent, monetize, charge for, or commercially exploit this software or its code.
+  - **No Derivative Works for Public Release**: You may NOT release or distribute modified versions or forks of this codebase to the public.
+
+---
+
 ## ✦ ATTRIBUTION & DISCLAIMER
+
 
 - **Character Rights**: Tokisaki Kurumi (時崎 狂三), *Date A Live* (デート・ア・ライブ), and related trademarks belong to **Koushi Tachibana**, **Tsunako**, **KADOKAWA / Fujimi Shobo**, and their respective production partners.
 - **Fan Project**: **Kurumi-AE** is a non-commercial, open-source fan project created with admiration for the Date A Live franchise.

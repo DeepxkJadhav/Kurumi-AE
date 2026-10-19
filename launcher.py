@@ -1,19 +1,14 @@
 # -*- coding: utf-8 -*-
-# Copyright 2025-2026 Project N.E.K.O. Team
+# Copyright (c) 2026 Deepak Jadhav (https://github.com/DeepxkJadhav). All Rights Reserved.
+# Project: Kurumi-AE — Victorian Gothic 3D Desktop Companion Spirit (Zafkiel)
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# Licensed for Personal End-User Execution Only.
+# Unauthorized code extraction, modification for public redistribution, or commercial use is strictly prohibited.
+# See LICENSE for details.
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# Derivative architecture based on open-source foundation components from Project N.E.K.O. Team (Apache 2.0).
 
-"""Thin compatibility entry point for the N.E.K.O launcher."""
+"""Astral entry point for the Kurumi-AE (Zafkiel) Desktop Companion."""
 
 from __future__ import annotations
 
