@@ -1,0 +1,84 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "model.moc",
+    "Textures": [
+      "textures/texture_00.png",
+      "textures/texture_01.png",
+      "textures/texture_02.png"
+    ],
+    "Physics": "physics.json",
+    "Motions": {
+      "Idle": [
+        { "File": "motions/id4.mtn" },
+        { "File": "motions/id4_1.mtn" },
+        { "File": "motions/id4_2.mtn" }
+      ],
+      "happy": [
+        { "File": "motions/id4_3.mtn" }
+      ],
+      "shy": [
+        { "File": "motions/id4_4.mtn" }
+      ],
+      "surprised": [
+        { "File": "motions/id4_5.mtn" }
+      ],
+      "neutral": [
+        { "File": "motions/id4_6.mtn" }
+      ]
+    }
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "PARAM_EYE_L_OPEN",
+        "PARAM_EYE_R_OPEN"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "PARAM_MOUTH_OPEN_Y"
+      ]
+    }
+  ],
+  "HitAreas": [
+    {
+      "Name": "Head",
+      "Id": "D_REF.FACE"
+    },
+    {
+      "Name": "Body",
+      "Id": "D_REF.BODY"
+    },
+    {
+      "Name": "Tui",
+      "Id": "D_REF.TUI"
+    }
+  ],
+  "EmotionMapping": {
+    "motions": {
+      "Idle": [
+        "motions/id4.mtn",
+        "motions/id4_1.mtn",
+        "motions/id4_2.mtn"
+      ],
+      "happy": [
+        "motions/id4_3.mtn"
+      ],
+      "shy": [
+        "motions/id4_4.mtn"
+      ],
+      "surprised": [
+        "motions/id4_5.mtn"
+      ],
+      "neutral": [
+        "motions/id4_6.mtn"
+      ]
+    },
+    "expressions": {}
+  }
+}
