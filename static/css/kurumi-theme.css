@@ -1,0 +1,2717 @@
+/* ==========================================================================
+   Project ZAFKIEL — Kurumi Tokisaki (Date A Live)
+   Empress of Time (刻々帝) Gothic Lolita & Astral Dress Master Theme
+   ==========================================================================
+   Color Palette:
+   - Obsidian Abyss: #060408, #0b080e, #130d1a, #1a1022
+   - Royal Crimson / Wine: #640d14, #800e13, #ad2831, #c41e3a, #e63946
+   - Antique Clock Gold: #c5a059, #d4af37, #ffd700, #ffe699
+   - Warm Ivory Parchment: #f5eedc, #fff6e5
+   - Shadow Aura: rgba(196, 30, 58, 0.45), rgba(212, 175, 55, 0.35)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root,
+[data-theme="dark"],
+html,
+body {
+  /* Core Kurumi Accent Palette */
+  --neko-kurumi-crimson: #c41e3a;
+  --neko-kurumi-crimson-dark: #640d14;
+  --neko-kurumi-crimson-glow: rgba(196, 30, 58, 0.55);
+  --neko-kurumi-gold: #d4af37;
+  --neko-kurumi-gold-light: #ffd700;
+  --neko-kurumi-gold-glow: rgba(212, 175, 55, 0.4);
+  --neko-kurumi-obsidian: #0b080e;
+  --neko-kurumi-surface: rgba(18, 12, 22, 0.94);
+  --neko-kurumi-surface-card: rgba(26, 16, 30, 0.96);
+
+  /* Override N.E.K.O. Internal Popup & UI Variables */
+  --neko-popup-active: var(--neko-kurumi-crimson) !important;
+  --neko-popup-accent: var(--neko-kurumi-gold) !important;
+  --neko-popup-accent-bg: rgba(196, 30, 58, 0.15) !important;
+  --neko-popup-accent-border: rgba(212, 175, 55, 0.45) !important;
+  --neko-popup-hover: rgba(196, 30, 58, 0.25) !important;
+  --neko-popup-hover-subtle: rgba(196, 30, 58, 0.15) !important;
+  --neko-popup-selected-bg: rgba(196, 30, 58, 0.3) !important;
+  --neko-popup-selected-hover: rgba(196, 30, 58, 0.45) !important;
+  --neko-popup-bg: rgba(18, 12, 22, calc(0.95 * var(--neko-floating-menu-opacity-factor, 1))) !important;
+  --neko-popup-border: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+  --neko-popup-border-color: rgba(212, 175, 55, 0.4) !important;
+  --neko-popup-shadow: 0 4px 24px rgba(0, 0, 0, 0.8), 0 0 18px rgba(196, 30, 58, 0.4) !important;
+  --neko-popup-text: #f5eedc !important;
+  --neko-popup-text-sub: #d4af37 !important;
+
+  /* Floating Buttons */
+  --neko-btn-bg: rgba(22, 14, 28, calc(0.9 * var(--neko-floating-menu-opacity-factor, 1))) !important;
+  --neko-btn-bg-hover: rgba(90, 14, 26, calc(0.96 * var(--neko-floating-menu-opacity-factor, 1))) !important;
+  --neko-btn-bg-active: rgba(138, 16, 30, 0.98) !important;
+  --neko-btn-border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+  --neko-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.7), 0 0 10px rgba(196, 30, 58, 0.35) !important;
+  --neko-btn-shadow-hover: 0 6px 22px rgba(196, 30, 58, 0.75), 0 0 15px rgba(255, 215, 0, 0.5) !important;
+
+  /* HUD */
+  --neko-hud-header-bg: rgba(32, 16, 32, 0.95) !important;
+  --neko-hud-subtle-bg: rgba(196, 30, 58, 0.2) !important;
+}
+
+/* ==========================================================================
+   Global Typography & Headings
+   ========================================================================== */
+h1, h2, h3, h4,
+.page-title,
+.page-title-bar h2,
+.section-title,
+.modal-title,
+.dialog-title,
+.chat-title,
+.window-title {
+  font-family: 'Cinzel', 'Playfair Display', 'Georgia', serif !important;
+  color: #ffd700 !important;
+  letter-spacing: 1.2px !important;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.5), 0 0 25px rgba(196, 30, 58, 0.4) !important;
+}
+
+/* ==========================================================================
+   Global Atmosphere & Backgrounds
+   ========================================================================== */
+body {
+  background: radial-gradient(ellipse at 50% 25%, #1f1224 0%, #0c0812 65%, #050408 100%) !important;
+  color: #f5eedc !important;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ==========================================================================
+   Chat Container & Window
+   ========================================================================== */
+#chat-container,
+.app-shell,
+.chat-window {
+  border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+  border-radius: 16px !important;
+  background: rgba(14, 10, 18, 0.94) !important;
+  box-shadow: 0 8px 36px rgba(0, 0, 0, 0.75), 0 0 24px rgba(196, 30, 58, 0.4) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+}
+
+#chat-header,
+.chat-header,
+.compact-chat-surface-frame .chat-header,
+.window-topbar,
+#react-chat-window-shell .window-topbar,
+[data-theme="dark"] .window-topbar {
+  background: linear-gradient(135deg, #3d050a 0%, #680d15 50%, #1e0912 100%) !important;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  color: #ffd700 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.3) !important;
+}
+
+#chat-title,
+.chat-header-title,
+.window-title,
+#react-chat-window-title,
+[data-theme="dark"] .window-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.2px !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(196, 30, 58, 0.4) !important;
+}
+
+#chat-content-wrapper {
+  background: rgba(11, 8, 14, 0.94) !important;
+}
+
+/* User & Companion Bubbles */
+.message.user,
+.chat-bubble-user {
+  background: linear-gradient(135deg, #640d14 0%, #800e13 60%, #a71d2a 100%) !important;
+  color: #fff8f0 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  box-shadow: 0 4px 14px rgba(100, 13, 20, 0.6) !important;
+  border-radius: 14px 14px 2px 14px !important;
+}
+
+.message.gemini,
+.message.assistant,
+.chat-bubble-assistant {
+  background: rgba(26, 16, 30, 0.95) !important;
+  color: #f7eedd !important;
+  border-left: 3.5px solid #c41e3a !important;
+  border-top: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-right: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 12px rgba(196, 30, 58, 0.2) !important;
+  border-radius: 4px 14px 14px 14px !important;
+}
+
+/* ==========================================================================
+   Model Manager Section (Astral Vessel Sanctuary)
+   ========================================================================== */
+body.model-manager-page,
+.model-manager-page {
+  background: #09070c url('/static/icons/model_manager_background.png') center / cover no-repeat !important;
+  color: #f5eedc !important;
+}
+
+#sidebar {
+  background: rgba(14, 10, 18, 0.96) !important;
+  border-right: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  box-shadow: 6px 0 28px rgba(0, 0, 0, 0.85), 0 0 20px rgba(196, 30, 58, 0.3) !important;
+  backdrop-filter: blur(24px) !important;
+}
+
+#sidebar .btn,
+#sidebar .btn-primary,
+#sidebar button,
+.sidebar-controls button {
+  background: linear-gradient(135deg, rgba(30, 14, 24, 0.95) 0%, rgba(68, 14, 26, 0.95) 100%) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.65), inset 0 0 10px rgba(212, 175, 55, 0.15) !important;
+  transition: all 0.25s ease !important;
+}
+
+#sidebar .btn:hover,
+#sidebar .btn-primary:hover,
+#sidebar button:hover {
+  background: linear-gradient(135deg, rgba(84, 12, 26, 0.98) 0%, rgba(138, 18, 34, 0.98) 100%) !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.75), 0 0 15px rgba(255, 215, 0, 0.45) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Eliminate cartoon round stroke text and comic fonts */
+.round-stroke-text {
+  font-family: 'Cinzel', 'Playfair Display', serif !important;
+  color: #ffd700 !important;
+  -webkit-text-fill-color: #ffd700 !important;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.75) !important;
+  letter-spacing: 1.2px !important;
+}
+
+.round-stroke-text::before,
+.round-stroke-text::after {
+  display: none !important;
+}
+
+/* Hide cute paw icon in back button */
+.paw-icon,
+#backToMainBtn .paw-icon {
+  display: none !important;
+}
+
+/* Model lighting & settings panels */
+.vrm-lighting-panel,
+.model-settings-panel,
+[class*="lighting-controls"] {
+  background: rgba(18, 12, 22, 0.94) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7) !important;
+  border-radius: 12px !important;
+  color: #f5eedc !important;
+}
+
+/* Range sliders */
+input[type="range"] {
+  accent-color: #c41e3a !important;
+}
+
+/* ==========================================================================
+   Character Card Manager Section (Chrono Grimoire)
+   ========================================================================== */
+body.character-card-manager,
+.workshop-page,
+[class*="character_card_manager"] {
+  background: #09070c url('/static/icons/steam_shop_bg.png') top center / 100% no-repeat !important;
+  color: #f5eedc !important;
+}
+
+.page-title-bar {
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+  background: linear-gradient(135deg, rgba(32, 10, 20, 0.95) 0%, rgba(14, 8, 18, 0.95) 100%) !important;
+}
+
+.master-profile-section,
+.character-list-panel,
+.character-card,
+.character-card-inner,
+.detail-panel,
+.workshop-card {
+  background: rgba(18, 12, 22, 0.94) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.75), 0 0 16px rgba(196, 30, 58, 0.25) !important;
+  border-radius: 14px !important;
+  color: #f5eedc !important;
+}
+
+.character-card:hover {
+  border-color: #ffd700 !important;
+  box-shadow: 0 12px 32px rgba(196, 30, 58, 0.65), 0 0 20px rgba(255, 215, 0, 0.45) !important;
+  transform: translateY(-3px) !important;
+}
+
+/* ==========================================================================
+   API Key Settings Section
+   ========================================================================== */
+body.api-key-settings-page,
+.api-key-settings-page {
+  background: #0a080e !important;
+  color: #f5eedc !important;
+}
+
+.api-key-container,
+.settings-section,
+.settings-card,
+.api-card,
+.card {
+  background: rgba(18, 12, 22, 0.94) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.7), 0 0 16px rgba(196, 30, 58, 0.2) !important;
+  color: #f5eedc !important;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  background: rgba(28, 16, 32, 0.88) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.35) !important;
+  border-radius: 8px !important;
+  color: #fff6e5 !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #c41e3a !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.65), 0 0 6px rgba(212, 175, 55, 0.4) !important;
+  outline: none !important;
+}
+
+/* ==========================================================================
+   Memory Browser Section (Chrono Archives)
+   ========================================================================== */
+body.memory-browser-page,
+.memory-browser-page {
+  background: #09070c url('/static/icons/subscriptions-content_bg.png') center / cover no-repeat !important;
+  color: #f5eedc !important;
+}
+
+.memory-sidebar,
+.memory-content,
+.memory-role-item,
+.memory-card {
+  background: rgba(16, 11, 20, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+  color: #f5eedc !important;
+  border-radius: 12px !important;
+}
+
+.memory-role-item.is-selected,
+.memory-role-item.active {
+  background: linear-gradient(135deg, rgba(84, 12, 24, 0.95) 0%, rgba(138, 18, 34, 0.95) 100%) !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 15px rgba(196, 30, 58, 0.6) !important;
+  color: #fff !important;
+}
+
+/* ==========================================================================
+   Jukebox & Music Player Section
+   ========================================================================== */
+body.jukebox-page,
+body.jukebox-manager-page,
+.jukebox-container,
+.manager-container {
+  background: #09070c !important;
+  color: #f5eedc !important;
+}
+
+.aplayer {
+  background: rgba(18, 12, 22, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.75) !important;
+  border-radius: 12px !important;
+}
+
+.aplayer .aplayer-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.aplayer .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+  background: #c41e3a !important;
+}
+
+.aplayer .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
+  background: #ffd700 !important;
+}
+
+/* ==========================================================================
+   Driver.js Tutorial Popovers (Kurumi Gothic Dialogues)
+   ========================================================================== */
+.driver-popover {
+  background: rgba(16, 11, 20, 0.98) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.75) !important;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.85), 0 0 20px rgba(196, 30, 58, 0.5) !important;
+  color: #f5eedc !important;
+  border-radius: 12px !important;
+}
+
+.driver-popover-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', 'Playfair Display', serif !important;
+  letter-spacing: 1px !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.65) !important;
+}
+
+.driver-popover-description {
+  color: #e5ded0 !important;
+}
+
+.driver-popover-footer button,
+.driver-popover-next-btn,
+.driver-popover-btn {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  border: 1px solid #ffd700 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 0 10px rgba(196, 30, 58, 0.55) !important;
+  transition: all 0.2s ease !important;
+}
+
+.driver-popover-footer button:hover,
+.driver-popover-next-btn:hover,
+.driver-popover-btn:hover {
+  background: linear-gradient(135deg, #a71d2a 0%, #e63946 100%) !important;
+  box-shadow: 0 0 16px rgba(196, 30, 58, 0.85), 0 0 8px rgba(255, 215, 0, 0.5) !important;
+  transform: translateY(-1px) !important;
+}
+
+.driver-highlighted-element {
+  outline: 3px solid #c41e3a !important;
+  box-shadow: 0 0 25px rgba(196, 30, 58, 0.85), 0 0 10px rgba(255, 215, 0, 0.5) !important;
+}
+
+/* ==========================================================================
+   Window Controls (Sleek Obsidian & Gold Pill)
+   ========================================================================== */
+.neko-window-controls {
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  background: rgba(22, 14, 28, 0.88) !important;
+  box-shadow: inset 0 1px 0 rgba(212, 175, 55, 0.25), 0 4px 16px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 12px !important;
+}
+
+.neko-window-controls .neko-window-control-btn,
+.neko-window-controls .close-btn,
+.neko-window-controls .minimize-btn,
+.neko-window-controls .maximize-btn {
+  color: #ffd700 !important;
+}
+
+.neko-window-controls .close-btn:hover,
+.neko-window-controls .neko-window-control-btn[data-neko-window-control="close"]:hover {
+  background: #c41e3a !important;
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   Buttons & Interactive Elements
+   ========================================================================== */
+.btn-primary,
+.save-btn,
+.submit-btn,
+.confirm-btn,
+[class*="-btn-primary"] {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  border: 1px solid rgba(212, 175, 55, 0.6) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(100, 13, 20, 0.6) !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-primary:hover,
+.save-btn:hover,
+.submit-btn:hover,
+.confirm-btn:hover {
+  background: linear-gradient(135deg, #a71d2a 0%, #e63946 100%) !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 6px 18px rgba(196, 30, 58, 0.8), 0 0 12px rgba(255, 215, 0, 0.45) !important;
+  transform: translateY(-1.5px) !important;
+}
+
+/* Floating Action / Side Buttons */
+.side-btn,
+.chat-header-action-btn,
+.neko-floating-menu-btn {
+  background: rgba(24, 16, 30, 0.88) !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+  color: #ffd700 !important;
+  transition: all 0.25s ease !important;
+}
+
+.side-btn:hover,
+.chat-header-action-btn:hover,
+.neko-floating-menu-btn:hover {
+  background: linear-gradient(135deg, #720914 0%, #ad2831 100%) !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 14px rgba(196, 30, 58, 0.7), 0 0 8px rgba(212, 175, 55, 0.45) !important;
+  transform: translateY(-1.5px) !important;
+}
+
+/* ==========================================================================
+   Floating Action Buttons & Lock Icon (Kurumi Gothic Edition)
+   ========================================================================== */
+#live2d-floating-buttons,
+#vrm-floating-buttons,
+#mmd-floating-buttons,
+[id$="-floating-buttons"] {
+  gap: 14px !important;
+}
+
+.live2d-floating-btn,
+.vrm-floating-btn,
+.mmd-floating-btn,
+[class*="-floating-btn"] {
+  background: rgba(18, 12, 22, 0.88) !important;
+  border: 1.5px solid rgba(196, 30, 58, 0.75) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7), 0 0 12px rgba(196, 30, 58, 0.45), inset 0 0 8px rgba(212, 175, 55, 0.25) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.live2d-floating-btn:hover,
+.vrm-floating-btn:hover,
+.mmd-floating-btn:hover,
+[class*="-floating-btn"]:hover {
+  background: radial-gradient(circle at center, #520b18 0%, #1e0e1a 100%) !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.75), 0 0 16px rgba(255, 215, 0, 0.5), inset 0 0 10px rgba(212, 175, 55, 0.4) !important;
+  transform: scale(1.1) !important;
+}
+
+#live2d-lock-icon,
+#vrm-lock-icon,
+#mmd-lock-icon,
+[id$="-lock-icon"] {
+  filter: drop-shadow(0 0 8px rgba(196, 30, 58, 0.85)) drop-shadow(0 0 14px rgba(212, 175, 55, 0.5)) !important;
+  transition: transform 0.2s ease, filter 0.2s ease !important;
+}
+
+#live2d-lock-icon:hover,
+#vrm-lock-icon:hover,
+#mmd-lock-icon:hover,
+[id$="-lock-icon"]:hover {
+  transform: scale(1.12) !important;
+  filter: drop-shadow(0 0 12px rgba(255, 20, 60, 1)) drop-shadow(0 0 20px rgba(255, 215, 0, 0.75)) !important;
+}
+
+/* Subtitle Container Kurumi Overrides */
+#subtitle-display,
+body.subtitle-web-host #subtitle-display,
+body.subtitle-window-host #subtitle-display {
+  --subtitle-control-fg: #d4af37 !important;
+  --subtitle-corner-line: rgba(196, 30, 58, 0.95) !important;
+  --subtitle-settings-text: #ffd700 !important;
+  --subtitle-settings-muted: rgba(212, 175, 55, 0.8) !important;
+  --subtitle-focus-ring: rgba(196, 30, 58, 0.6) !important;
+  --subtitle-panel-text: #f5eedc !important;
+  --subtitle-text-fill: #f5eedc !important;
+  --subtitle-placeholder-fill: rgba(212, 175, 55, 0.75) !important;
+  background: rgba(14, 10, 18, 0.92) !important;
+  border: 1.5px solid rgba(196, 30, 58, 0.55) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.75), 0 0 20px rgba(196, 30, 58, 0.35) !important;
+}
+
+#subtitle-display svg polygon,
+#subtitle-display svg path,
+.subtitle-corner-accent {
+  stroke: #c41e3a !important;
+  fill: #c41e3a !important;
+}
+
+/* ==========================================================================
+   Composer & React Chat Overrides
+   ========================================================================== */
+#react-chat-window-shell,
+.compact-chat-surface-frame,
+.chat-window-shell,
+.chat-body,
+.composer-panel {
+  background: rgba(14, 10, 18, 0.95) !important;
+  color: #f5eedc !important;
+  border-color: rgba(196, 30, 58, 0.6) !important;
+}
+
+.composer-input-shell {
+  background: rgba(24, 16, 30, 0.92) !important;
+  border: 1.5px solid rgba(196, 30, 58, 0.55) !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.25) !important;
+}
+
+.composer-input {
+  color: #f5eedc !important;
+}
+
+.composer-input::placeholder {
+  color: rgba(212, 175, 55, 0.5) !important;
+}
+
+.composer-galgame-btn,
+.composer-galgame-btn-glyph {
+  color: #ffd700 !important;
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.6) !important;
+}
+
+.composer-tool-btn svg {
+  color: #d4af37 !important;
+  fill: #d4af37 !important;
+}
+
+.composer-translate-btn.is-active::after,
+[data-theme="dark"] .composer-translate-btn.is-active::after,
+.composer-galgame-btn.is-active::after,
+[data-theme="dark"] .composer-galgame-btn.is-active::after {
+  background: #c41e3a !important;
+  box-shadow: 0 0 8px rgba(196, 30, 58, 0.8) !important;
+}
+
+#react-chat-window-header-actions button,
+.window-topbar-actions button,
+.topbar-action-btn {
+  color: #ffd700 !important;
+  border-color: rgba(212, 175, 55, 0.35) !important;
+  transition: all 0.2s ease !important;
+}
+
+#react-chat-window-header-actions button:hover,
+.window-topbar-actions button:hover,
+.topbar-action-btn:hover {
+  background: rgba(196, 30, 58, 0.4) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 8px rgba(196, 30, 58, 0.6) !important;
+}
+
+/* ==========================================================================
+   Gothic Scrollbars
+   ========================================================================== */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(14, 10, 18, 0.85);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #800e13 0%, #c41e3a 50%, #d4af37 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a71d2a 0%, #e63946 50%, #ffd700 100%);
+}
+
+/* ==========================================================================
+   Project ZAFKIEL — Complete Section & Component Overrides
+   Banish all N.E.K.O. Light/Blue Themes and Cartoon Bubbly Headings
+   ========================================================================== */
+
+/* 1. Global Header Double-Render Override (Eliminate Cartoon Bubbly Blue Strokes) */
+.page-title-bar h1, .page-title-bar h2,
+.container-header h1, .container-header h2,
+.settings-header h1, .settings-header h2,
+.panel-header h1, .panel-header h2,
+.round-stroke-text,
+.container-header h2,
+.settings-header h2 {
+  font-family: 'Cinzel', 'Playfair Display', 'Georgia', serif !important;
+  color: #ffd700 !important;
+  -webkit-text-fill-color: #ffd700 !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(196, 30, 58, 0.5) !important;
+  letter-spacing: 1.5px !important;
+  white-space: nowrap !important;
+}
+
+.page-title-bar h1::before, .page-title-bar h2::before,
+.container-header h1::before, .container-header h2::before,
+.settings-header h1::before, .settings-header h2::before,
+.panel-header h1::before, .panel-header h2::before,
+.page-title-bar h1::after, .page-title-bar h2::after,
+.container-header h1::after, .container-header h2::after,
+.settings-header h1::after, .settings-header h2::after,
+.panel-header h1::after, .panel-header h2::after,
+.round-stroke-text::before, .round-stroke-text::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Hide all cat and paw elements */
+.card-info-paw,
+.paw-icon,
+.catgirl-logo,
+.cat-ear,
+.cat-tail {
+  display: none !important;
+}
+
+/* 2. Character Card Manager (/character_card_manager) */
+.layout-container {
+  background: transparent !important;
+}
+
+.main-content {
+  background: transparent !important;
+}
+
+.chara-cards-view-area,
+.subscription-view-area,
+#subscriptions-content .subscription-view-area {
+  background: rgba(14, 10, 18, 0.96) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8), 0 0 20px rgba(196, 30, 58, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+#sidebar .menu-section,
+.workshop-integration-info,
+.master-profile-section {
+  background: rgba(20, 14, 26, 0.94) !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  border-radius: 14px !important;
+  color: #f5eedc !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6) !important;
+}
+
+#sidebar .tab {
+  background: rgba(28, 18, 34, 0.85) !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+#sidebar .tab.active {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 14px rgba(196, 30, 58, 0.6) !important;
+}
+
+.workshop-integration-info .info-text p,
+.master-profile-header,
+.master-profile-header span {
+  color: #d4af37 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.sidebar-cloudsave-btn {
+  background: linear-gradient(135deg, #800e13 0%, #520b18 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+}
+
+.chara-cards-header-bg,
+.chara-cards-header-row,
+.subscription-header-bg,
+.subscription-header-row {
+  background: linear-gradient(135deg, #2b0b14 0%, #160a18 100%) !important;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+.card-info-header-text,
+.card-info-header-text span {
+  font-family: 'Cinzel', serif !important;
+  color: #ffd700 !important;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.5) !important;
+}
+
+.card-info-header-text svg {
+  fill: #ffd700 !important;
+  stroke: #c41e3a !important;
+}
+
+.chara-cards-toggle-bar {
+  background: rgba(18, 12, 22, 0.98) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25) !important;
+}
+
+.chara-add-btn {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffd700 !important;
+  box-shadow: 0 4px 14px rgba(196, 30, 58, 0.5) !important;
+  font-weight: 700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.chara-add-btn:hover {
+  background: linear-gradient(135deg, #e63946 0%, #ad2831 100%) !important;
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.8), 0 0 10px rgba(255, 215, 0, 0.5) !important;
+}
+
+.chara-import-btn {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.chara-import-btn:hover {
+  background: rgba(196, 30, 58, 0.35) !important;
+  border-color: #ffd700 !important;
+  color: #ffffff !important;
+}
+
+.api-key-toolbar-btn {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.6) !important;
+  box-shadow: 0 0 10px rgba(196, 30, 58, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.view-toggle-btn {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+}
+
+.view-toggle-btn.active {
+  background: #c41e3a !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+}
+
+.chara-search-wrapper .control-input,
+#search-subscription,
+.control-input,
+.control-select {
+  background: rgba(24, 16, 30, 0.95) !important;
+  color: #f5eedc !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+}
+
+.chara-search-wrapper .control-input::placeholder,
+#search-subscription::placeholder {
+  color: rgba(212, 175, 55, 0.5) !important;
+}
+
+.chara-cards-container {
+  background: transparent !important;
+}
+
+.chara-card-item {
+  background: rgba(22, 14, 28, 0.96) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7), 0 0 12px rgba(196, 30, 58, 0.25) !important;
+}
+
+.chara-card-item:hover {
+  border-color: #ffd700 !important;
+  box-shadow: 0 8px 28px rgba(196, 30, 58, 0.5), 0 0 16px rgba(255, 215, 0, 0.4) !important;
+  transform: translateY(-3px) !important;
+}
+
+.chara-card-item.active {
+  background: linear-gradient(160deg, rgba(40, 16, 30, 0.98) 0%, rgba(18, 10, 22, 0.98) 100%) !important;
+  border: 2px solid #ffd700 !important;
+  box-shadow: 0 0 20px rgba(196, 30, 58, 0.6), 0 0 15px rgba(255, 215, 0, 0.5) !important;
+}
+
+.chara-card-item .card-badge,
+.chara-list-item .list-badge {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.chara-card-item .card-action-btn.switch-btn,
+.chara-list-item .list-action-btn.switch-btn {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+}
+
+.chara-card-item .card-action-btn.delete-btn,
+.chara-list-item .list-action-btn.delete-btn {
+  background: linear-gradient(135deg, #500a12 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(196, 30, 58, 0.6) !important;
+}
+
+.chara-card-item .card-name,
+.chara-list-item .list-name {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+/* Workshop Cards */
+.workshop-card {
+  background: rgba(22, 14, 28, 0.96) !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+.workshop-card .card-header,
+.workshop-card .card-content {
+  background: rgba(16, 10, 20, 0.95) !important;
+  border-color: rgba(212, 175, 55, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+.workshop-card::before,
+.workshop-card .card-content::before {
+  display: none !important;
+}
+
+/* Catgirl Panel Editor */
+.catgirl-panel-wrapper,
+.catgirl-panel-right,
+.catgirl-panel-right .field-row,
+.catgirl-panel-right .fold-content,
+.settings-form-layout {
+  background: rgba(16, 10, 22, 0.96) !important;
+  color: #f5eedc !important;
+  border-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+.catgirl-panel-right .field-row input,
+.catgirl-panel-right .field-row textarea,
+.catgirl-panel-right .control-input,
+.settings-form-layout input,
+.settings-form-layout textarea {
+  background: rgba(26, 16, 32, 0.95) !important;
+  color: #f5eedc !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+/* 3. API Key Settings (/api_key) */
+.api-key-settings-page,
+#main-content .container,
+.api-key-info,
+.newbie-recommend,
+.section {
+  background: rgba(16, 10, 22, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 16px rgba(196, 30, 58, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+.api-key-info h3 {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.api-key-info strong,
+.api-key-info span,
+.api-key-info label {
+  color: #f5eedc !important;
+}
+
+.api-key-info a {
+  color: #ffd700 !important;
+  text-decoration: underline !important;
+}
+
+.field-row input,
+.field-row select,
+.control-select,
+.model-select {
+  background: rgba(26, 16, 32, 0.95) !important;
+  color: #ffd700 !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 8px !important;
+}
+
+#save-settings-btn,
+.save-btn,
+#saveSettingsBtn,
+.api-key-save-btn,
+.save-button-wrapper button {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border: 1.5px solid #ffd700 !important;
+  box-shadow: 0 4px 18px rgba(196, 30, 58, 0.6), 0 0 12px rgba(255, 215, 0, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+}
+
+/* 4. Memory Browser (/memory_browser) */
+.memory-browser-page,
+.memory-content-wrapper,
+.memory-sidebar,
+.memory-main,
+.chat-history-container,
+.file-list,
+.memory-header-bar,
+.storage-location-section,
+.storage-location-card-mini {
+  background: rgba(16, 10, 22, 0.96) !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  color: #f5eedc !important;
+}
+
+.memory-sidebar .character-item,
+.file-list-item,
+.character-list-item {
+  background: rgba(24, 16, 30, 0.85) !important;
+  color: #f5eedc !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-radius: 8px !important;
+}
+
+.memory-sidebar .character-item.active,
+.file-list-item.active,
+.character-list-item.active {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.5) !important;
+}
+
+.empty-state p,
+.no-chat-hint {
+  color: #d4af37 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.storage-location-manage-btn,
+.storage-location-open-btn,
+.memory-btn {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.storage-location-manage-btn:hover,
+.storage-location-open-btn:hover,
+.memory-btn:hover {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+}
+
+/* 5. Model Manager (/model_manager) VRM Lighting Panel */
+#vrm-lighting-panel {
+  background: rgba(16, 10, 22, 0.96) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.8), 0 0 16px rgba(196, 30, 58, 0.35) !important;
+}
+
+#vrm-lighting-panel .panel-title,
+#vrm-lighting-panel label,
+#vrm-lighting-panel span,
+#vrm-lighting-panel .slider-label {
+  color: #d4af37 !important;
+  font-weight: 600 !important;
+}
+
+#vrm-lighting-panel .badge-vrm,
+#vrm-lighting-panel [class*="badge"],
+.vrm-badge {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffd700 !important;
+  border: 1px solid #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+#vrm-lighting-panel input[type="range"] {
+  accent-color: #c41e3a !important;
+}
+
+/* 6. Jukebox & Jukebox Manager (/jukebox, /jukebox/manager) */
+.manager-container,
+.jukebox-manager-page,
+.playlist-panel,
+.song-list-container,
+.select-all-bar,
+.manager-header,
+.jukebox-manager-content {
+  background: rgba(16, 10, 22, 0.96) !important;
+  border-color: rgba(212, 175, 55, 0.4) !important;
+  color: #f5eedc !important;
+}
+
+.song-card,
+.song-item {
+  background: rgba(24, 16, 32, 0.94) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+.song-card:hover,
+.song-item:hover {
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 14px rgba(196, 30, 58, 0.5) !important;
+}
+
+.song-tag,
+.tag-badge {
+  background: linear-gradient(135deg, #800e13, #c41e3a) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+}
+
+.nav-pill,
+.tab-pill,
+.manager-header .btn {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.nav-pill.active,
+.tab-pill.active {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 10px rgba(196, 30, 58, 0.6) !important;
+}
+
+/* 7. Tutorial & Guide Popups (Driver.js / Click Guide) */
+.driver-popover,
+.driver-popover-title,
+.driver-popover-description {
+  background: rgba(18, 12, 24, 0.98) !important;
+  color: #f5eedc !important;
+  border-color: rgba(212, 175, 55, 0.55) !important;
+}
+
+.driver-popover-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.driver-popover-next-btn {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border: 1px solid #ffd700 !important;
+}
+
+.driver-popover-prev-btn,
+.driver-popover-close-btn {
+  background: rgba(30, 18, 36, 0.9) !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+
+/* ==========================================================================
+   KURUMI TOKISAKI (ZAFKIEL) MASTER COMPONENT OVERRIDES
+   Guarantees no white background, cyan blue, or comic font anywhere
+   ========================================================================== */
+
+/* Universal Reset for Titles and Spans with Text-Clip Cyan Gradients */
+.page-title-bar h1, .page-title-bar h2,
+.container-header h1, .container-header h2,
+.settings-header h1, .settings-header h2,
+.panel-header h1, .panel-header h2,
+.round-stroke-text,
+.custom-api-toggle-text,
+#save-settings-btn span,
+#custom-api-toggle-btn span,
+#key-book-toggle-btn span {
+  font-family: 'Cinzel', 'Playfair Display', 'Georgia', serif !important;
+  color: #ffd700 !important;
+  -webkit-text-fill-color: #ffd700 !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(196, 30, 58, 0.45) !important;
+  letter-spacing: 1.5px !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+}
+
+.page-title-bar h1::before, .page-title-bar h2::before,
+.container-header h1::before, .container-header h2::before,
+.settings-header h1::before, .settings-header h2::before,
+.panel-header h1::before, .panel-header h2::before,
+.page-title-bar h1::after, .page-title-bar h2::after,
+.container-header h1::after, .container-header h2::after,
+.settings-header h1::after, .settings-header h2::after,
+.panel-header h1::after, .panel-header h2::after,
+.round-stroke-text::before, .round-stroke-text::after,
+.custom-api-toggle-text::before, .custom-api-toggle-text::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Page Title Bar Global Luxury Gothic Banner */
+body .page-title-bar,
+.page-title-bar,
+.container-header {
+  background: linear-gradient(135deg, #1f0b14 0%, #0d0610 60%, #1a0812 100%) !important;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.75), 0 0 15px rgba(196, 30, 58, 0.35) !important;
+}
+
+/* Remove all cat face, paw and tail icons */
+.paw-icon,
+.card-info-paw,
+.cat-icon,
+.cat-ear,
+.cat-tail,
+img[src*="paw_ui"],
+img[src*="cat_icon"] {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Section 1: Character Card Manager (/character_card_manager)
+   ========================================================================== */
+body:has(#workshop-tabs),
+.layout-container,
+.main-content,
+.tab-contents,
+#character-cards-content,
+#subscriptions-content {
+  background: transparent !important;
+}
+
+.chara-cards-view-area,
+.subscription-view-area,
+#subscriptions-content .subscription-view-area,
+.chara-cards-container,
+#chara-cards-container {
+  background: rgba(14, 10, 18, 0.96) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8), 0 0 20px rgba(196, 30, 58, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+#sidebar .menu-section,
+.workshop-integration-info,
+.master-profile-section {
+  background: rgba(20, 14, 26, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.38) !important;
+  border-radius: 14px !important;
+  color: #f5eedc !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6) !important;
+}
+
+.workshop-integration-info .info-text p,
+.master-profile-header,
+.master-profile-header span {
+  color: #d4af37 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+#sidebar .tab {
+  background: rgba(28, 18, 34, 0.85) !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+#sidebar .tab.active {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 14px rgba(196, 30, 58, 0.6) !important;
+}
+
+.sidebar-cloudsave-btn {
+  background: linear-gradient(135deg, #800e13 0%, #520b18 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+}
+
+.chara-cards-header-bg,
+.chara-cards-header-row,
+.subscription-header-bg,
+.subscription-header-row {
+  background: linear-gradient(135deg, #2b0b14 0%, #160a18 100%) !important;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+.card-info-header-text,
+.card-info-header-text span {
+  font-family: 'Cinzel', serif !important;
+  color: #ffd700 !important;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.5) !important;
+}
+
+.card-info-header-text svg {
+  fill: #ffd700 !important;
+  stroke: #c41e3a !important;
+}
+
+.chara-cards-toggle-bar {
+  background: rgba(18, 12, 22, 0.98) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25) !important;
+}
+
+.chara-add-btn {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffd700 !important;
+  box-shadow: 0 4px 14px rgba(196, 30, 58, 0.5) !important;
+  font-weight: 700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.chara-add-btn:hover {
+  background: linear-gradient(135deg, #e63946 0%, #ad2831 100%) !important;
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.8), 0 0 10px rgba(255, 215, 0, 0.5) !important;
+}
+
+.chara-import-btn {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.chara-import-btn:hover {
+  background: rgba(196, 30, 58, 0.35) !important;
+  border-color: #ffd700 !important;
+  color: #ffffff !important;
+}
+
+.api-key-toolbar-btn {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.6) !important;
+  box-shadow: 0 0 10px rgba(196, 30, 58, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.view-toggle-btn {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+}
+
+.view-toggle-btn.active {
+  background: #c41e3a !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+}
+
+.chara-search-wrapper .control-input,
+#search-subscription,
+.control-input,
+.control-select {
+  background: rgba(24, 16, 30, 0.95) !important;
+  color: #f5eedc !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+}
+
+.chara-search-wrapper .control-input::placeholder,
+#search-subscription::placeholder {
+  color: rgba(212, 175, 55, 0.5) !important;
+}
+
+.chara-card-item {
+  background: rgba(22, 14, 28, 0.96) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7), 0 0 12px rgba(196, 30, 58, 0.25) !important;
+}
+
+.chara-card-item:hover {
+  border-color: #ffd700 !important;
+  box-shadow: 0 8px 28px rgba(196, 30, 58, 0.5), 0 0 16px rgba(255, 215, 0, 0.4) !important;
+  transform: translateY(-3px) !important;
+}
+
+.chara-card-item.active {
+  background: linear-gradient(160deg, rgba(40, 16, 30, 0.98) 0%, rgba(18, 10, 22, 0.98) 100%) !important;
+  border: 2px solid #ffd700 !important;
+  box-shadow: 0 0 20px rgba(196, 30, 58, 0.6), 0 0 15px rgba(255, 215, 0, 0.5) !important;
+}
+
+.chara-card-item .card-badge,
+.chara-list-item .list-badge {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.chara-card-item .card-action-btn.switch-btn,
+.chara-list-item .list-action-btn.switch-btn {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+}
+
+.chara-card-item .card-action-btn.delete-btn,
+.chara-list-item .list-action-btn.delete-btn {
+  background: linear-gradient(135deg, #500a12 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(196, 30, 58, 0.6) !important;
+}
+
+.chara-card-item .card-name,
+.chara-list-item .list-name {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+/* Workshop Cards */
+.workshop-card {
+  background: rgba(22, 14, 28, 0.96) !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+.workshop-card .card-header,
+.workshop-card .card-content {
+  background: rgba(16, 10, 20, 0.95) !important;
+  border-color: rgba(212, 175, 55, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+.workshop-card::before,
+.workshop-card .card-content::before {
+  display: none !important;
+}
+
+/* Catgirl Panel Editor */
+.catgirl-panel-wrapper,
+.catgirl-panel-right,
+.catgirl-panel-right .field-row,
+.catgirl-panel-right .fold-content,
+.settings-form-layout {
+  background: rgba(16, 10, 22, 0.96) !important;
+  color: #f5eedc !important;
+  border-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+.catgirl-panel-right .field-row input,
+.catgirl-panel-right .field-row textarea,
+.catgirl-panel-right .control-input,
+.settings-form-layout input,
+.settings-form-layout textarea {
+  background: rgba(26, 16, 32, 0.95) !important;
+  color: #f5eedc !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+/* ==========================================================================
+   Section 2: API Key Settings (/api_key)
+   ========================================================================== */
+.api-key-settings-page,
+body.api-key-settings-page,
+#main-content,
+.container,
+.container-content,
+.api-key-info,
+.newbie-recommend,
+.section {
+  background: rgba(16, 10, 22, 0.96) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 16px rgba(196, 30, 58, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+.api-key-info h3 {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.api-key-info strong,
+.api-key-info span,
+.api-key-info label {
+  color: #f5eedc !important;
+}
+
+.api-key-info a {
+  color: #ffd700 !important;
+  text-decoration: underline !important;
+}
+
+.api-provider-dropdown-trigger {
+  background: rgba(28, 16, 34, 0.96) !important;
+  color: #ffd700 !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+}
+
+.api-provider-dropdown-menu {
+  background: rgba(20, 12, 26, 0.98) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+  color: #f5eedc !important;
+}
+
+.api-provider-dropdown-item:hover {
+  background: rgba(196, 30, 58, 0.35) !important;
+  color: #ffd700 !important;
+}
+
+.field-row input,
+.field-row select,
+.control-select,
+.model-select {
+  background: rgba(26, 16, 32, 0.95) !important;
+  color: #ffd700 !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 8px !important;
+}
+
+#save-settings-btn,
+.save-btn,
+#saveSettingsBtn,
+.api-key-save-btn,
+.save-button-wrapper button {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border: 1.5px solid #ffd700 !important;
+  box-shadow: 0 4px 18px rgba(196, 30, 58, 0.6), 0 0 12px rgba(255, 215, 0, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+}
+
+/* ==========================================================================
+   Section 3: Memory Browser (/memory_browser)
+   ========================================================================== */
+:root,
+[data-theme="dark"],
+body.memory-browser-page {
+  --memory-canvas: #09070c !important;
+  --memory-sidebar: rgba(18, 12, 22, 0.96) !important;
+  --memory-surface: rgba(18, 12, 22, 0.96) !important;
+  --memory-surface-subtle: rgba(26, 16, 32, 0.9) !important;
+  --memory-surface-hover: rgba(45, 18, 30, 0.95) !important;
+  --memory-text: #f5eedc !important;
+  --memory-text-secondary: #d4af37 !important;
+  --memory-text-tertiary: rgba(212, 175, 55, 0.7) !important;
+  --memory-border: rgba(212, 175, 55, 0.4) !important;
+  --memory-divider: rgba(212, 175, 55, 0.25) !important;
+  --memory-accent: #c41e3a !important;
+  --memory-accent-brand: #ffd700 !important;
+  --memory-accent-border: #d4af37 !important;
+  --memory-primary-gradient: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  --memory-primary-gradient-hover: linear-gradient(135deg, #e63946, #ad2831) !important;
+  --memory-primary-shadow: 0 4px 16px rgba(196, 30, 58, 0.5) !important;
+}
+
+.memory-browser-page,
+.memory-content-wrapper,
+.memory-sidebar,
+.memory-main,
+.chat-history-container,
+.file-list,
+.memory-header-bar,
+.storage-location-section,
+.storage-location-card-mini,
+.tips-container,
+.memory-utility-bar,
+.editor {
+  background: rgba(16, 10, 22, 0.96) !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  color: #f5eedc !important;
+}
+
+.memory-sidebar .character-item,
+.file-list-item,
+.character-list-item,
+.cat-btn {
+  background: rgba(24, 16, 30, 0.85) !important;
+  color: #f5eedc !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-radius: 8px !important;
+}
+
+.memory-sidebar .character-item.active,
+.file-list-item.active,
+.character-list-item.active,
+.cat-btn[aria-current="true"] {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.5) !important;
+}
+
+.empty-state p,
+.no-chat-hint {
+  color: #d4af37 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.storage-location-manage-btn,
+.storage-location-open-btn,
+.memory-btn,
+.memory-header-action {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.storage-location-manage-btn:hover,
+.storage-location-open-btn:hover,
+.memory-btn:hover,
+.memory-header-action:hover {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffd700 !important;
+  border: 1px solid #ffd700 !important;
+}
+
+.clear-btn {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #e63946 !important;
+  border: 1px solid rgba(230, 57, 70, 0.5) !important;
+}
+
+/* ==========================================================================
+   Section 4: Model Manager (/model_manager)
+   ========================================================================== */
+#vrm-lighting-panel {
+  background: rgba(16, 10, 22, 0.96) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.8), 0 0 16px rgba(196, 30, 58, 0.35) !important;
+}
+
+#vrm-lighting-panel .panel-title,
+#vrm-lighting-panel label,
+#vrm-lighting-panel span,
+#vrm-lighting-panel .slider-label {
+  color: #d4af37 !important;
+  font-weight: 600 !important;
+}
+
+#vrm-lighting-panel .badge-vrm,
+#vrm-lighting-panel [class*="badge"],
+.vrm-badge {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffd700 !important;
+  border: 1px solid #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+#vrm-lighting-panel input[type="range"] {
+  accent-color: #c41e3a !important;
+}
+
+/* ==========================================================================
+   Section 5: Jukebox & Jukebox Manager (/jukebox, /jukebox/manager)
+   ========================================================================== */
+.jukebox-sam-panel,
+html[data-theme="dark"] .jukebox-sam-panel,
+body[data-theme="dark"] .jukebox-sam-panel,
+.manager-container,
+.jukebox-manager-page,
+.playlist-panel,
+.song-list-container,
+.select-all-bar,
+.manager-header,
+.jukebox-manager-content {
+  color: #f5eedc !important;
+  background: radial-gradient(ellipse at 50% 25%, #1f1224 0%, #0c0812 65%, #050408 100%) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+}
+
+.sam-header,
+[data-theme="dark"] .sam-header {
+  background: linear-gradient(135deg, #2b0b14 0%, #160a18 100%) !important;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+.sam-title,
+[data-theme="dark"] .sam-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5) !important;
+}
+
+.sam-tab,
+[data-theme="dark"] .sam-tab {
+  color: #d4af37 !important;
+  background: rgba(28, 18, 34, 0.85) !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.sam-tab.active,
+[data-theme="dark"] .sam-tab.active {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 14px rgba(196, 30, 58, 0.7), 0 0 8px rgba(255, 215, 0, 0.4) !important;
+}
+
+.sam-list-header,
+[data-theme="dark"] .sam-list-header {
+  background: rgba(24, 14, 28, 0.95) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3) !important;
+  color: #ffd700 !important;
+}
+
+.sam-item,
+[data-theme="dark"] .sam-item,
+.sam-binding-item,
+[data-theme="dark"] .sam-binding-item {
+  background: rgba(22, 14, 28, 0.94) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+.sam-item:hover,
+[data-theme="dark"] .sam-item:hover {
+  border-color: #ffd700 !important;
+  box-shadow: 0 4px 18px rgba(196, 30, 58, 0.45) !important;
+}
+
+.sam-item-name,
+[data-theme="dark"] .sam-item-name {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.sam-item-artist,
+[data-theme="dark"] .sam-item-artist {
+  color: #d4af37 !important;
+}
+
+.sam-tag,
+[data-theme="dark"] .sam-tag,
+.sam-badge,
+[data-theme="dark"] .sam-badge {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+}
+
+.sam-footer,
+[data-theme="dark"] .sam-footer,
+.sam-import-footer,
+[data-theme="dark"] .sam-import-footer {
+  background: rgba(18, 10, 22, 0.96) !important;
+  border-top: 1.5px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+.sam-btn,
+[data-theme="dark"] .sam-btn {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.sam-btn:hover,
+[data-theme="dark"] .sam-btn:hover {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+}
+
+.sam-file-drop-zone,
+[data-theme="dark"] .sam-file-drop-zone {
+  background: rgba(22, 12, 26, 0.7) !important;
+  border: 2px dashed rgba(212, 175, 55, 0.45) !important;
+  color: #d4af37 !important;
+}
+
+/* ==========================================================================
+   Section 6: Tutorial & Guide Popovers (Driver.js / Click Guide)
+   ========================================================================== */
+.driver-popover,
+.driver-popover-title,
+.driver-popover-description {
+  background: rgba(18, 12, 24, 0.98) !important;
+  color: #f5eedc !important;
+  border-color: rgba(212, 175, 55, 0.55) !important;
+}
+
+.driver-popover-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.driver-popover-next-btn {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border: 1px solid #ffd700 !important;
+}
+
+.driver-popover-prev-btn,
+.driver-popover-close-btn {
+  background: rgba(30, 18, 36, 0.9) !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+
+/* ==========================================================================
+   FINAL POLISH OVERRIDES (Pixel-Perfect Kurumi Gothic Sanctuary)
+   ========================================================================== */
+
+/* 1. API Key Settings - Current Key Banner */
+#current-api-key,
+[data-theme="dark"] #current-api-key {
+  background: rgba(22, 14, 28, 0.96) !important;
+  color: #ffd700 !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+#current-api-key svg,
+#current-api-key span,
+#current-api-key strong {
+  color: #ffd700 !important;
+}
+
+/* 2. Model Manager - VRM Lighting Controls & Sliders */
+.vrm-lighting-wrapper,
+.vrm-lighting-content,
+.mmd-lighting-wrapper > .vrm-lighting-content,
+[data-theme="dark"] .vrm-lighting-content,
+[data-theme="dark"] .mmd-lighting-wrapper > .vrm-lighting-content,
+[data-theme="dark"] .vrm-lighting-wrapper {
+  background: rgba(16, 10, 22, 0.96) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8), 0 0 14px rgba(196, 30, 58, 0.35) !important;
+  color: #f5eedc !important;
+}
+
+.vrm-lighting-header-text,
+.vrm-lighting-content span,
+.vrm-lighting-content label,
+.vrm-lighting-content .slider-label,
+.vrm-lighting-row label,
+.vrm-lighting-row span {
+  color: #d4af37 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.vrm-lighting-content input[type="range"] {
+  accent-color: #c41e3a !important;
+}
+
+.vrm-lighting-badge,
+.vrm-lighting-header .badge,
+span.vrm-badge,
+.badge-vrm,
+.vrm-lighting-header span.badge {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffd700 !important;
+  border: 1px solid #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+/* 3. Jukebox Manager - Song Tag Badges & Buttons */
+.sam-binding-tag,
+.sam-tag,
+.sam-item-tag,
+.sam-tag-badge,
+[data-theme="dark"] .sam-binding-tag,
+[data-theme="dark"] .sam-tag,
+[data-theme="dark"] .sam-item-tag {
+  background: linear-gradient(135deg, #800e13 0%, #c41e3a 100%) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+  border-radius: 12px !important;
+}
+
+.sam-visibility-btn,
+[data-theme="dark"] .sam-visibility-btn {
+  background: rgba(45, 14, 24, 0.9) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+.sam-visibility-btn:hover,
+[data-theme="dark"] .sam-visibility-btn:hover {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+}
+
+.sam-delete-btn,
+[data-theme="dark"] .sam-delete-btn {
+  background: rgba(60, 10, 18, 0.9) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(196, 30, 58, 0.5) !important;
+}
+
+.sam-delete-btn:hover,
+[data-theme="dark"] .sam-delete-btn:hover {
+  background: linear-gradient(135deg, #800e13, #c41e3a) !important;
+  color: #ffffff !important;
+}
+
+.sam-file-drop-zone,
+[data-theme="dark"] .sam-file-drop-zone,
+.sam-drop-hint,
+[data-theme="dark"] .sam-drop-hint {
+  background: rgba(22, 12, 26, 0.85) !important;
+  border: 1.5px dashed rgba(212, 175, 55, 0.45) !important;
+  color: #d4af37 !important;
+  border-radius: 20px !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+/* 4. Memory Browser - Header & Buttons */
+.memory-header-bar,
+.file-list-title,
+#memory-role-panel-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.memory-header-action,
+.memory-editor-action,
+.memory-action-btn,
+button.memory-header-action {
+  background: rgba(28, 18, 34, 0.9) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+/* ==========================================================================
+   KURUMI TOKISAKI (ZAFKIEL • KOKKOKUTEI) EXTENDED SECTIONS OVERHAUL
+   Covers: Cloud Save Manager, Emotion Managers (VRM / MMD / Live2D),
+   Card Maker, Theater & Story Selector, Chat Window
+   ========================================================================== */
+
+/* --- 1. CLOUD SAVE MANAGER --- */
+:root {
+  --cloudsave-blue: #c41e3a !important;
+  --cloudsave-blue-deep: #800e13 !important;
+  --cloudsave-blue-soft: #ffd700 !important;
+  --cloudsave-panel: #140d1a !important;
+  --cloudsave-panel-soft: #1c1024 !important;
+  --cloudsave-panel-warm: #22122b !important;
+  --cloudsave-warm-border: rgba(212, 175, 55, 0.45) !important;
+  --cloudsave-text: #f5eedc !important;
+  --cloudsave-muted: #d4af37 !important;
+  --cloudsave-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 16px rgba(196, 30, 58, 0.25) !important;
+}
+
+body .container:has(.cloudsave-status-card),
+.container:has(#cloudsave-subtitle),
+body .container:has(#cloudsave-list) {
+  background: radial-gradient(ellipse at 50% 20%, #1a0d20 0%, #0d0812 100%) !important;
+  color: #f5eedc !important;
+}
+
+.cloudsave-status-card {
+  background: rgba(20, 12, 26, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 16px rgba(196, 30, 58, 0.2) !important;
+  color: #f5eedc !important;
+}
+
+#cloudsave-provider-status,
+#cloudsave-provider-scope,
+#cloudsave-current-character {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.cloudsave-name-note {
+  background: rgba(36, 12, 20, 0.85) !important;
+  border: 1px solid rgba(196, 30, 58, 0.5) !important;
+  border-left: 4px solid #c41e3a !important;
+  border-radius: 12px !important;
+  color: #fce7f3 !important;
+}
+
+.cloudsave-name-note-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+}
+
+.cloudsave-name-note-body {
+  color: #e2d9cc !important;
+}
+
+.cloudsave-group,
+.cloudsave-group.workshop,
+.cloudsave-group.other,
+[data-theme="dark"] .cloudsave-group,
+[data-theme="dark"] .cloudsave-group.workshop,
+[data-theme="dark"] .cloudsave-group.other {
+  background: rgba(20, 12, 26, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.35) !important;
+  border-radius: 16px !important;
+  color: #f5eedc !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+}
+
+.cloudsave-group-count,
+[data-theme="dark"] .cloudsave-group-count {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.5), rgba(128, 14, 19, 0.7)) !important;
+  border: 1px solid rgba(255, 215, 0, 0.4) !important;
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.cloudsave-group-title,
+[data-theme="dark"] .cloudsave-group-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+}
+
+.cloudsave-group-subtitle,
+[data-theme="dark"] .cloudsave-group-subtitle {
+  color: #d4af37 !important;
+}
+
+.cloudsave-item {
+  background: rgba(26, 15, 34, 0.92) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.35) !important;
+  border-radius: 14px !important;
+  color: #f5eedc !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.25s ease !important;
+}
+
+.cloudsave-item:hover {
+  border-color: #ffd700 !important;
+  box-shadow: 0 8px 26px rgba(196, 30, 58, 0.35), 0 0 12px rgba(255, 215, 0, 0.3) !important;
+  transform: translateY(-2px) !important;
+}
+
+.cloudsave-role-avatar {
+  border: 2px solid rgba(212, 175, 55, 0.6) !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.4) !important;
+}
+
+.cloudsave-role-name {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+}
+
+.cloudsave-meta-item,
+.page-subtitle,
+#cloudsave-subtitle {
+  color: #d4af37 !important;
+}
+
+.cloudsave-btn,
+.cloudsave-action-btn,
+#refresh-cloudsave-btn {
+  background: linear-gradient(135deg, rgba(34, 16, 42, 0.95), rgba(20, 10, 26, 0.95)) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  color: #ffd700 !important;
+  border-radius: 10px !important;
+  font-family: 'Cinzel', serif !important;
+  transition: all 0.25s ease !important;
+}
+
+.cloudsave-btn:hover,
+.cloudsave-action-btn:hover,
+#refresh-cloudsave-btn:hover {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 16px rgba(196, 30, 58, 0.6), 0 0 8px rgba(255, 215, 0, 0.4) !important;
+}
+
+/* --- 2. VRM / MMD / LIVE2D EMOTION MANAGERS --- */
+:root {
+  --color-n-main: #c41e3a !important;
+  --color-n-deep: #800e13 !important;
+  --color-n-light: #160c1c !important;
+  --color-n-border: rgba(212, 175, 55, 0.45) !important;
+  --color-text-main: #ffd700 !important;
+  --color-text-dark: #f5eedc !important;
+}
+
+body .container:has(#model-singleselect),
+body .container:has(#emotion-mappings-container),
+body .container:has(.emotion-category),
+.container:has(.header-content) {
+  background: radial-gradient(ellipse at 50% 20%, #1a0d20 0%, #0d0812 100%) !important;
+  color: #f5eedc !important;
+}
+
+body > .container > .header,
+.container .header,
+.header:has(.header-content) {
+  background: linear-gradient(135deg, #18091a 0%, #2a0b1c 50%, #120614 100%) !important;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.45) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.8), 0 0 16px rgba(196, 30, 58, 0.3) !important;
+}
+
+.header h1::before,
+.header h1::after {
+  display: none !important;
+}
+
+.header h1 {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  text-shadow: 0 0 12px rgba(196, 30, 58, 0.8), 0 0 20px rgba(255, 215, 0, 0.4) !important;
+  -webkit-text-stroke: 0 !important;
+  letter-spacing: 1.5px !important;
+}
+
+.header p {
+  color: #d4af37 !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 13px !important;
+}
+
+.info-box {
+  background: rgba(26, 14, 32, 0.9) !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  border-left: 4px solid #c41e3a !important;
+  border-radius: 12px !important;
+  color: #e2d9cc !important;
+}
+
+.info-box strong {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.field-row label {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 600 !important;
+}
+
+.singleselect-header,
+.multiselect-header {
+  background: rgba(24, 14, 30, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  color: #ffd700 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+}
+
+.singleselect-header:hover,
+.multiselect-header:hover {
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.4) !important;
+}
+
+.singleselect-options,
+.multiselect-options {
+  background: rgba(18, 10, 24, 0.98) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.8) !important;
+}
+
+.singleselect-option,
+.multiselect-option {
+  color: #f5eedc !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15) !important;
+}
+
+.singleselect-option:hover,
+.multiselect-option:hover,
+.singleselect-option.selected,
+.multiselect-option.selected {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.4), rgba(128, 14, 19, 0.6)) !important;
+  color: #ffd700 !important;
+}
+
+.emotion-card,
+.emotion-item,
+.emotion-mapping-item {
+  background: rgba(22, 12, 28, 0.92) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.35) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5) !important;
+  color: #f5eedc !important;
+}
+
+.emotion-card:hover,
+.emotion-item:hover {
+  border-color: #ffd700 !important;
+  box-shadow: 0 8px 24px rgba(196, 30, 58, 0.35), 0 0 12px rgba(255, 215, 0, 0.3) !important;
+}
+
+.emotion-name,
+.emotion-title {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+}
+
+.tag-pill,
+.selected-tag {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.5), rgba(128, 14, 19, 0.7)) !important;
+  border: 1px solid rgba(255, 215, 0, 0.5) !important;
+  color: #ffd700 !important;
+  border-radius: 20px !important;
+}
+
+/* --- 3. CARD MAKER --- */
+body:has(#card-preview-container),
+body:has(#card-edit-area),
+html:has(#card-edit-area) {
+  background: #0d0812 !important;
+  color: #f5eedc !important;
+}
+
+#card-edit-area {
+  background: radial-gradient(ellipse at 50% 20%, #1c0e22 0%, #0d0812 100%) !important;
+}
+
+#card-preview {
+  background: radial-gradient(circle, #24112c 0%, #110816 100%) !important;
+  border: 2px solid rgba(212, 175, 55, 0.45) !important;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8), 0 0 24px rgba(196, 30, 58, 0.35) !important;
+}
+
+#card-portrait-area {
+  background: transparent !important;
+}
+
+#main-content {
+  background: radial-gradient(ellipse at 50% 20%, #180c20 0%, #0d0812 100%) !important;
+}
+
+#control-panel,
+#layer-panel {
+  background: rgba(18, 11, 24, 0.97) !important;
+  border-color: rgba(212, 175, 55, 0.35) !important;
+  color: #f5eedc !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7) !important;
+}
+
+#panel-tabs,
+[data-theme="dark"] #panel-tabs {
+  background: rgba(28, 16, 36, 0.9) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+.panel-tab,
+[data-theme="dark"] .panel-tab {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 600 !important;
+}
+
+.panel-tab.active,
+[data-theme="dark"] .panel-tab.active {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border: 1px solid #ffd700 !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.6) !important;
+}
+
+.control-section,
+.layer-section {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
+}
+
+.control-section > label,
+.layer-panel-header,
+.tab-btn {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.btn-secondary,
+[data-theme="dark"] .btn-secondary {
+  background: rgba(36, 18, 44, 0.95) !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+  transition: all 0.25s ease !important;
+}
+
+.btn-secondary:hover,
+[data-theme="dark"] .btn-secondary:hover {
+  background: linear-gradient(135deg, #800e13, #c41e3a) !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.5) !important;
+}
+
+.btn-primary,
+[data-theme="dark"] .btn-primary,
+.export-actions button {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border: 1.5px solid #ffd700 !important;
+  box-shadow: 0 4px 18px rgba(196, 30, 58, 0.6), 0 0 12px rgba(255, 215, 0, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+}
+
+.btn-primary:hover,
+[data-theme="dark"] .btn-primary:hover,
+.export-actions button:hover {
+  background: linear-gradient(135deg, #e02446 0%, #961228 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 24px rgba(196, 30, 58, 0.8), 0 0 18px rgba(255, 215, 0, 0.6) !important;
+}
+
+.layer-item {
+  background: rgba(28, 16, 36, 0.8) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+.layer-item.active {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.4), rgba(128, 14, 19, 0.6)) !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* --- 4. THEATER & STORY SELECTOR --- */
+:root {
+  --theater-bg: #0d0812 !important;
+  --theater-ink: #f5eedc !important;
+  --theater-muted: #d4af37 !important;
+  --theater-panel: rgba(20, 12, 26, 0.96) !important;
+  --theater-panel-soft: rgba(28, 16, 36, 0.95) !important;
+  --theater-line: rgba(212, 175, 55, 0.35) !important;
+  --theater-accent: #c41e3a !important;
+  --theater-accent-strong: #800e13 !important;
+  --theater-accent-soft: rgba(196, 30, 58, 0.2) !important;
+  --theater-accent-ink: #ffffff !important;
+  --theater-warm: #ffd700 !important;
+  --theater-shadow: 0 14px 34px rgba(0, 0, 0, 0.8), 0 0 20px rgba(196, 30, 58, 0.25) !important;
+}
+
+.theater-selector-shell {
+  background: radial-gradient(ellipse at 50% 20%, #1a0d20 0%, #0d0812 100%) !important;
+}
+
+.theater-story-library,
+.theater-story-detail {
+  background: rgba(18, 11, 24, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.35) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7) !important;
+}
+
+.theater-library-heading h1,
+.theater-detail-heading h1 {
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.theater-mode-badge,
+.theater-session-badge {
+  background: linear-gradient(135deg, #c41e3a, #800e13) !important;
+  color: #ffffff !important;
+  border: 1px solid #ffd700 !important;
+  box-shadow: 0 0 10px rgba(196, 30, 58, 0.5) !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.theater-primary {
+  background: linear-gradient(135deg, #c41e3a 0%, #800e13 100%) !important;
+  color: #ffd700 !important;
+  border: 1.5px solid #ffd700 !important;
+  box-shadow: 0 4px 18px rgba(196, 30, 58, 0.6), 0 0 12px rgba(255, 215, 0, 0.4) !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+}
+
+.theater-primary:hover {
+  background: linear-gradient(135deg, #e02446 0%, #961228 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 24px rgba(196, 30, 58, 0.8), 0 0 18px rgba(255, 215, 0, 0.6) !important;
+}
+
+.theater-story-card,
+.theater-story-item {
+  background: rgba(28, 16, 36, 0.85) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.3) !important;
+  color: #f5eedc !important;
+}
+
+.theater-story-card:hover,
+.theater-story-item:hover,
+.theater-story-card.active,
+.theater-story-item.active {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.35), rgba(128, 14, 19, 0.55)) !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 14px rgba(196, 30, 58, 0.4), 0 0 8px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Jukebox Song Action Manager tags and dropzone */
+.sam-action-tag-small,
+.sam-action-tag,
+.sam-binding-tag,
+.sam-binding-tag-small,
+[class*="sam-action-tag-small"],
+[class*="sam-action-tag"] {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.45), rgba(128, 14, 19, 0.75)) !important;
+  border: 1px solid rgba(255, 215, 0, 0.5) !important;
+  color: #ffd700 !important;
+}
+
+.sam-action-tag-small .sam-binding-tag-label,
+.sam-binding-tag-small .sam-binding-tag-label,
+.sam-binding-tag {
+  color: #ffd700 !important;
+}
+
+.sam-drop-hint,
+.sam-file-drop-zone,
+[data-theme="dark"] .sam-drop-hint,
+[data-theme="dark"] .sam-file-drop-zone {
+  background: rgba(26, 15, 34, 0.95) !important;
+  border: 1.5px dashed rgba(212, 175, 55, 0.45) !important;
+  color: #ffd700 !important;
+}
+
+.sam-drop-hint span,
+.sam-file-drop-zone span,
+[data-theme="dark"] .sam-drop-hint span {
+  color: #ffd700 !important;
+}
+
+/* --- 5. GLOBAL STROKE SUPPRESSION & TEXT FIX --- */
+.container-header h2,
+.page-title-bar h2,
+.header h1 {
+  font-family: 'Cinzel', serif !important;
+  color: #ffd700 !important;
+  text-shadow: 0 0 12px rgba(196, 30, 58, 0.8), 0 0 20px rgba(255, 215, 0, 0.4) !important;
+}
+
+/* ==========================================================================
+   PERMANENT KURUMI TOKISAKI (ZAFKIEL) LOCKDOWN RULES
+   - Model switching disabled
+   - Model upload & deletion disabled
+   - Character card addition & deletion disabled
+   - Immutable badge display
+   ========================================================================== */
+
+/* Model Manager: Lock Model Changing Options */
+.model-manager-page #upload-btn,
+.model-manager-page #delete-model-btn,
+.model-manager-page #delete-mmd-model-btn,
+.model-manager-page #model-upload,
+.model-manager-page #vrm-file-upload,
+.model-manager-page #mmd-file-upload,
+.model-manager-page #pngtuber-model-upload {
+  display: none !important;
+}
+
+.model-manager-page #model-type-select-btn,
+.model-manager-page #live2d-model-select-btn,
+.model-manager-page #vrm-model-select-btn,
+.model-manager-page #mmd-model-select-btn {
+  pointer-events: none !important;
+  opacity: 0.9 !important;
+  cursor: not-allowed !important;
+  border-color: rgba(212, 175, 55, 0.6) !important;
+}
+
+.model-manager-page #model-type-dropdown,
+.model-manager-page #live2d-model-dropdown,
+.model-manager-page #vrm-model-dropdown,
+.model-manager-page #mmd-model-dropdown {
+  display: none !important;
+}
+
+.kurumi-locked-badge-card {
+  background: linear-gradient(135deg, rgba(32, 16, 38, 0.96), rgba(16, 10, 22, 0.98)) !important;
+  border: 1.5px solid #d4af37 !important;
+  border-radius: 12px !important;
+  padding: 12px 14px !important;
+  margin-bottom: 12px !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.65), 0 0 14px rgba(196, 30, 58, 0.45) !important;
+  text-align: center !important;
+}
+
+.kurumi-locked-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin-bottom: 6px !important;
+}
+
+.kurumi-lock-icon {
+  font-size: 1.15rem !important;
+  color: #ffd700 !important;
+}
+
+.kurumi-locked-title {
+  font-family: 'Cinzel', serif !important;
+  font-weight: 800 !important;
+  font-size: 0.88rem !important;
+  letter-spacing: 1.2px !important;
+  color: #ffd700 !important;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.5) !important;
+}
+
+.kurumi-locked-desc {
+  font-size: 0.78rem !important;
+  color: #e5d7c3 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 8px !important;
+}
+
+.kurumi-locked-status-tag {
+  display: inline-block !important;
+  padding: 3px 10px !important;
+  background: rgba(196, 30, 58, 0.4) !important;
+  border: 1px solid rgba(212, 175, 55, 0.6) !important;
+  border-radius: 12px !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  color: #ffd700 !important;
+  letter-spacing: 0.8px !important;
+}
+
+/* Character Card Manager: Hide Card Adding/Importing/Deleting */
+.chara-add-btn,
+#chara-import-btn,
+button[onclick*="cloudImport"],
+button[onclick*="openNewCatgirlPanel"],
+.card-hide-corner,
+.card-hide-btn,
+.card-delete-btn,
+.list-hide-btn,
+.list-delete-btn,
+.chara-cards-view-toggle,
+.hidden-catgirl-area {
+  display: none !important;
+}
+
+.kurumi-permanent-card-banner {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 10px 16px !important;
+  margin-bottom: 14px !important;
+  background: linear-gradient(135deg, rgba(42, 18, 36, 0.95), rgba(18, 10, 24, 0.98)) !important;
+  border: 1.5px solid #d4af37 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 0 14px rgba(196, 30, 58, 0.45) !important;
+}
+
+.kurumi-banner-icon {
+  font-size: 1.6rem !important;
+  color: #ffd700 !important;
+  flex-shrink: 0 !important;
+}
+
+.kurumi-banner-info {
+  flex: 1 !important;
+}
+
+.kurumi-banner-title {
+  font-family: 'Cinzel', serif !important;
+  font-weight: 800 !important;
+  font-size: 0.92rem !important;
+  color: #ffd700 !important;
+  letter-spacing: 1px !important;
+}
+
+.kurumi-banner-sub {
+  font-size: 0.8rem !important;
+  color: #dfd0bb !important;
+  margin-top: 2px !important;
+}
+
+.kurumi-banner-badge {
+  background: rgba(196, 30, 58, 0.4) !important;
+  border: 1px solid #ffd700 !important;
+  color: #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+  font-size: 0.75rem !important;
+  padding: 4px 10px !important;
+  border-radius: 10px !important;
+  letter-spacing: 0.8px !important;
+  white-space: nowrap !important;
+}
+
+/* Card Actions Lockdown & Permanent Badge */
+.card-actions-row .delete-btn,
+.card-actions-row .switch-btn,
+.list-actions-col .delete-btn,
+.list-actions-col .switch-btn {
+  display: none !important;
+}
+
+.chara-card-item .card-actions-row {
+  justify-content: center !important;
+}
+
+.chara-card-item .card-actions-row::after {
+  content: "✦ PERMANENT SPIRIT • IMMUTABLE ✦" !important;
+  display: block !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  color: #ffd700 !important;
+  letter-spacing: 0.8px !important;
+  padding: 6px 14px !important;
+  background: rgba(196, 30, 58, 0.35) !important;
+  border: 1px solid rgba(212, 175, 55, 0.6) !important;
+  border-radius: 8px !important;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.4) !important;
+}
+
+.chara-card-item .card-badge {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.85), rgba(100, 13, 20, 0.95)) !important;
+  color: #ffd700 !important;
+  border: 1px solid #ffd700 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+}
+
+/* ==========================================================================
+   VICTORIAN GOTHIC CLOCKWORK & ASTRAL SANCTUARY BESPOKE TAB SYSTEM
+   ========================================================================== */
+
+/* Character Card Manager Sidebar Width Allocation */
+#sidebar {
+  flex: 0 0 310px !important;
+  min-width: 290px !important;
+  max-width: 350px !important;
+}
+
+/* Tab Bar Containers */
+.tabs,
+.tab-buttons,
+.tabs.compact,
+.tabs.normal,
+#workshop-tabs,
+#panel-tabs,
+.platform-bar.tabs,
+.nav-tabs,
+.modal-tabs {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  background: linear-gradient(180deg, rgba(16, 10, 22, 0.98) 0%, rgba(26, 14, 32, 0.95) 100%) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 8px !important;
+  padding: 4px 6px !important;
+  margin-bottom: 18px !important;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.85), 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+  gap: 6px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  position: relative !important;
+}
+
+/* Individual Tab Items across all pages */
+#sidebar .tab,
+.tabs .tab,
+.tabs.compact .tab,
+.tabs.normal .tab,
+.tab-btn,
+.panel-tab,
+.tab-button,
+.lb-tab,
+.subwindow-tab,
+.filter-tab,
+.category-tab {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  padding: 8px 10px !important;
+  min-height: 36px !important;
+  background: linear-gradient(180deg, rgba(32, 18, 42, 0.85) 0%, rgba(18, 10, 24, 0.95) 100%) !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-radius: 6px !important;
+  font-family: 'Cinzel', 'Noto Serif SC', serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  white-space: nowrap !important;
+  flex: 1 1 0 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45) !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+/* Hover State */
+#sidebar .tab:hover,
+.tabs .tab:hover,
+.tabs.compact .tab:hover,
+.tab-btn:hover,
+.panel-tab:hover,
+.tab-button:hover,
+.lb-tab:hover {
+  background: linear-gradient(180deg, rgba(65, 20, 42, 0.9) 0%, rgba(35, 12, 30, 0.98) 100%) !important;
+  color: #ffd700 !important;
+  border-color: rgba(255, 215, 0, 0.7) !important;
+  box-shadow: 0 0 12px rgba(196, 30, 58, 0.5), 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Active State */
+#sidebar .tab.active,
+.tabs .tab.active,
+.tabs.compact .tab.active,
+.tabs.normal .tab.active,
+.tab-btn.active,
+.panel-tab.active,
+.tab-button.active,
+.lb-tab.active {
+  background: linear-gradient(135deg, #c41e3a 0%, #8b0e1e 50%, #4a0612 100%) !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffd700 !important;
+  border-radius: 6px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 16px rgba(196, 30, 58, 0.8), inset 0 1px 1px rgba(255, 215, 0, 0.6) !important;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.9) !important;
+  transform: none !important;
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* Active Astral Diamond Marker */
+#sidebar .tab.active::before,
+.tabs .tab.active::before,
+.panel-tab.active::before,
+.tab-btn.active::before,
+.tab-button.active::before {
+  content: '✦' !important;
+  color: #ffd700 !important;
+  font-size: 11px !important;
+  margin-right: 4px !important;
+  text-shadow: 0 0 8px #ffd700 !important;
+  display: inline-block !important;
+}
+
+
+
+
