@@ -1262,7 +1262,7 @@
                 availableModes.push('news');
             }
 
-            // 喵宇宙社区搭话：使用发现页的公开卡牌。
+            // 暗影领域社区搭话：使用发现页的公开卡牌。
             if (S.proactiveCommunityChatEnabled && S.proactiveChatEnabled) {
                 availableModes.push('community');
             }

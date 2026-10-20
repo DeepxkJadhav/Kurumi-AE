@@ -20,7 +20,7 @@ NUMERIC_V2_ACTOR_JSON_INSTRUCTION = (
 )
 
 NUMERIC_V2_ACTOR_NARRATION_BREVITY_INSTRUCTION = (
-    "performance 中全角括号只写当前猫娘一个必要的即时动作，括号外只写她实际说出的对白；"
+    "performance 中全角括号只写当前角色一个必要的即时动作，括号外只写她实际说出的对白；"
     "对白不用引号，不写‘她说’、人物名动作或小说旁白。performance 通常一至三句，以自然对白为主，默认纯对白；"
     "最终全角动作括号最多一对。"
     "不写内心或罗列身体反应，不复述玩家刚做过的动作。环境变化写 scene_update；"
@@ -29,7 +29,7 @@ NUMERIC_V2_ACTOR_NARRATION_BREVITY_INSTRUCTION = (
 )
 
 NUMERIC_V2_ACTOR_OPENING_NARRATION_INSTRUCTION = (
-    "performance 中全角括号只写当前猫娘一个必要的即时动作，括号外只写她实际说出的对白；"
+    "performance 中全角括号只写当前角色一个必要的即时动作，括号外只写她实际说出的对白；"
     "对白不用引号，不写‘她说’、人物名动作或小说旁白。performance 通常一至三句，以自然对白为主，默认纯对白；"
     "最终全角动作括号最多一对。不写内心或罗列身体反应。"
     "环境与获准的场景变化写 scene_narration，建立本次开场；"

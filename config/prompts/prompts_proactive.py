@@ -3831,7 +3831,7 @@ REALTIME_PROACTIVE_VISION_TRIGGER_PROMPTS = {
 PROACTIVE_SOURCE_LABELS = {
     "zh": {
         "news": "热议话题",
-        "community": "喵宇宙社区",
+        "community": "暗影领域社区",
         "video": "视频推荐",
         "home": "首页推荐",
         "window": "窗口上下文",
@@ -3841,7 +3841,7 @@ PROACTIVE_SOURCE_LABELS = {
     },
     "zh-TW": {
         "news": "熱議話題",
-        "community": "喵宇宙社群",
+        "community": "暗影領域社群",
         "video": "影片推薦",
         "home": "首頁推薦",
         "window": "視窗上下文",

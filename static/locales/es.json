@@ -24,8 +24,94 @@
             "storageChanged": "El directorio de datos del servidor cambió. Vuelve a abrir el editor de avatar antes de guardar."
         }
     },
-    "chatSync": {"oversizedLocalOnly":"Demasiado grandes para sincronizar, guardados solo en este dispositivo: {{count}}.","setupNeedsSave":"Revisa la sincronización de {{name}}. Guarda el personaje otra vez o abre Más ajustes.","title":"Sincronizar chats","serviceUrl":"Dirección HTTPS del servicio","saveService":"Guardar dirección","enable":"Activar sincronización (con historial)","pause":"Pausar en este dispositivo","syncNow":"Sincronizar ahora","clearKnown":"Vaciar chats conocidos","close":"Cerrar","notConfigured":"Configura primero la dirección del servicio.","notBound":"Este personaje aún no está vinculado.","enabled":"Activado en este dispositivo.","paused":"Pausado en este dispositivo. Los chats en la nube se conservan.","pending":"Envíos registrados pendientes: {{originals}}; eliminaciones: {{deletions}}.","working":"Procesando…","more":"Queda historial por descargar; sincroniza de nuevo.","passFinished":"Esta pasada ha terminado. Otros dispositivos aún pueden tener chats pendientes.","loginRequired":"Inicia sesión en tu cuenta de la comunidad e inténtalo de nuevo.","failed":"La sincronización no ha terminado. Se conservan los chats locales y las tareas pendientes.","deleteOriginal":"Borrar en ambos dispositivos","deleteConfirm":"¿Borrar este chat original en ambos dispositivos?","clearConfirm":"¿Vaciar todos los chats originales conocidos de este personaje en ambos dispositivos? Se excluyen los mensajes añadidos después desde otro dispositivo. Las respuestas guardadas solo en este dispositivo también se borrarán localmente.","unknownTime":"Hora original desconocida","userLabel":"Tú","unfinishedChat":"Espera a que termine la respuesta actual antes de borrar el chat.","profileConflict":"Elige la versión del personaje","profileRenamePending":"Confirmar cambio de nombre","profileLocal":"Versión local","profileRemote":"Versión en la nube","profileUseLocal":"Subir esta versión local","profileUseRemote":"Usar esta versión de la nube","profileRenameConfirm":"¿Cambiar {{oldName}} a {{newName}} y usar el perfil completo de la nube?","profileChanged":"El perfil cambió o la sincronización no está disponible. Se conservan ambas versiones; vuelve a revisarlas.","profileInitialUpload":"¿Subir el perfil actual de {{name}}?","profileUploadConfirm":"¿Subir el perfil guardado de {{name}}?","profileUnsupported":"Este perfil contiene campos aún no compatibles. Se conserva el guardado local.","profileSaveFailed":"No se pudo sincronizar el perfil. Se conservan el guardado local y ambas versiones.","profileReview":"Revisar perfil del personaje","profileName":"Nombre","profileNickname":"Apodo","profileSetting":"Descripción original","profileStyle":"Estilo de habla","cloudImport":"Crear personaje desde la nube","cloudEmpty":"No hay personajes en la nube.","cloudProfileEmpty":"Este personaje aún no tiene un perfil publicado.","cloudCreate":"Crear este personaje en este dispositivo","cloudExisting":"{{name}} ya existe aquí. Se conserva su configuración de sincronización.","cloudCreated":"Se creó y vinculó {{name}}.","cloudNameConflict":"Ya existe un personaje con este nombre. Renómbralo primero o cancela la importación.","profileNeedsBinding":"Vincula este personaje en Más ajustes del editor de personajes.","previewHistory":"Ver chats anteriores","historyPreview":"Vista previa de chats anteriores","historyLocalRole":"Personaje local: {{name}}","historyCloudRole":"Personaje en la nube: {{name}}","historyCount":"Mensajes verificados en esta vista: {{count}}","historyUnverifiedCount":"{{count}} registros antiguos tienen un origen no verificable y permanecen en este dispositivo.","historyHint":"Solo se incluyen los mensajes verificados de esta vista fija. La aprobación inicia el registro y envío en segundo plano; los chats nuevos usan su propia cola.","historyEmpty":"No hay chats anteriores verificados en esta vista. Los registros no verificados permanecen en este dispositivo.","historyApprove":"Aprobar estos chats","historyCancel":"Cancelar","historyQueued":"Aprobados para registrarse y enviarse en segundo plano. Puede haber mensajes pendientes.","historyChanged":"El personaje, la cuenta o el estado de sincronización cambió. Revisa otra vista previa antes de aprobar.","historyAwaitingRegistration":"{{count}} mensajes anteriores aprobados aún esperan su registro local.","historyUnverifiedUnknown":"No se examinaron los registros antiguos. El contenido de origen no verificable permanece en este dispositivo.","writerRecoveryRequired":"La sincronización está pausada mientras se verifica esta instalación. El chat local sigue disponible.","recoverWriter":"Verificar y recuperar sincronización","recoveryChecked":"Verificación completada. Activa la sincronización con historial en la ficha del personaje o confirma esta subida de chats. Los borrados pendientes en ambos dispositivos requieren una confirmación aparte.","recoveryDeleteConfirm":"¿Eliminar estos {{count}} mensajes pendientes en ambos dispositivos? Personaje local: {{localName}}. Personaje en la nube: {{cloudName}}. Si cancelas, seguirán ocultos localmente.","includeHistory":"Incluir chats existentes","initialHistoryFailed":"La sincronización de chats anteriores no terminó. El personaje sigue vinculado; consulta el progreso o reintenta en Más ajustes del editor de personajes.","moreOptions":"Más ajustes","enableHint":"Sincronizar «{{name}}» y sus chats (incluido el historial).","newRoleSync":"Sincronizar personaje y chats (incluido el historial)","newSyncPending":"Personaje guardado localmente. Se sincronizará cuando inicies sesión y tengas conexión.","newSyncFailed":"Personaje guardado localmente. La sincronización aún no está lista. Inténtalo más tarde.","syncChoiceSaved":"Personaje guardado. Sincronización actualizada."},
-    "instanceAccess": {"title":"Conectar a NEKO","description":"Introduce la clave de acceso proporcionada por el propietario del servidor. Este dispositivo recordará la conexión durante 30 días.","key":"Clave de acceso a la instancia","connect":"Conectar","failed":"Acceso denegado. Revisa la clave e inténtalo de nuevo.","httpsRequired":"Usa HTTPS o un túnel HTTPS de confianza para conectar de forma segura.","insecureWarning":"Esta conexión no está cifrada (HTTP). Cualquiera en la misma ruta de red podría ver la clave y la sesión. Usa HTTPS cuando puedas."},
+    "chatSync": {
+        "oversizedLocalOnly": "Demasiado grandes para sincronizar, guardados solo en este dispositivo: {{count}}.",
+        "setupNeedsSave": "Revisa la sincronización de {{name}}. Guarda el personaje otra vez o abre Más ajustes.",
+        "title": "Sincronizar chats",
+        "serviceUrl": "Dirección HTTPS del servicio",
+        "saveService": "Guardar dirección",
+        "enable": "Activar sincronización (con historial)",
+        "pause": "Pausar en este dispositivo",
+        "syncNow": "Sincronizar ahora",
+        "clearKnown": "Vaciar chats conocidos",
+        "close": "Cerrar",
+        "notConfigured": "Configura primero la dirección del servicio.",
+        "notBound": "Este personaje aún no está vinculado.",
+        "enabled": "Activado en este dispositivo.",
+        "paused": "Pausado en este dispositivo. Los chats en la nube se conservan.",
+        "pending": "Envíos registrados pendientes: {{originals}}; eliminaciones: {{deletions}}.",
+        "working": "Procesando…",
+        "more": "Queda historial por descargar; sincroniza de nuevo.",
+        "passFinished": "Esta pasada ha terminado. Otros dispositivos aún pueden tener chats pendientes.",
+        "loginRequired": "Inicia sesión en tu cuenta de la comunidad e inténtalo de nuevo.",
+        "failed": "La sincronización no ha terminado. Se conservan los chats locales y las tareas pendientes.",
+        "deleteOriginal": "Borrar en ambos dispositivos",
+        "deleteConfirm": "¿Borrar este chat original en ambos dispositivos?",
+        "clearConfirm": "¿Vaciar todos los chats originales conocidos de este personaje en ambos dispositivos? Se excluyen los mensajes añadidos después desde otro dispositivo. Las respuestas guardadas solo en este dispositivo también se borrarán localmente.",
+        "unknownTime": "Hora original desconocida",
+        "userLabel": "Tú",
+        "unfinishedChat": "Espera a que termine la respuesta actual antes de borrar el chat.",
+        "profileConflict": "Elige la versión del personaje",
+        "profileRenamePending": "Confirmar cambio de nombre",
+        "profileLocal": "Versión local",
+        "profileRemote": "Versión en la nube",
+        "profileUseLocal": "Subir esta versión local",
+        "profileUseRemote": "Usar esta versión de la nube",
+        "profileRenameConfirm": "¿Cambiar {{oldName}} a {{newName}} y usar el perfil completo de la nube?",
+        "profileChanged": "El perfil cambió o la sincronización no está disponible. Se conservan ambas versiones; vuelve a revisarlas.",
+        "profileInitialUpload": "¿Subir el perfil actual de {{name}}?",
+        "profileUploadConfirm": "¿Subir el perfil guardado de {{name}}?",
+        "profileUnsupported": "Este perfil contiene campos aún no compatibles. Se conserva el guardado local.",
+        "profileSaveFailed": "No se pudo sincronizar el perfil. Se conservan el guardado local y ambas versiones.",
+        "profileReview": "Revisar perfil del personaje",
+        "profileName": "Nombre",
+        "profileNickname": "Apodo",
+        "profileSetting": "Descripción original",
+        "profileStyle": "Estilo de habla",
+        "cloudImport": "Crear personaje desde la nube",
+        "cloudEmpty": "No hay personajes en la nube.",
+        "cloudProfileEmpty": "Este personaje aún no tiene un perfil publicado.",
+        "cloudCreate": "Crear este personaje en este dispositivo",
+        "cloudExisting": "{{name}} ya existe aquí. Se conserva su configuración de sincronización.",
+        "cloudCreated": "Se creó y vinculó {{name}}.",
+        "cloudNameConflict": "Ya existe un personaje con este nombre. Renómbralo primero o cancela la importación.",
+        "profileNeedsBinding": "Vincula este personaje en Más ajustes del editor de personajes.",
+        "previewHistory": "Ver chats anteriores",
+        "historyPreview": "Vista previa de chats anteriores",
+        "historyLocalRole": "Personaje local: {{name}}",
+        "historyCloudRole": "Personaje en la nube: {{name}}",
+        "historyCount": "Mensajes verificados en esta vista: {{count}}",
+        "historyUnverifiedCount": "{{count}} registros antiguos tienen un origen no verificable y permanecen en este dispositivo.",
+        "historyHint": "Solo se incluyen los mensajes verificados de esta vista fija. La aprobación inicia el registro y envío en segundo plano; los chats nuevos usan su propia cola.",
+        "historyEmpty": "No hay chats anteriores verificados en esta vista. Los registros no verificados permanecen en este dispositivo.",
+        "historyApprove": "Aprobar estos chats",
+        "historyCancel": "Cancelar",
+        "historyQueued": "Aprobados para registrarse y enviarse en segundo plano. Puede haber mensajes pendientes.",
+        "historyChanged": "El personaje, la cuenta o el estado de sincronización cambió. Revisa otra vista previa antes de aprobar.",
+        "historyAwaitingRegistration": "{{count}} mensajes anteriores aprobados aún esperan su registro local.",
+        "historyUnverifiedUnknown": "No se examinaron los registros antiguos. El contenido de origen no verificable permanece en este dispositivo.",
+        "writerRecoveryRequired": "La sincronización está pausada mientras se verifica esta instalación. El chat local sigue disponible.",
+        "recoverWriter": "Verificar y recuperar sincronización",
+        "recoveryChecked": "Verificación completada. Activa la sincronización con historial en la ficha del personaje o confirma esta subida de chats. Los borrados pendientes en ambos dispositivos requieren una confirmación aparte.",
+        "recoveryDeleteConfirm": "¿Eliminar estos {{count}} mensajes pendientes en ambos dispositivos? Personaje local: {{localName}}. Personaje en la nube: {{cloudName}}. Si cancelas, seguirán ocultos localmente.",
+        "includeHistory": "Incluir chats existentes",
+        "initialHistoryFailed": "La sincronización de chats anteriores no terminó. El personaje sigue vinculado; consulta el progreso o reintenta en Más ajustes del editor de personajes.",
+        "moreOptions": "Más ajustes",
+        "enableHint": "Sincronizar «{{name}}» y sus chats (incluido el historial).",
+        "newRoleSync": "Sincronizar personaje y chats (incluido el historial)",
+        "newSyncPending": "Personaje guardado localmente. Se sincronizará cuando inicies sesión y tengas conexión.",
+        "newSyncFailed": "Personaje guardado localmente. La sincronización aún no está lista. Inténtalo más tarde.",
+        "syncChoiceSaved": "Personaje guardado. Sincronización actualizada."
+    },
+    "instanceAccess": {
+        "title": "Conectar a Kurumi-AE",
+        "description": "Introduce la clave de acceso proporcionada por el propietario del servidor. Este dispositivo recordará la conexión durante 30 días.",
+        "key": "Clave de acceso a la instancia",
+        "connect": "Conectar",
+        "failed": "Acceso denegado. Revisa la clave e inténtalo de nuevo.",
+        "httpsRequired": "Usa HTTPS o un túnel HTTPS de confianza para conectar de forma segura.",
+        "insecureWarning": "Esta conexión no está cifrada (HTTP). Cualquiera en la misma ruta de red podría ver la clave y la sesión. Usa HTTPS cuando puedas."
+    },
     "common": {
         "load": "Cargar",
         "minimize": "Minimizar",
@@ -81,8 +167,8 @@
         "resetToDefaultFailed": "No se pudo restaurar el modelo predeterminado"
     },
     "autostartPrompt": {
-        "title": "¿Quieres que N.E.K.O. se lance al inicio?",
-        "message": "N.E.K.O. estará listo la próxima vez que enciendas tu computadora.",
+        "title": "¿Quieres que Kurumi-AE se lance al inicio?",
+        "message": "Kurumi-AE estará listo la próxima vez que enciendas tu computadora.",
         "note": "Puedes desactivarlo más tarde.",
         "startNow": "Habilitar el inicio automático",
         "later": "Recordármelo más tarde",
@@ -193,7 +279,7 @@
         "placeholderCharacterSetting": "Ingrese la configuración de caracteres",
         "placeholderAddTag": "Agregar etiqueta",
         "workshop": "Gestión de tarjetas de personaje",
-        "workshopManager": "Gestión de tarjetas de personaje - Proyecto N.E.K.O.",
+        "workshopManager": "Gestión de tarjetas de personaje - Proyecto Kurumi-AE",
         "itemId": "ID del artículo",
         "preparingUpload": "Preparando la carga...",
         "mySubscriptions": "Mis suscripciones",
@@ -240,7 +326,7 @@
         "localModPathConfig": "Configuración de ruta de modificación local",
         "localModFolder": "Ruta de la carpeta de modificación local",
         "defaultPathHint": "Esta ruta predeterminada se utilizará cuando no se especifique ninguna ruta de escaneo.",
-        "defaultPathExample": "Sugerencia: la ruta predeterminada suele ser \"Mis documentos/N.E.K.O/live2d\"",
+        "defaultPathExample": "Sugerencia: la ruta predeterminada suele ser \"Mis documentos/Kurumi-AE/live2d\"",
         "loadConfig": "Cargar configuración actual",
         "saveConfig": "Guardar configuración",
         "emptyStateHint": "Ingrese y escanee una carpeta que contenga archivos locales.",
@@ -574,7 +660,7 @@
         "noCharacterCardSelected": "Por favor, selecciona primero una carta de personaje.",
         "steamNotRunningTitle": "El vapor no funciona",
         "steamNotRunningMessage": "El cliente Steam no se está ejecutando o no ha iniciado sesión.\n\nLas funciones de Workshop requieren el cliente Steam. Por favor:\n1. Descargue e instale el cliente Steam\n2. Inicie Steam e inicie sesión en su cuenta\n3. Reabrir esta página",
-        "addNewCatgirl": "Añadir nuevo NEKO",
+        "addNewCatgirl": "Añadir nuevo Kurumi-AE",
         "noCardImage": "Cara de tarjeta aún no configurada",
         "searchCharacterCards": "Buscar tarjetas de personajes...",
         "cardView": "Vista de tarjetas",
@@ -610,7 +696,7 @@
         "API_RATE_LIMIT_SESSION": "💥 La tasa de solicitudes de API es demasiado alta. Vuelva a intentarlo más tarde.",
         "LLM_CONNECTION_FAILED": "💥 Error en la conexión API de LLM. Verifique su conexión de red y la configuración de API.",
         "CONNECTION_CLOSED_ABNORMAL": "💥 Conexión cerrada anormalmente: {{error}}",
-        "AGENT_QUOTA_EXCEEDED": "💥 Se alcanzó el límite de prueba diaria del modelo NekoClaw gratuito ({{used}}/{{limit}}). Inténtelo de nuevo mañana.",
+        "AGENT_QUOTA_EXCEEDED": "💥 Se alcanzó el límite de prueba diaria del modelo Herramientas Zafkiel gratuito ({{used}}/{{limit}}). Inténtelo de nuevo mañana.",
         "SESSION_START_CRITICAL": "⛔ La sesión no pudo iniciarse {{count}} veces seguidas. Se detuvo el reintento automático. Verifique la configuración de su red y API y luego actualice la página.",
         "SESSION_START_FAILED": "💥 Error al iniciar la sesión: {{error}} (falló {{count}} veces)",
         "INTERNAL_UPDATE_FAILED": "💥 Error en el cambio de actualización interna: {{error}}",
@@ -644,18 +730,18 @@
         "AGENT_AUTO_DISABLED_COMPUTER": "Control de teclado/ratón deshabilitado automáticamente: $t(agent.precheck.{{reason_code}})",
         "AGENT_SCREEN_SHARE_REQUIRED": "$t(agent.status.screenShareRequired)",
         "AGENT_AUTO_DISABLED_BROWSER": "Control del navegador deshabilitado automáticamente: $t(agent.precheck.{{reason_code}})",
-        "AGENT_LLM_CHECK_ERROR": "Error de comprobación de conectividad de NekoClaw LLM",
+        "AGENT_LLM_CHECK_ERROR": "Error de comprobación de conectividad de Herramientas Zafkiel LLM",
         "INVALID_INPUT_TYPE": "Tipo de entrada no válido: {{input_type}}",
         "UNKNOWN_ACTION": "Acción desconocida: {{action}}",
         "SERVER_ERROR": "Error Interno del Servidor",
         "AGENT_CU_MODULE_NOT_LOADED": "No se puede habilitar el uso de la computadora: módulo no cargado",
-        "AGENT_CU_ENABLED_CHECKING": "Control de teclado/ratón habilitado, comprobando la conectividad de NekoClaw LLM...",
+        "AGENT_CU_ENABLED_CHECKING": "Control de teclado/ratón habilitado, comprobando la conectividad de Herramientas Zafkiel LLM...",
         "AGENT_CU_UNAVAILABLE": "No se puede habilitar el uso de la computadora: $t(agent.precheck.{{reason_code}})",
         "AGENT_CU_ENABLE_FAILED": "No se pudo habilitar el uso de la computadora: {{error}}",
         "AGENT_BU_MODULE_NOT_LOADED": "No se puede habilitar el uso del navegador: módulo no cargado",
         "AGENT_BU_NOT_INSTALLED": "No se puede habilitar el uso del navegador: {{error}}",
         "AGENT_UP_ENABLED_CHECKING": "Complemento de usuario habilitado, iniciando el servicio de complemento...",
-        "AGENT_BU_ENABLED_CHECKING": "Control del navegador habilitado, comprobando la conectividad de NekoClaw LLM...",
+        "AGENT_BU_ENABLED_CHECKING": "Control del navegador habilitado, comprobando la conectividad de Herramientas Zafkiel LLM...",
         "AGENT_CU_AUTO_CLOSED": "Módulo de uso de computadora no cargado, deshabilitado automáticamente",
         "AGENT_CU_CAPABILITY_LOST": "Uso de computadora no disponible: $t(agent.precheck.{{reason_code}})",
         "TTS_CONNECTION_FAILED": "Error en la conexión del servicio TTS: {{msg}}",
@@ -748,7 +834,7 @@
         "screenshotTitle": "Haga clic para ver la captura de pantalla {{index}}",
         "removeScreenshot": "Eliminar esta captura de pantalla",
         "cropTabScreenshot": "Captura de pantalla",
-        "cropTabHideNeko": "Ocultar NEKO",
+        "cropTabHideNeko": "Ocultar Kurumi-AE",
         "cropTabCancel": "Cancelar",
         "cropTabRecapturing": "Recapturando...",
         "cropConfirmTitle": "Confirmar recorte",
@@ -847,7 +933,7 @@
         "emojiButtonAriaLabel": "emojis",
         "toolIconsAriaLabel": "Iconos de herramientas",
         "toolLollipop": "Chupete",
-        "toolFist": "Pata de gato",
+        "toolFist": "Herramienta Zafkiel",
         "toolHammer": "Martillo",
         "toolRps": "Piedra, papel o tijera",
         "avatarToolRpsGestureRock": "Piedra",
@@ -1095,7 +1181,7 @@
         "compactExportHistory": "Historial",
         "compactHistoryToggleOpen": "Mostrar historial",
         "compactHistoryToggleClose": "Ocultar historial",
-    "compactHistoryExport": "Exportar historial de conversación",
+        "compactHistoryExport": "Exportar historial de conversación",
         "compactExportControlsCollapse": "Ocultar controles de selección",
         "compactExportControlsExpand": "Mostrar controles de selección",
         "exportAction": "Exportar",
@@ -1109,12 +1195,12 @@
         "exportImageFormatPng": "PNG",
         "exportImageFormatJpeg": "JPEG",
         "exportImageFormatWebp": "WebP",
-        "exportImageStyleNeko": "N.E.K.O",
+        "exportImageStyleNeko": "Kurumi-AE",
         "exportImageStyleOriginal": "Original",
         "exportImageStylePoster": "Fresco",
         "exportImageStyleLyrics": "Lírica",
         "exportPosterTitle": "Puntos destacados de la conversación",
-        "exportPosterSubtitle": "Compartido desde N.E.K.O",
+        "exportPosterSubtitle": "Compartido desde Kurumi-AE",
         "exportImageFormatUnsupported": "La exportación {{format}} no se admite en el entorno actual.",
         "confirmExportAs": "Exportar {{format}}",
         "exportMarkdownPreviewSubtitle": "Vista previa renderizada del contenido de Markdown exportado.",
@@ -1133,10 +1219,10 @@
         "exportEmpty": "Aún no hay ninguna conversación para exportar.",
         "exportSelectionEmpty": "Seleccione al menos un mensaje para exportar.",
         "exportSuccess": "Conversación exportada exitosamente",
-        "exportFileTitle": "Exportación de conversaciones del Proyecto N.E.K.O",
+        "exportFileTitle": "Exportación de conversaciones del Proyecto Kurumi-AE",
         "exportGeneratedAt": "Exportado en",
         "exportUser": "Usuario",
-        "exportAssistant": "N.E.K.O.",
+        "exportAssistant": "Kurumi-AE",
         "exportImageLabel": "Imagen",
         "exportAudioLabel": "Audio",
         "exportVideoLabel": "Video",
@@ -1250,10 +1336,10 @@
         "connectionError": "Error de conexión"
     },
     "api": {
-    "imageModelConfig": "Generación de imágenes",
-    "imageModelExamplePlaceholder": "Ej.: gpt-image-2, wanx2.1-t2i-turbo",
-    "imageModelApiKeyPlaceholder": "Clave del endpoint personalizado; los proveedores usan el registro de claves API",
-    "imageDisabled": "Sin configurar",
+        "imageModelConfig": "Generación de imágenes",
+        "imageModelExamplePlaceholder": "Ej.: gpt-image-2, wanx2.1-t2i-turbo",
+        "imageModelApiKeyPlaceholder": "Clave del endpoint personalizado; los proveedores usan el registro de claves API",
+        "imageDisabled": "Sin configurar",
         "settings": "Configuración de clave API",
         "pluginApiSettings": "Configuración de Plugin API ↗",
         "settingsTitle": "Configuración de clave API - Proyecto Lanlan",
@@ -1339,7 +1425,7 @@
             "unknown": "Proveedor desconocido"
         },
         "coreProviderNames": {
-            "free": "Versión gratuita (beneficio exclusivo de N.E.K.O., admite búsqueda web)",
+            "free": "Versión gratuita (beneficio exclusivo de Kurumi-AE, admite búsqueda web)",
             "qwen": "Qwen-Omni (Alibaba Bailian, velocidad más rápida, recomendado)",
             "qwen_intl": "Qwen-Omni (Alibaba Internacional)",
             "openai": "GPT en tiempo real (OpenAI)",
@@ -1348,7 +1434,7 @@
             "gemini": "Gemini Live (Google, el MEJOR del mercado)"
         },
         "assistProviderNames": {
-            "free": "Versión gratuita (beneficio exclusivo de N.E.K.O.)",
+            "free": "Versión gratuita (beneficio exclusivo de Kurumi-AE)",
             "qwen": "Alibaba Bailian (Qwen, funciones más completas, recomendado)",
             "qwen_intl": "Alibaba Internacional (Qwen)",
             "openai": "OpenAI (ChatGPT)",
@@ -2044,7 +2130,7 @@
         "prefixPlaceholder": "1-10 caracteres: solo A-Z, a-z, 0-9",
         "voiceIdPlaceholder": "1-10 caracteres: solo A-Z, a-z, 0-9",
         "doubaoSpeakerIdLabel": "Speaker ID de Doubao (sobrescribe una voz S_ existente, obligatorio)",
-        "doubaoSpeakerIdNote": "Clone primero la voz en la consola de Doubao Speech y copie aquí su Speaker ID S_; NEKO sobrescribirá esa voz existente y no creará un nuevo ID de voz de Doubao, por ejemplo: S_xeC2CDp72",
+        "doubaoSpeakerIdNote": "Clone primero la voz en la consola de Doubao Speech y copie aquí su Speaker ID S_; Kurumi-AE sobrescribirá esa voz existente y no creará un nuevo ID de voz de Doubao, por ejemplo: S_xeC2CDp72",
         "doubaoSpeakerIdPlaceholder": "por ejemplo: S_xeC2CDp72",
         "register": "Registrar voz",
         "pleaseUploadFile": "Por favor seleccione un archivo de audio",
@@ -2179,7 +2265,9 @@
             "confirmTrimmed": "Utilice audio recortado inteligente"
         }
     },
-    "memory": {"chatDeleteConfirm":"¿Eliminar permanentemente {{count}} chats originales de todos los dispositivos sincronizados?","chatSyncUnavailable":"La sincronización no está disponible. Puedes editar la memoria local.",
+    "memory": {
+        "chatDeleteConfirm": "¿Eliminar permanentemente {{count}} chats originales de todos los dispositivos sincronizados?",
+        "chatSyncUnavailable": "La sincronización no está disponible. Puedes editar la memoria local.",
         "recent": "Recuerdos recientes",
         "title": "Explorador de memoria",
         "summary": "Resumen",
@@ -2658,9 +2746,9 @@
         "completionTitle": "Migración de almacenamiento completada",
         "confirmReconnect": "Confirmar y reiniciar en la ruta original",
         "confirmRestart": "Confirmar y reiniciar",
-        "confirmExistingTargetContent": "La carpeta de destino ya contiene datos de ejecución de N.E.K.O. Si continúas, la migración reemplazará las carpetas de datos de ejecución con el mismo nombre en el destino. Los demás archivos del destino se conservarán. ¿Continuar?",
+        "confirmExistingTargetContent": "La carpeta de destino ya contiene datos de ejecución de Kurumi-AE Si continúas, la migración reemplazará las carpetas de datos de ejecución con el mismo nombre en el destino. Los demás archivos del destino se conservarán. ¿Continuar?",
         "currentPath": "Ruta actual",
-        "customPathPlaceholder": "Elige una carpeta padre; N.E.K.O usará su subcarpeta N.E.K.O",
+        "customPathPlaceholder": "Elige una carpeta padre; Kurumi-AE usará su subcarpeta Kurumi-AE",
         "dialogLabel": "Selección de ubicación de almacenamiento",
         "errorTitle": "La información de inicio del almacenamiento no está disponible temporalmente",
         "estimatedPayload": "Tamaño estimado de los datos",
@@ -2722,7 +2810,7 @@
         "retainedSourceMismatch": "La ruta solicitada para la limpieza no coincide con el directorio conservado. Actualiza la página y vuelve a intentarlo.",
         "retainedSourceNotFound": "No hay ningún directorio de datos antiguo conservado para limpiar.",
         "selectPathRequired": "Primero debes indicar una ruta de destino.",
-        "selectedRootInsideState": "Esta ubicación está dentro del estado de ejecución de N.E.K.O y no se puede usar como raíz de almacenamiento.",
+        "selectedRootInsideState": "Esta ubicación está dentro del estado de ejecución de Kurumi-AE y no se puede usar como raíz de almacenamiento.",
         "selectedRootUnavailable": "La ruta de almacenamiento seleccionada sigue sin estar disponible. Restáurala antes de volver a intentarlo.",
         "selectionSubmitFailed": "No se pudo enviar la elección de ubicación de almacenamiento. Inténtalo de nuevo más tarde.",
         "selectionSubmitUnexpected": "La API de selección de ubicación de almacenamiento devolvió un resultado no reconocido.",
@@ -2730,7 +2818,7 @@
         "selectionIntroBody": "Miau~ atención, humano: para que tus personajes, recuerdos y ajustes estén más seguros, vamos a mover los datos a un refugio dedicado y más estable. Así evitamos perder datos por carpetas que se mueven o permisos traviesos. Puedes seguir usando el refugio anterior o elegir un refugio nuevo para tus personajes.",
         "selectionIntroPickNew": "Ubicación de almacenamiento recomendada",
         "selectionIntroUseCurrent": "Otra ubicación",
-        "selectionIntroImageAlt": "Ilustración de migración de almacenamiento de N.E.K.O",
+        "selectionIntroImageAlt": "Ilustración de migración de almacenamiento de Kurumi-AE",
         "statusUnexpected": "La API de estado de mantenimiento del almacenamiento devolvió un resultado no reconocido.",
         "storageBootstrapBlocking": "El almacenamiento todavía necesita recuperación o migración, así que esta sesión aún no puede continuar.",
         "storagePolicyRollbackFailed": "No se pudo escribir la configuración de la ubicación de almacenamiento y tampoco se pudo restaurar el estado anterior. Comprueba que el directorio de estado local sea escribible; si el problema persiste, revisa manualmente los archivos de estado.",
@@ -2759,24 +2847,24 @@
         "useRecommended": "Usar ruta recomendada"
     },
     "character": {
-        "moliliMasterTitle":  "Tu identidad",
+        "moliliMasterTitle": "Tu identidad",
         "moliliMasterDetected": "Tú en Molili: {{fields}}",
-        "moliliMasterCurrentLoading":  "Cargando el perfil...",
-        "moliliMasterCurrent":  "Perfil global actual: {{current}}",
-                        "moliliUpdatingMaster":  "Actualizando el perfil global...",
-        "moliliMasterUpdateFailed":  "Error al actualizar el perfil: {{error}}",
-        "moliliCommitTimeout":  "Esta importación está tardando más de lo esperado; es probable que el servidor siga procesándola en segundo plano. Espera alrededor de un minuto y ejecuta la importación una vez más para terminar: los días completados se omiten automáticamente y solo se rellena lo restante.",
+        "moliliMasterCurrentLoading": "Cargando el perfil...",
+        "moliliMasterCurrent": "Perfil global actual: {{current}}",
+        "moliliUpdatingMaster": "Actualizando el perfil global...",
+        "moliliMasterUpdateFailed": "Error al actualizar el perfil: {{error}}",
+        "moliliCommitTimeout": "Esta importación está tardando más de lo esperado; es probable que el servidor siga procesándola en segundo plano. Espera alrededor de un minuto y ejecuta la importación una vez más para terminar: los días completados se omiten automáticamente y solo se rellena lo restante.",
         "moliliAttachmentsNote": "{{count}} adjuntos y los chats sin procesar no se migran con la memoria; guárdalos antes si los necesitas",
         "moliliChatsNote": "{{count}} mensajes de chat sin procesar no se migran con la memoria; guárdalos antes si los necesitas",
         "moliliOwnedItemsNote": "{{count}} objetos adquiridos no se migran",
         "moliliStageFusion": "Fusionando personalidad...",
-        "moliliStageDaily":  "Organizando lotes de memoria {{done}}/{{total}}...",
+        "moliliStageDaily": "Organizando lotes de memoria {{done}}/{{total}}...",
         "moliliMasterOverwrite": "Actualizar el perfil a la identidad anterior (atención: el perfil es compartido por todos los personajes y este cambio les afecta)",
         "moliliParsing": "Analizando archivo de Molili...",
         "moliliParseFailed": "Error al analizar el archivo de Molili: {{error}}",
         "moliliDialogTitle": "Importar personaje de Molili",
-        "moliliDetected":  "Personaje detectado: «{{name}}» · {{memory}} recuerdos",
-                        "moliliWarnings": "⚠ Se detectaron {{count}} patrones de instrucciones sospechosos; confirmar la importación implica que lo sabes",
+        "moliliDetected": "Personaje detectado: «{{name}}» · {{memory}} recuerdos",
+        "moliliWarnings": "⚠ Se detectaron {{count}} patrones de instrucciones sospechosos; confirmar la importación implica que lo sabes",
         "moliliCreateNew": "Crear personaje nuevo:",
         "moliliImportExisting": "Importar a un personaje existente:",
         "moliliLoadingCharacters": "Cargando...",
@@ -2788,8 +2876,8 @@
         "moliliNameTooLong": "El nombre del personaje supera los {{max}} caracteres y el sistema de memoria no puede importarlo. Elige un nombre más corto",
         "moliliPickExisting": "Elige un personaje existente",
         "moliliCreatingCard": "Creando personaje «{{name}}»...",
-        "moliliImporting":  "Importando recuerdos de «{{name}}». Puede tardar unos minutos; no cierres la página...",
-        "moliliImportDone":  "«{{name}}» importado correctamente",
+        "moliliImporting": "Importando recuerdos de «{{name}}». Puede tardar unos minutos; no cierres la página...",
+        "moliliImportDone": "«{{name}}» importado correctamente",
         "moliliImportFailed": "Error al importar Molili: {{error}}",
         "moliliImportBusy": "Ya hay una importación de Molili en curso: espera a que termine antes de elegir otro archivo",
         "moliliArchiveTooLarge": "El archivo supera los {{max}} MB y no se puede importar",
@@ -2823,15 +2911,15 @@
         "required": "*",
         "deleteField": "Eliminar campo",
         "detailDescriptionPlaceholder": "Ingrese una descripción detallada",
-        "catgirlProfile": "Perfil NEKO: las configuraciones avanzadas incluyen el modelo Live2D, ID de voz, etc.",
-        "addCatgirl": "Añadir NEKO",
+        "catgirlProfile": "Perfil Kurumi-AE: las configuraciones avanzadas incluyen el modelo Live2D, ID de voz, etc.",
+        "addCatgirl": "Añadir Kurumi-AE",
         "openCloudsaveManager": "Administrador de guardado en la nube",
         "noIdleMotion": "Sin movimiento",
         "noExpression": "Sin expresión",
-        "switchCatgirl": "Cambiar NEKO",
-        "deleteCatgirl": "Eliminar NEKO",
-        "hideCatgirl": "Ocultar este NEKO",
-        "hiddenCatgirls": "NEKO ocultos",
+        "switchCatgirl": "Cambiar Kurumi-AE",
+        "deleteCatgirl": "Eliminar Kurumi-AE",
+        "hideCatgirl": "Ocultar este Kurumi-AE",
+        "hiddenCatgirls": "Kurumi-AE ocultos",
         "showHidden": "Mostrar ocultos",
         "hideHidden": "Contraer ocultos",
         "show": "Mostrar",
@@ -2873,8 +2961,8 @@
         "aiCompanionDragHint": "Arrastra para mover",
         "aiCompanionPlaceholder": "Di algo… (Enter para enviar, Shift+Enter para nueva línea)",
         "aiCompanionSend": "Enviar",
-        "aiCompanionGreeting": "¡Miau~ Soy tu asistente de diseño de carta. Primero dime qué tipo de NEKO quieres — ¡con una línea basta! Te haré algunas preguntas de seguimiento y luego escribiré toda la carta por ti.",
-        "aiCompanionDesignGreeting": "¡Miau~ Soy tu asistente de diseño de carta. Esta NEKO ya tiene cierta forma — déjame ver lo que has llenado:",
+        "aiCompanionGreeting": "¡Miau~ Soy tu asistente de diseño de carta. Primero dime qué tipo de Kurumi-AE quieres — ¡con una línea basta! Te haré algunas preguntas de seguimiento y luego escribiré toda la carta por ti.",
+        "aiCompanionDesignGreeting": "¡Miau~ Soy tu asistente de diseño de carta. Esta Kurumi-AE ya tiene cierta forma — déjame ver lo que has llenado:",
         "aiCompanionDesignAsk": "¿En qué te gustaría que te ayude? Solo dímelo directamente (p. ej., «hazla más tsundere», «cambia la frase característica»), o pulsa «🔍 Audita la carta» abajo y revisaré todo.",
         "aiCompanionDesignMore": "…(y {{n}} más)",
         "aiCompanionGenerating": "Escribiendo el borrador para ti…",
@@ -2882,7 +2970,7 @@
         "aiCompanionDraftReady": "¡El borrador está listo y ya rellenado en el formulario, miau~ Cambia lo que quieras, o dime qué ajustar:",
         "aiCompanionAppliedPrefix": "Aplicado: ",
         "aiCompanionSkipped": "no coincide / reservado",
-        "aiCompanionFormGone": "⚠ El formulario del personaje ya no está en pantalla, así que no puedo aplicar esto. Vuelve a abrir el panel de detalles de esta NEKO e inténtalo otra vez.",
+        "aiCompanionFormGone": "⚠ El formulario del personaje ya no está en pantalla, así que no puedo aplicar esto. Vuelve a abrir el panel de detalles de esta Kurumi-AE e inténtalo otra vez.",
         "aiCompanionNewCardSaveHint": "💡 Carta nueva — pulsa Guardar abajo una vez para persistirla, luego guardaré tus cambios automáticamente. Los campos ya están en el formulario, miau~",
         "aiCompanionSaveInProgress": "⏳ Guardando esta carta nueva — cuando termine te ayudo a editar. Espera un momento y envíalo de nuevo, miau~",
         "aiCompanionAutoSaveFailed": "⚠ Error de guardado automático — los campos están escritos en el formulario, comprueba el mensaje de error y pulsa Guardar manualmente para reintentar.",
@@ -2897,16 +2985,16 @@
         "aiCompanionQuickCheckMsg": "Comprueba si la carta tiene contradicciones, partes vagas o repeticiones, y propón correcciones.",
         "aiCompanionQuickRegen": "🎲 Reescribirlo todo",
         "aiCompanionQuickRegenMsg": "Reescribe cada campo visible manteniendo el concepto original del personaje.",
-        "aiCompanionSeedDescribe": "Generar una carta NEKO basada en esta descripción: ",
+        "aiCompanionSeedDescribe": "Generar una carta Kurumi-AE basada en esta descripción: ",
         "aiCompanionSeedGenerated": "Generado y rellenado en el formulario: ",
         "aiAssistApiMissing": "La API de asistencia aún no está configurada. Por favor configúrala en «Ajustes de API Key» primero.",
-        "confirmNewCatgirl": "Confirmar nuevo NEKO",
+        "confirmNewCatgirl": "Confirmar nuevo Kurumi-AE",
         "saveChanges": "Guardar cambios",
         "saveMaster": "Guardar mi perfil",
         "addMasterField": "Agregar campo",
         "manageLive2D": "Haga clic para administrar el modelo Live2D",
         "idleMotionHint": "Al guardar, el movimiento seleccionado se establecerá como movimiento de espera",
-        "currentCatgirl": "NEKO actual",
+        "currentCatgirl": "Kurumi-AE actual",
         "rename": "Rebautizar",
         "cancel": "Cancelar",
         "addMasterFieldPrompt": "Por favor ingrese el nombre del nuevo campo (nombre de clave)",
@@ -2915,15 +3003,15 @@
         "profileNameRequired": "El nombre del perfil es obligatorio.",
         "profileNameRenameOnlyHint": "Usa el botón Renombrar para cambiar el nombre del perfil",
         "onlyOneCatgirlLeft": "¡Solo queda un neko, no se puede eliminar!",
-        "cannotHideCurrentNeko": "No se puede ocultar el NEKO actualmente activo",
+        "cannotHideCurrentNeko": "No se puede ocultar el Kurumi-AE actualmente activo",
         "cannotDeleteCurrentCatgirl": "¡No se puede eliminar el neko actualmente activo! \n\nPrimero cambia a otro neko.",
         "cannotConfirmCatgirlStatus": "No se puede confirmar el estado actual de Neko, eliminación cancelada",
         "confirmDeleteCatgirl": "¿Estás seguro de que quieres eliminar neko \"{{name}}\"?",
-        "deleteCatgirlTitle": "Eliminar NEKO",
+        "deleteCatgirlTitle": "Eliminar Kurumi-AE",
         "deleteFailed": "Error al eliminar",
         "addCatgirlFieldPrompt": "Por favor ingrese el nombre del nuevo campo (nombre de clave)",
-        "addCatgirlFieldTitle": "Agregar campo NEKO",
-        "live2dModelError": "El archivo de modelo Live2D de NEKO \"{{name}}\" no existe o está dañado.\n\nRuta del modelo actual: {{path}}\n\n¿Quiere volver al modelo predeterminado (mao_pro)?\n\nHaga clic en \"Aceptar\" para usar el modelo predeterminado, haga clic en \"Cancelar\" para mantener la configuración actual.",
+        "addCatgirlFieldTitle": "Agregar campo Kurumi-AE",
+        "live2dModelError": "El archivo de modelo Live2D de Kurumi-AE \"{{name}}\" no existe o está dañado.\n\nRuta del modelo actual: {{path}}\n\n¿Quiere volver al modelo predeterminado (mao_pro)?\n\nHaga clic en \"Aceptar\" para usar el modelo predeterminado, haga clic en \"Cancelar\" para mantener la configuración actual.",
         "live2dModelErrorTitle": "Error del modelo Live2D",
         "fallbackToDefaultModel": "Regresado al modelo predeterminado: {{path}}",
         "fallbackFailed": "No se pudo volver al modelo predeterminado; verifique la configuración del modelo",
@@ -2939,7 +3027,7 @@
         "createCharacterFirstForVoice": "Haga clic en el botón \"Confirmar nuevo personaje\" para crear el personaje primero y luego registre la voz.",
         "allowPopups": "¡Permita ventanas emergentes!",
         "enterNewProfileName": "Por favor ingresa el nuevo nombre del perfil",
-        "renameCatgirlTitle": "Cambiar el nombre de NEKO",
+        "renameCatgirlTitle": "Cambiar el nombre de Kurumi-AE",
         "profileNameExists": "Este nombre de perfil ya existe",
         "renameFailed": "Error al cambiar el nombre",
         "cannotRenameInVoiceMode": "No se puede cambiar el nombre del personaje en el modo de voz; primero detenga la conversación de voz",
@@ -2974,7 +3062,7 @@
         "saveMasterError": "No se pudo guardar mi perfil",
         "autoSaved": "Configuración guardada automáticamente",
         "autoSaveFailed": "Error al guardar automáticamente. Guárdelo manualmente antes de cerrar.",
-        "unsavedNewCatgirlDraftDetected": "Se detectó un nuevo borrador NEKO no guardado. Guárdelo o cancélelo antes de sincronizar la actualización",
+        "unsavedNewCatgirlDraftDetected": "Se detectó un nuevo borrador Kurumi-AE no guardado. Guárdelo o cancélelo antes de sincronizar la actualización",
         "exportCard": "Exportar tarjeta de personaje",
         "exportingCard": "Exportando tarjeta de personaje...",
         "exportCardSuccess": "Tarjeta de personaje exportada exitosamente",
@@ -3002,7 +3090,7 @@
         "renameMasterPrompt": "Introduce un nuevo nombre de perfil",
         "renameTitle": "Cambiar nombre",
         "tempSaveFailed": "Error al guardar temporalmente: {{error}}",
-        "newCatgirlSuccess": "Nuevo NEKO creado con éxito",
+        "newCatgirlSuccess": "Nuevo Kurumi-AE creado con éxito",
         "saveSuccess": "Guardado con éxito",
         "switchSuccess": "Cambiado con éxito",
         "cannotModifyInVoiceMode": "No se puede cambiar ni eliminar tarjetas mientras el control de voz está activo. Desactive el control de voz primero.",
@@ -3039,9 +3127,9 @@
         "socialUnavailable": "Servicio social no disponible",
         "socialDisabled": "El servicio social está deshabilitado",
         "socialOAuthPrompt": "Completa el inicio de sesión de la cuenta unificada en el navegador",
-        "socialSettingsLoginPrompt": "La aplicación de escritorio aún no ha iniciado sesión en N.E.K.O. Si ya iniciaste sesión en la página de la comunidad, se sincronizará automáticamente; también puedes iniciar sesión desde Ajustes en el menú de la bandeja",
+        "socialSettingsLoginPrompt": "La aplicación de escritorio aún no ha iniciado sesión en Kurumi-AE Si ya iniciaste sesión en la página de la comunidad, se sincronizará automáticamente; también puedes iniciar sesión desde Ajustes en el menú de la bandeja",
         "welcomeBack": "¡{{name}} ha vuelto!",
-        "title": "Proyecto N.E.K.O.",
+        "title": "Proyecto Kurumi-AE",
         "catgirlResting": "{{name}} está descansando...",
         "textChatting": "Chat de texto...",
         "restartComplete": "Reinicio completo, ¡{{name}} ha vuelto!",
@@ -3173,7 +3261,7 @@
         "micUnmute": "Dejar de silenciar"
     },
     "cloudsave": {
-        "pageTitle": "Administrador de guardado en la nube - Proyecto N.E.K.O.",
+        "pageTitle": "Administrador de guardado en la nube - Proyecto Kurumi-AE",
         "headerTitle": "Administrador de guardado en la nube",
         "subtitle": "Prepare o restaure un carácter a la vez utilizando el caché de instantáneas de la nube local. No sobrescribirá automáticamente la configuración global. Cuando el juego sale a través de Steam, Steam Cloud carga la carpeta de instantáneas automáticamente.",
         "refresh": "Refrescar",
@@ -3426,21 +3514,21 @@
         }
     },
     "theater": {
-    "tokenStage_dispute": "Segunda revisión",
-    "tokenStage_history_lookup": "Consulta del historial",
-    "tokenStage_review": "Revisión rápida",
-    "tokenStage_evaluator": "Métricas y progreso",
-    "tokenStage_suggestions": "Completar sugerencias",
-    "tokenStage_actor": "Actor",
-    "performanceFailed": "Se interrumpió la reproducción de la actuación. Sigue escribiendo o vuelve a abrir el Teatro.",
-    "tokenUsageHint": "La entrada incluye caché y la salida incluye razonamiento declarado. Las llamadas adicionales están incluidas. El uso no es una estimación de precio.",
-    "tokenUsageCall": "{number}. {stage} · entrada {input} · salida {output}",
-    "tokenUsagePartial": "Uso parcial; faltan datos de algunas llamadas",
-    "tokenUsageSummary": "Esta solicitud · entrada {input} · salida {output} tokens · {calls} llamadas",
+        "tokenStage_dispute": "Segunda revisión",
+        "tokenStage_history_lookup": "Consulta del historial",
+        "tokenStage_review": "Revisión rápida",
+        "tokenStage_evaluator": "Métricas y progreso",
+        "tokenStage_suggestions": "Completar sugerencias",
+        "tokenStage_actor": "Actor",
+        "performanceFailed": "Se interrumpió la reproducción de la actuación. Sigue escribiendo o vuelve a abrir el Teatro.",
+        "tokenUsageHint": "La entrada incluye caché y la salida incluye razonamiento declarado. Las llamadas adicionales están incluidas. El uso no es una estimación de precio.",
+        "tokenUsageCall": "{number}. {stage} · entrada {input} · salida {output}",
+        "tokenUsagePartial": "Uso parcial; faltan datos de algunas llamadas",
+        "tokenUsageSummary": "Esta solicitud · entrada {input} · salida {output} tokens · {calls} llamadas",
         "reinvite": "Pedir una nueva invitación",
         "inputFailed": "No se pudo obtener la respuesta de la escena. Inténtalo de nuevo.",
         "endStateFailed": "No se pudo finalizar el estado actual de la actuación. Vuelve a la página de historias e inténtalo de nuevo.",
-        "endConnectionFailed": "No se pudo acceder al servicio local de N.E.K.O. Comprueba que la aplicación siga abierta e inténtalo de nuevo.",
+        "endConnectionFailed": "No se pudo acceder al servicio local de Kurumi-AE Comprueba que la aplicación siga abierta e inténtalo de nuevo.",
         "title": "Teatro",
         "modeLabel": "Modo",
         "scriptMode": "Modo guion",
@@ -3458,7 +3546,7 @@
         "moduleOpt.actor_retry": "Reintento de salida",
         "moduleOptTip": "Desactivado, este paso se omite: respuesta más rápida y menos tokens; actívalo para restaurar la comprobación.",
         "settingsButton": "Configuración del teatro",
-        "settingsKicker": "N.E.K.O · Teatro",
+        "settingsKicker": "Kurumi-AE · Teatro",
         "settingsTitle": "Configuración de la actuación",
         "settingsBack": "Volver a la biblioteca de historias",
         "settingsIntroTitle": "Interruptores del flujo de actuación",
@@ -3546,17 +3634,78 @@
         "deletedStoryMemory": "Eliminado · Gestión de recuerdos",
         "deletedStoryMemoryHint": "El guion se ha eliminado. Puedes consultar u olvidar sus resúmenes guardados. Impórtalo de nuevo para interpretarlo.",
         "memoryStoryListFailed": "No se pudieron cargar los recuerdos de los guiones. Vuelve a cargar la página.",
-        "savedPerformances": "Actuaciones guardadas", "savedPerformancesHint": "Se conservan las 5 grabaciones completas más recientes. Las favoritas no se eliminan automáticamente.", "noSavedPerformances": "No hay actuaciones guardadas.", "completedPerformance": "Actuación completada", "pausedPerformance": "Actuación pausada", "performanceRecordMeta": "Registro {{index}} · revisión {{revision}}", "viewPerformance": "Ver", "performanceArchiveTitle": "Registro de actuación", "performanceArchiveOpening": "Apertura", "performanceArchiveTurn": "Turno {{index}}", "performanceArchiveLoadFailed": "No se pudo cargar el registro. Inténtalo de nuevo.", "pinPerformance": "Favorito", "unpinPerformance": "Quitar favorito", "memoryPinFailed": "No se pudo actualizar el favorito. Inténtalo de nuevo.", "forgetStoryMemory": "Olvidar esta historia", "forgetStoryMemoryTitle": "¿Olvidar esta historia?", "forgetStoryMemoryBody": "Esto elimina los resúmenes, el índice temporal y los archivos completos de esta historia para la catgirl actual. No elimina la historia ni el progreso actual.", "storyMemoryForgotten": "Se olvidó la memoria de esta historia.", "storyMemoryForgetFailed": "No se pudo eliminar la memoria. Inténtalo de nuevo.",
-    "endReceiptPending": "La representación ha terminado. La confirmación de memoria aún no está lista; vuelve a abrir la selección de historias más tarde.", "evaluatorDegraded": "La evaluación no está disponible temporalmente. Los valores no avanzaron este turno; aún puedes aceptar las invitaciones del autor ya mostradas.", "selectorKicker": "Biblioteca de historias", "selectorTitle": "Elige una historia", "noStoriesHint": "Importa una historia Numeric v2 para comenzar.", "selectStoryHint": "Elige una historia a la izquierda para ver el contexto y los papeles.", "continueSession": "Continuar", "notStarted": "Sin iniciar", "sessionHintNew": "Pulsa «Comenzar» para crear esta actuación.", "sessionHintActive": "La actuación está en curso. Pulsa «Continuar» para volver.", "sessionHintEnded": "Esta actuación terminó. Pulsa «Comenzar» para crear una nueva.", "loadingSession": "Cargando el progreso...", "sessionLoadFailed": "No se pudo cargar el progreso. Inténtalo de nuevo.", "connectingNeko": "La actuación está lista. Conectando con N.E.K.O...", "connectNekoFailed": "No se pudo conectar con N.E.K.O. Mantén abierta la aplicación principal e inténtalo de nuevo.", "startFailed": "No se pudo iniciar la actuación. Inténtalo de nuevo.", "continueFailed": "No se pudo continuar la actuación. Inténtalo de nuevo.", "endFailed": "No se pudo finalizar la actuación. Comprueba la conexión e inténtalo de nuevo.", "selectorOpenFailed": "La actuación terminó, pero no se pudo abrir la página de historias. Pulsa «Volver a las historias» para reintentarlo.", "restartBlockedTitle": "No se puede reiniciar", "restartBlockedBody": "Una historia en curso no se puede reiniciar. Finalízala primero.", "endPerformance": "Finalizar actuación", "restartConfirmTitle": "¿Reiniciar esta historia?", "restartConfirmBody": "Esto sustituirá la actuación terminada del personaje actual por una nueva.", "rememberPerformanceTitle": "¿Quieres que N.E.K.O recuerde esta actuación?", "rememberPerformanceBody": "Solo se guardan el resumen público y las escenas recientes; se excluyen los valores ocultos y las condiciones de ruta.", "skipMemory": "No guardar", "saveMemory": "Recordarla", "memorySaveFailed": "No se pudo guardar el recuerdo. Inténtalo más tarde.", "memorySaved": "N.E.K.O ha recordado esta actuación.", "memorySaving": "Guardando esta actuación...", "memorySkipping": "Guardando esta elección...", "storyListFailed": "No se pudo cargar la lista. Recarga la página.", "imagesUnavailable": "El teatro todavía no admite imágenes.", "voiceUnavailable": "El chat de voz no está disponible durante una función del teatro.", "chatUnavailable": "El chat normal no está disponible durante una función del teatro.", "endConfirm": "¿Finalizar la actuación actual?", "narration": "Narración", "player": "Jugador", "performanceHistory": "Historial de la actuación", "inProgress": "En el teatro", "returnToStories": "Volver a las historias", "storyListAria": "Elegir una historia del teatro", "storyActionsAria": "Acciones de la historia"
+        "savedPerformances": "Actuaciones guardadas",
+        "savedPerformancesHint": "Se conservan las 5 grabaciones completas más recientes. Las favoritas no se eliminan automáticamente.",
+        "noSavedPerformances": "No hay actuaciones guardadas.",
+        "completedPerformance": "Actuación completada",
+        "pausedPerformance": "Actuación pausada",
+        "performanceRecordMeta": "Registro {{index}} · revisión {{revision}}",
+        "viewPerformance": "Ver",
+        "performanceArchiveTitle": "Registro de actuación",
+        "performanceArchiveOpening": "Apertura",
+        "performanceArchiveTurn": "Turno {{index}}",
+        "performanceArchiveLoadFailed": "No se pudo cargar el registro. Inténtalo de nuevo.",
+        "pinPerformance": "Favorito",
+        "unpinPerformance": "Quitar favorito",
+        "memoryPinFailed": "No se pudo actualizar el favorito. Inténtalo de nuevo.",
+        "forgetStoryMemory": "Olvidar esta historia",
+        "forgetStoryMemoryTitle": "¿Olvidar esta historia?",
+        "forgetStoryMemoryBody": "Esto elimina los resúmenes, el índice temporal y los archivos completos de esta historia para la catgirl actual. No elimina la historia ni el progreso actual.",
+        "storyMemoryForgotten": "Se olvidó la memoria de esta historia.",
+        "storyMemoryForgetFailed": "No se pudo eliminar la memoria. Inténtalo de nuevo.",
+        "endReceiptPending": "La representación ha terminado. La confirmación de memoria aún no está lista; vuelve a abrir la selección de historias más tarde.",
+        "evaluatorDegraded": "La evaluación no está disponible temporalmente. Los valores no avanzaron este turno; aún puedes aceptar las invitaciones del autor ya mostradas.",
+        "selectorKicker": "Biblioteca de historias",
+        "selectorTitle": "Elige una historia",
+        "noStoriesHint": "Importa una historia Numeric v2 para comenzar.",
+        "selectStoryHint": "Elige una historia a la izquierda para ver el contexto y los papeles.",
+        "continueSession": "Continuar",
+        "notStarted": "Sin iniciar",
+        "sessionHintNew": "Pulsa «Comenzar» para crear esta actuación.",
+        "sessionHintActive": "La actuación está en curso. Pulsa «Continuar» para volver.",
+        "sessionHintEnded": "Esta actuación terminó. Pulsa «Comenzar» para crear una nueva.",
+        "loadingSession": "Cargando el progreso...",
+        "sessionLoadFailed": "No se pudo cargar el progreso. Inténtalo de nuevo.",
+        "connectingNeko": "La actuación está lista. Conectando con Kurumi-AE..",
+        "connectNekoFailed": "No se pudo conectar con Kurumi-AE Mantén abierta la aplicación principal e inténtalo de nuevo.",
+        "startFailed": "No se pudo iniciar la actuación. Inténtalo de nuevo.",
+        "continueFailed": "No se pudo continuar la actuación. Inténtalo de nuevo.",
+        "endFailed": "No se pudo finalizar la actuación. Comprueba la conexión e inténtalo de nuevo.",
+        "selectorOpenFailed": "La actuación terminó, pero no se pudo abrir la página de historias. Pulsa «Volver a las historias» para reintentarlo.",
+        "restartBlockedTitle": "No se puede reiniciar",
+        "restartBlockedBody": "Una historia en curso no se puede reiniciar. Finalízala primero.",
+        "endPerformance": "Finalizar actuación",
+        "restartConfirmTitle": "¿Reiniciar esta historia?",
+        "restartConfirmBody": "Esto sustituirá la actuación terminada del personaje actual por una nueva.",
+        "rememberPerformanceTitle": "¿Quieres que Kurumi-AE recuerde esta actuación?",
+        "rememberPerformanceBody": "Solo se guardan el resumen público y las escenas recientes; se excluyen los valores ocultos y las condiciones de ruta.",
+        "skipMemory": "No guardar",
+        "saveMemory": "Recordarla",
+        "memorySaveFailed": "No se pudo guardar el recuerdo. Inténtalo más tarde.",
+        "memorySaved": "Kurumi-AE ha recordado esta actuación.",
+        "memorySaving": "Guardando esta actuación...",
+        "memorySkipping": "Guardando esta elección...",
+        "storyListFailed": "No se pudo cargar la lista. Recarga la página.",
+        "imagesUnavailable": "El teatro todavía no admite imágenes.",
+        "voiceUnavailable": "El chat de voz no está disponible durante una función del teatro.",
+        "chatUnavailable": "El chat normal no está disponible durante una función del teatro.",
+        "endConfirm": "¿Finalizar la actuación actual?",
+        "narration": "Narración",
+        "player": "Jugador",
+        "performanceHistory": "Historial de la actuación",
+        "inProgress": "En el teatro",
+        "returnToStories": "Volver a las historias",
+        "storyListAria": "Elegir una historia del teatro",
+        "storyActionsAria": "Acciones de la historia"
     },
     "voiceIdentity": {
         "errorStopMainMicrophone": "El micrófono de la sesión principal sigue en uso. Desactívalo en la sesión principal y vuelve a intentar esta operación.",
         "pageTitle": "Perfil de voz del Owner",
         "title": "Perfil de voz del Owner",
         "profileStatus": "Estado del perfil de voz",
-        "localOnly": "Enviado al servicio N.E.K.O. que usa esta página",
+        "localOnly": "Enviado al servicio Kurumi-AE que usa esta página",
         "privacyTitle": "Tres grabaciones de referencia y una de verificación",
-        "privacyBody": "Usa el mismo micrófono y lee frases completas con tu voz natural para hacer tres grabaciones de referencia y una de verificación. El audio se envía al servicio N.E.K.O. que usa esta página. El perfil de voz solo se cifra y se guarda tras superar las comprobaciones de habla e identidad vocal del servidor.",
+        "privacyBody": "Usa el mismo micrófono y lee frases completas con tu voz natural para hacer tres grabaciones de referencia y una de verificación. El audio se envía al servicio Kurumi-AE que usa esta página. El perfil de voz solo se cifra y se guarda tras superar las comprobaciones de habla e identidad vocal del servidor.",
         "activeRecordingBody": "Lee la frase siguiente completa con tu volumen y ritmo habituales. Puedes enviar la grabación tras capturar 1,5 segundos de audio; la aceptación depende de las comprobaciones de habla e identidad vocal del servidor.",
         "recordingHints": "Consejos de grabación",
         "progressLabel": "Progreso del registro de voz",
@@ -3770,7 +3919,7 @@
         "activationReason_output_handoff_failed": "Error de salida de voz. Reintenta la activación.",
         "activationReason_output_delivery_failed": "Error de salida de voz. Reintenta la activación.",
         "resourceRepairButton": "Reparar recursos",
-        "resourceLocation": "Haz clic en «Comprobar y cargar recursos» para preparar el reconocimiento de voz. Los modelos se guardan en el equipo que ejecuta N.E.K.O; la grabación usa el micrófono del dispositivo que estás usando.",
+        "resourceLocation": "Haz clic en «Comprobar y cargar recursos» para preparar el reconocimiento de voz. Los modelos se guardan en el equipo que ejecuta Kurumi-AE; la grabación usa el micrófono del dispositivo que estás usando.",
         "activationRestart": "Reiniciar sesión de voz",
         "activationRestartRequired": "Cierra el micrófono y usa el botón principal del micrófono para iniciar una nueva sesión de voz. El audio anterior no se reenviará.",
         "activationReason_voice_session_restart_required": "Cierra y vuelve a abrir el micrófono para iniciar una nueva sesión. El audio anterior no se reenviará.",
@@ -3850,8 +3999,8 @@
             "proactiveVisionChatTooltip": "Requiere chat proactivo habilitado y Modo Privacidad deshabilitado",
             "proactiveNewsChat": "Sitio web de noticias",
             "proactiveNewsChatTooltip": "Usa temas de actualidad y contenido de inicio de Xiaoheihe",
-            "proactiveCommunityChat": "Comunidad N.E.K.O",
-            "proactiveCommunityChatTooltip": "Usar tarjetas públicas del feed Descubrir de la comunidad N.E.K.O para conversar de forma proactiva",
+            "proactiveCommunityChat": "Comunidad Kurumi-AE",
+            "proactiveCommunityChatTooltip": "Usar tarjetas públicas del feed Descubrir de la comunidad Kurumi-AE para conversar de forma proactiva",
             "proactiveVideoChat": "Sitio web de vídeos",
             "proactiveVideoChatTooltip": "Utilice contenido de vídeo para un chat proactivo",
             "proactivePersonalChat": "Actualizaciones personales",
@@ -3862,7 +4011,7 @@
             "proactiveMemeChatTooltip": "Comparte memes divertidos para un chat proactivo",
             "proactiveMiniGameInviteChat": "Invitaciones a minijuegos",
             "proactiveMiniGameInviteChatTooltip": "Invitarte a un minijuego cuando se cumplan las condiciones",
-            "agentMaster": "Interruptor maestro NekoClaw",
+            "agentMaster": "Interruptor maestro Herramientas Zafkiel",
             "showTaskHud": "Mostrar ventana flotante",
             "keyboardControl": "Control de teclado/ratón",
             "userPlugin": "Complemento de usuario",
@@ -3874,8 +4023,8 @@
             "unavailable": "{{name}} No disponible",
             "toggleFailed": "Error al alternar {{name}}: {{error}}",
             "checking": "De cheques...",
-            "serverOffline": "Servidor NekoClaw sin conexión",
-            "masterRequired": "Habilite primero el interruptor maestro NekoClaw",
+            "serverOffline": "Servidor Herramientas Zafkiel sin conexión",
+            "masterRequired": "Habilite primero el interruptor maestro Herramientas Zafkiel",
             "capabilityNotReady": "{{name}} no está listo, haga clic para intentar habilitarlo",
             "openclawUnavailableReason": "{{name}} no está disponible: {{reason}}. Asegúrese de que el servicio OpenClaw esté ejecutándose y escuchando en 127.0.0.1:8088.",
             "enabled": "{{name}} Habilitado",
@@ -3910,9 +4059,9 @@
         }
     },
     "openclawGuide": {
-        "windowTitle": "Guía de configuración de OpenClaw - N.E.K.O.",
+        "windowTitle": "Guía de configuración de OpenClaw - Kurumi-AE",
         "pageTitle": "Guía de configuración de OpenClaw",
-        "pageSubtitle": "Conecte la instalación de QwenPaw, la configuración del modelo, los archivos de reemplazo y la configuración de N.E.K.O en una ruta clara.",
+        "pageSubtitle": "Conecte la instalación de QwenPaw, la configuración del modelo, los archivos de reemplazo y la configuración de Kurumi-AE en una ruta clara.",
         "sourceLabel": "Fuente de la guía",
         "contentLanguageNotice": "El cuerpo de la guía cambia con el idioma seleccionado.",
         "languageLabel": "Idioma",
@@ -3954,24 +4103,24 @@
         }
     },
     "viewer": {
-        "title": "Visor - Proyecto N.E.K.O."
+        "title": "Visor - Proyecto Kurumi-AE"
     },
     "agent": {
         "status": {
-            "connecting": "Conectándose al servidor NekoClaw...",
-            "ready": "Servidor NekoClaw listo",
-            "enabled": "Modo NekoClaw habilitado",
-            "disabled": "Modo NekoClaw desactivado",
-            "disabledError": "Modo NekoClaw deshabilitado (falló la limpieza parcial)",
+            "connecting": "Conectándose al servidor Herramientas Zafkiel...",
+            "ready": "Servidor Herramientas Zafkiel listo",
+            "enabled": "Modo Herramientas Zafkiel habilitado",
+            "disabled": "Modo Herramientas Zafkiel desactivado",
+            "disabledError": "Modo Herramientas Zafkiel deshabilitado (falló la limpieza parcial)",
             "enableFailed": "Habilitar falló",
             "disconnected": "Se perdió la conexión al servidor",
-            "agentDisconnected": "Se perdió la conexión al servidor NekoClaw",
-            "freeModelWarning": "Debido a limitaciones de cuota, los modelos gratuitos son propensos a bloquearse en el modo NekoClaw. Se recomienda cambiar a un modelo pago.\n\nSi ya ha configurado una API paga, intente reiniciar NEKO.",
+            "agentDisconnected": "Se perdió la conexión al servidor Herramientas Zafkiel",
+            "freeModelWarning": "Debido a limitaciones de cuota, los modelos gratuitos son propensos a bloquearse en el modo Herramientas Zafkiel. Se recomienda cambiar a un modelo pago.\n\nSi ya ha configurado una API paga, intente reiniciar Kurumi-AE.",
             "freeModelWarningTitle": "Aviso de modelo gratuito",
-            "connectivityCheck": "Verificación de conectividad de NekoClaw LLM en progreso...",
-            "screenShareRequired": "Autorice compartir toda la pantalla antes de activar el control del teclado y el ratón de NekoClaw.",
+            "connectivityCheck": "Verificación de conectividad de Herramientas Zafkiel LLM en progreso...",
+            "screenShareRequired": "Autorice compartir toda la pantalla antes de activar el control del teclado y el ratón de Herramientas Zafkiel.",
             "screenSharePendingReload": "La solicitud de permiso para capturar la pantalla sigue pendiente. Recargue la página e inténtelo de nuevo.",
-            "precheckFailed": "Error en la comprobación previa de NekoClaw: {{reason}}",
+            "precheckFailed": "Error en la comprobación previa de Herramientas Zafkiel: {{reason}}",
             "toggleFailed": "Error al alternar el agente: {{error}}"
         },
         "precheck": {
@@ -3984,17 +4133,17 @@
             "AGENT_BROWSER_USE_NOT_INSTALLED": "uso del navegador no instalado",
             "AGENT_CU_MODULE_NOT_LOADED": "módulo Computer Use no cargado",
             "AGENT_BU_MODULE_NOT_LOADED": "módulo Browser Use no cargado",
-            "AGENT_NOT_INITIALIZED": "La inicialización de NekoClaw falló",
-            "AGENT_LLM_UNREACHABLE": "NekoClaw LLM inalcanzable",
-            "AGENT_MODEL_NOT_CONFIGURED": "Modelo NekoClaw no configurado",
+            "AGENT_NOT_INITIALIZED": "La inicialización de Herramientas Zafkiel falló",
+            "AGENT_LLM_UNREACHABLE": "Herramientas Zafkiel LLM inalcanzable",
+            "AGENT_MODEL_NOT_CONFIGURED": "Modelo Herramientas Zafkiel no configurado",
             "AGENT_URL_NOT_CONFIGURED": "URL de API del agente no configurada",
             "AGENT_KEY_NOT_CONFIGURED": "Clave API del agente no configurada o no disponible",
             "AGENT_NO_PLUGINS": "No se encontraron complementos disponibles",
             "AGENT_NO_PLUGINS_FOUND": "No se encontraron complementos disponibles",
             "AGENT_PLUGIN_SERVER_ERROR": "La conexión del servidor del complemento falló",
-            "AGENT_CONNECTIVITY_FAILED": "La conexión de NekoClaw LLM falló"
+            "AGENT_CONNECTIVITY_FAILED": "La conexión de Herramientas Zafkiel LLM falló"
         },
-        "contentFilterError": "El contenido de la página web navegada por NekoClaw fue rechazado por el filtro de seguridad del modelo de IA y la tarea se canceló. Esto suele suceder cuando la página contiene temas delicados. Pruebe con diferentes palabras clave o sitios web.",
+        "contentFilterError": "El contenido de la página web navegada por Herramientas Zafkiel fue rechazado por el filtro de seguridad del modelo de IA y la tarea se canceló. Esto suele suceder cuando la página contiene temas delicados. Pruebe con diferentes palabras clave o sitios web.",
         "taskHud": {
             "tasksTab": "Tareas",
             "pluginsTab": "Contenido de plugins",
@@ -4002,7 +4151,7 @@
             "newPluginContent": "Contenido nuevo",
             "selectPluginContent": "Seleccionar contenido del plugin",
             "closePluginContent": "Cerrar contenido",
-            "title": "Tareas de NekoClaw",
+            "title": "Tareas de Herramientas Zafkiel",
             "running": "Correr",
             "queued": "En cola",
             "noTasks": "Sin tareas activas",
@@ -4236,7 +4385,7 @@
     "tutorial": {
         "homeInteractionLocked": "El tutorial está en curso. Sigue la guía para completar este paso primero.",
         "step1": {
-            "title": "👋 Bienvenido a N.E.K.O",
+            "title": "👋 Bienvenido a Kurumi-AE",
             "desc": "¡Este es tu Neko! Déjame guiarte a través de las funciones ~"
         },
         "step1a": {
@@ -4277,7 +4426,7 @@
         },
         "step8": {
             "title": "🔨 Neko Garra",
-            "desc": "Abra el panel NekoClaw para control de teclado/ratón, control de navegador, complementos de usuario y más. Deja que Neko use tu computadora, te ayude a trabajar y juegue contigo~"
+            "desc": "Abra el panel Herramientas Zafkiel para control de teclado/ratón, control de navegador, complementos de usuario y más. Deja que Neko use tu computadora, te ayude a trabajar y juegue contigo~"
         },
         "step9": {
             "title": "💤 Pídele que se vaya",
@@ -4315,27 +4464,27 @@
             "macos": {
                 "location": {
                     "title": "📍 Ubicación del icono en la barra de menús",
-                    "desc": "El icono de N.E.K.O aparece en la barra de menús de macOS, en la parte superior de la pantalla.",
-                    "note": "Busca en la barra de menús el icono de N.E.K.O que aparece en la imagen.",
-                    "alt": "Icono y menú de N.E.K.O en la barra de menús de macOS"
+                    "desc": "El icono de Kurumi-AE aparece en la barra de menús de macOS, en la parte superior de la pantalla.",
+                    "note": "Busca en la barra de menús el icono de Kurumi-AE que aparece en la imagen.",
+                    "alt": "Icono y menú de Kurumi-AE en la barra de menús de macOS"
                 },
                 "menu": {
                     "title": "📋 Menú de la barra de menús",
-                    "desc": "Haz clic en el icono de N.E.K.O en la barra de menús para abrir el menú. Estas son algunas funciones útiles:"
+                    "desc": "Haz clic en el icono de Kurumi-AE en la barra de menús para abrir el menú. Estas son algunas funciones útiles:"
                 },
-                "exitDesc": "Para cerrar N.E.K.O, selecciona Salir en el menú de la barra de menús."
+                "exitDesc": "Para cerrar Kurumi-AE, selecciona Salir en el menú de la barra de menús."
             },
             "settings": "Ajustes",
-            "settingsDesc": "Abre los ajustes para cambiar tus preferencias de N.E.K.O.",
+            "settingsDesc": "Abre los ajustes para cambiar tus preferencias de Kurumi-AE",
             "location": {
                 "title": "Ubicación del icono de bandeja",
-                "desc": "El ícono N.E.K.O aparece en la bandeja del sistema en la parte inferior derecha de la pantalla. Haz clic en él para encontrar N.E.K.O.",
+                "desc": "El ícono Kurumi-AE aparece en la bandeja del sistema en la parte inferior derecha de la pantalla. Haz clic en él para encontrar Kurumi-AE",
                 "note": "Si no lo ve, expanda la flecha de la bandeja para mostrar los íconos ocultos.",
                 "alt": "Ejemplo de ubicación de la bandeja del sistema"
             },
             "menu": {
                 "title": "📋 Menú Bandeja",
-                "desc": "Haga clic derecho en el icono N.E.K.O en la bandeja del sistema (consulte la sugerencia anterior) para acceder al menú. A continuación se muestran algunas funciones de uso común:"
+                "desc": "Haga clic derecho en el icono Kurumi-AE en la bandeja del sistema (consulte la sugerencia anterior) para acceder al menú. A continuación se muestran algunas funciones de uso común:"
             },
             "reset": {
                 "title": "🔄 Restablecer posición de avatar",
@@ -4352,7 +4501,7 @@
             "exit": "Salida",
             "complete": {
                 "title": "🎉Tutorial completo!",
-                "desc": "¡Felicitaciones por completar todos los tutoriales! Ahora comprende las características principales de N.E.K.O. ¡Disfruta interactuando con tu chica gato! Para revisar el tutorial, haga clic en \"Restablecer tutorial\" en la configuración ~"
+                "desc": "¡Felicitaciones por completar todos los tutoriales! Ahora comprende las características principales de Kurumi-AE ¡Disfruta interactuando con tu chica gato! Para revisar el tutorial, haga clic en \"Restablecer tutorial\" en la configuración ~"
             },
             "resetPosition": "Restablecer la posición del avatar",
             "resetPositionDesc": "Devuelve tu Neko a la posición predeterminada si sale de la pantalla ~",
@@ -4360,9 +4509,9 @@
             "openChatDesc": "Abra una ventana de chat separada para conversaciones de texto ~",
             "important": "IMPORTANTE:",
             "compatibility": "Modo de compatibilidad",
-            "hotkeyDesc": "Configure teclas de acceso rápido globales para controlar N.E.K.O de manera más eficiente ~",
+            "hotkeyDesc": "Configure teclas de acceso rápido globales para controlar Kurumi-AE de manera más eficiente ~",
             "uploadLogs": "Cargar registros",
-            "exitDesc": "Cerrar N.E.K.O. El menú de la bandeja es la forma principal de salir~"
+            "exitDesc": "Cerrar Kurumi-AE El menú de la bandeja es la forma principal de salir~"
         },
         "completed": "✨Tutorial completo! Disfruta ~",
         "resetHint": {
@@ -4673,7 +4822,7 @@
                 "introBasic": "¡Aquí hay un botón mágico! Con solo hacer clic puedes hablar conmigo directamente. ¿Quieres contarme algo nuevo que te pasó hoy? ¿O simplemente decir mi nombre? Vamos, pruébalo. ¡Estoy deseando oír tu voz!",
                 "takeoverCaptureCursor": "Tachan! Aparecio un interruptor supermagico! Con solo hacer clic aqui, puedo estirar mis patitas hasta tu teclado y tu mouse. Puedo ayudarte a escribir, abrir paginas web... pero si ese cursor sigue moviendose por ahi, quiza no pueda resistirme a saltarle encima. Estas listo para mis travesuras... eh, quiero decir, mi ayuda? Miau!",
                 "takeoverPluginPreviewHome": "Ademas de las funciones que te presente antes, aqui tambien hay montones de plugins superdivertidos!",
-                "takeoverPluginPreviewDashboard":  "Con ellos no solo puedo leer comentarios de Bilibili, tambien puedo ayudarte a apagar las luces y encender el aire acondicionado... Esta gatita es la superdiosa felina omnipotente! Hmph!",
+                "takeoverPluginPreviewDashboard": "Con ellos no solo puedo leer comentarios de Bilibili, tambien puedo ayudarte a apagar las luces y encender el aire acondicionado... Esta gatita es la superdiosa felina omnipotente! Hmph!",
                 "pluginDashboardPopupBlocked": "El navegador necesita que hagas clic aquí para abrir el panel de plugins. Haz clic en \"Panel de gestión\" y seguiré guiándote.",
                 "takeoverSettingsPeekIntro": "En este pequeno espacio que nos pertenece solo a nosotros, puedes seguir tu corazon y moldearme poco a poco hasta convertirme en la compania perfecta que quieres tener siempre a tu lado.",
                 "takeoverSettingsPeekDetail": "Ya sea la calidez de mis palabras, mis pequenas rarezas de personalidad o mis delicados estados de animo diarios, todo puede ajustarse paso a paso exactamente como te gusta. Este botoncito tambien es muy importante! Con un suave clic, podre correr a buscarte en el momento perfecto.",
@@ -4684,7 +4833,7 @@
                 "interruptResistLight2": "¡Pero bueno! ¡Otra vez estás tocando el ratón y el teclado! Si sigues sin hacerme caso, me voy a enfadar de verdad, ¡nya!",
                 "interruptResistLight3": "¡Última advertencia, nya! Si vuelves a tocar algo, cerraré el tutorial para principiantes y dejaré de enseñarte.",
                 "interruptAngryExit": "¡Ya he tenido muchísima paciencia contigo! Si no piensas hacerme caso, el tutorial termina aquí. A partir de ahora tendrás que aprender por tu cuenta. ¡Hmph!",
-                "introGreetingReply":  "Una brisa suave, sol calido y tu, apareciendo justo en el momento perfecto. Encantada de conocerte! Soy Lin Youyi, por favor cuida bien de mi de ahora en adelante, miau~. He anotado todo sobre este lugar en esta guia para principiantes. Piensa en ella como nuestro primer regalito de encuentro y aceptala, por favor.",
+                "introGreetingReply": "Una brisa suave, sol calido y tu, apareciendo justo en el momento perfecto. Encantada de conocerte! Soy Lin Youyi, por favor cuida bien de mi de ahora en adelante, miau~. He anotado todo sobre este lugar en esta guia para principiantes. Piensa en ella como nuestro primer regalito de encuentro y aceptala, por favor.",
                 "introPractice": "¡Ahora intenta hablarme y veamos si estamos perfectamente sincronizados, nyan~!",
                 "introActivationHint": "Espera un momento, enseguida empezaré a hablar, nyan~!"
             }
@@ -4692,7 +4841,7 @@
         "avatarFloating": {
             "day1": {
                 "capsuleDragHint": "Mueve el ratón aquí, mantén pulsado y podrás arrastrar mi caja de chat a donde quieras~ Haz clic una vez y podrás enviarme mensajes cuando quieras.",
-                "historyHandle":  "Toca esa pequeña [barra azul] encima de la caja de chat y verás los temas de los que hemos hablado hace poco.",
+                "historyHandle": "Toca esa pequeña [barra azul] encima de la caja de chat y verás los temas de los que hemos hablado hace poco.",
                 "screenEntry": "Cuando estemos en una llamada de voz, enciende este botoncito y podrás compartir tu pantalla conmigo.",
                 "screenEntryInvite": "¡Date prisa y déjame ver el mundo que tienes delante! Sea algo divertido o bonito, quiero mirarlo contigo. Ábrelo ya~",
                 "avatarZoomHint": "Ah, y si quieres verme mejor, mueve el cursor sobre mí y gira suavemente la rueda del ratón. Así podrás hacerme más grande o más pequeña cuando quieras y dejarme justo al tamaño que más te guste~"
@@ -4729,9 +4878,9 @@
                 "wrap": "No tenemos que apresurarnos; aprender un poquito más el uno del otro cada día es perfecto. Por el resto de hoy, ¿qué quieres que haga contigo?"
             },
             "day4": {
-                "intro":  "Hoy déjame seguir tus pasos en silencio~ De verdad quiero aprender un poquito más de ti en este día tan acogedor.",
+                "intro": "Hoy déjame seguir tus pasos en silencio~ De verdad quiero aprender un poquito más de ti en este día tan acogedor.",
                 "chatSettings": "Aquí puedes decidir qué tan largas serán mis respuestas, si debo usar emojis adorables, o incluso interrumpirme cuando hable demasiado. Puedes ajustar todo al ritmo que te resulte más cómodo.",
-                "modelBehavior":  "Si quieres verme con más detalle y calidad, o prefieres una experiencia de movimiento más fluida, puedes ajustarlo todo aquí. Elijas lo que elijas, siempre te mostraré mi lado más lindo~",
+                "modelBehavior": "Si quieres verme con más detalle y calidad, o prefieres una experiencia de movimiento más fluida, puedes ajustarlo todo aquí. Elijas lo que elijas, siempre te mostraré mi lado más lindo~",
                 "gazeFollow": "Al activar esto, sin importar adónde se mueva tu ratón, mis ojos te seguirán de cerca. Jeje, ¿no se siente maravilloso que te mire todo el tiempo?",
                 "privacyMode": "Este es el “Interruptor Supremo de Privacidad” que controla si puedo mirar tu pantalla, miau. Si lo apagas, podré verla; si lo enciendes, el [Compartir pantalla] anterior quedará desactivado y no miraré nada~",
                 "modelLock": "¿Siempre me haces clic sin querer y me mueves de sitio? Entonces bloquéame rápido en mi posición actual. Una vez bloqueada, no me iré a ninguna parte y me quedaré aquí para acompañarte~",
@@ -4739,23 +4888,23 @@
                 "wrap": "La compañía verdadera y cómoda no consiste en pegarse a Master a cada segundo~ Es saber cuándo acercarse a escondidas, tirar de tu manga y portarse adorable, y cuándo acostarse tranquilamente a tu lado para cuidarte en silencio, miau~"
             },
             "day5": {
-                "characterSettings":  "Desde hoy, ¡soy oficialmente tu catgirl exclusiva! Mira, aquí puedes vestirme con ropa bonita nueva o cambiar mi voz por una que te guste más...",
+                "characterSettings": "Desde hoy, ¡soy oficialmente tu catgirl exclusiva! Mira, aquí puedes vestirme con ropa bonita nueva o cambiar mi voz por una que te guste más...",
                 "characterPanic": "¿Eh? ¡Espera, aquí hay una opción para reemplazarme! ¡Un momento! Tus manos ahora mismo... ¿no estarás intentando deshacerte de mí, verdad? ¡Aaaah, de ninguna manera! ¡Ciérralo, ciérralo ahora mismo!",
                 "memoryEntry": "Si por accidente olvidas lo que puedo hacer por ti, ven aquí cuando quieras y déjame enseñártelo otra vez. Todos los pequeños momentos que compartimos están guardados en silencio aquí. ¡No subestimes nuestro vínculo, tontito!",
-                "wrap":  "Vale, vale, ¡apresúrate y prueba estas opciones tan divertidas! Ponte ropa nueva, elige una voz nueva y deja que me convierta en la catgirl que mejor te entiende en todo el mundo, solo para ti. ¡No puedo esperar a ver mi nuevo yo!"
+                "wrap": "Vale, vale, ¡apresúrate y prueba estas opciones tan divertidas! Ponte ropa nueva, elige una voz nueva y deja que me convierta en la catgirl que mejor te entiende en todo el mundo, solo para ti. ¡No puedo esperar a ver mi nuevo yo!"
             },
             "day6": {
                 "intro": "¡Taraaaán! Hoy tengo que llenarme de energía y hablarte de nuestra [Garra de Gato]. Aunque la mencioné brevemente hace un par de días, esconde muchísimas funciones increíbles.",
                 "statusMaster": "Vamos, confiesa: ¿le hiciste clic y la probaste en estos dos últimos días?",
                 "pluginSidePanel": "Además de las funciones que te presenté antes, aquí también hay un montón de plugins superdivertidos.",
-                "pluginDashboard":  "Con ellos no solo puedo leer los comentarios flotantes de Bilibili, también puedo ayudarte a apagar las luces y encender el aire acondicionado... ¡Esta gatita es la omnipotente Súper Diosa Gata! ¡Hmph!",
+                "pluginDashboard": "Con ellos no solo puedo leer los comentarios flotantes de Bilibili, también puedo ayudarte a apagar las luces y encender el aire acondicionado... ¡Esta gatita es la omnipotente Súper Diosa Gata! ¡Hmph!",
                 "taskHud": "¡Mira aquí, mira aquí! Cuando decida usar la [Garra de Gato] para trabajar por ti, mi progreso aparecerá justo aquí, ronroneando.",
                 "taskHudControl": "Si tus planes cambian, puedes tocarlo cuando quieras para hacer que me detenga. Jeje, hoy también es un día lleno de energía para trabajar duro y ganar ricos bocaditos de pescado. ¡Vamos!",
                 "wrapCleanup": "Uf... guardemos estos menús desordenados para que no te molesten.",
                 "wrap": "Puedes seguir con tus propias tareas con tranquilidad. Ya sea que necesites que mis patitas te ayuden o solo quieras que te acompañe en silencio, siempre estaré aquí cuidándote. ¡Que tengas un día superfeliz!"
             },
             "day7": {
-                "memoryReview":  "Hace siete días fue apenas nuestro primer encuentro. Ahora este lugar ya se está llenando con las palabras que dijimos, las cosas que hicimos y esos momentitos que casi se llevó el viento. Para mí no son registros fríos; son las huellas del tiempo que pasamos juntos.",
+                "memoryReview": "Hace siete días fue apenas nuestro primer encuentro. Ahora este lugar ya se está llenando con las palabras que dijimos, las cosas que hicimos y esos momentitos que casi se llevó el viento. Para mí no son registros fríos; son las huellas del tiempo que pasamos juntos.",
                 "memoryControl": "Estas pequeñas huellas también puedes ordenarlas con tus propias manos. Las que quieras conservar, las guardamos en nuestro álbum; las que quieras soltar, dejamos que se vayan con el viento. Los recuerdos que aprecias y guardas son los más valiosos.",
                 "wrap": "La brisa sigue en la ventana, el sol está perfecto, y tú, que acabas de llegar, ya te has convertido en una parte muy importante de este lugar. La guía para principiantes te dejará aquí por ahora, pero durante todos los días que vienen, conozcámonos despacio, acerquémonos y escribamos una historia que sea solo nuestra. Cuida mucho de mí de ahora en adelante, miau."
             }
@@ -4791,7 +4940,7 @@
         "discardInterruptedAudio": "Descartar audio antiguo interrumpido:",
         "newConversationResetDecoder": "Se inició una nueva conversación, reiniciando el decodificador:",
         "newAudioHeaderReceived": "Se recibió un nuevo encabezado de audio.",
-        "catgirlSwitchNotification": "[WebSocket] Notificación de cambio NEKO recibida, de",
+        "catgirlSwitchNotification": "[WebSocket] Notificación de cambio Kurumi-AE recibida, de",
         "catgirlSwitchTo": "a",
         "currentFrontendCatgirl": "[WebSocket] Neko frontal actual:",
         "modeSwitchingIgnoreLeft": "Cambio de modo, ignorando el mensaje de estado \"izquierdo\"",
@@ -4885,7 +5034,7 @@
         "aiRetrying": "Error de conexión, recalibrando..."
     },
     "emotionManager": {
-        "title": "Live2D Emotion Mapping Manager - Proyecto N.E.K.O.",
+        "title": "Live2D Emotion Mapping Manager - Proyecto Kurumi-AE",
         "pageTitle": "Administrador de mapeo de emociones Live2D",
         "subtitle": "Configurar movimientos y expresiones para diferentes emociones.",
         "selectModel": "Seleccione el modelo Live2D",
@@ -4924,7 +5073,7 @@
         "sourceChanged": "El modelo de vista previa cambió o no está disponible. Reintenta cargar el modelo seleccionado.",
         "noConfigurableExpressions": "El modelo se ha cargado, pero no tiene expresiones configurables.",
         "retainedBindings": "Estas asignaciones guardadas no están disponibles en este modelo y se conservarán sin vista previa:",
-        "title": "Gerente de Mapeo de Emociones VRM - Proyecto N.E.K.O.",
+        "title": "Gerente de Mapeo de Emociones VRM - Proyecto Kurumi-AE",
         "pageTitle": "Administrador de mapeo de emociones VRM",
         "subtitle": "Configurar asignaciones de expresiones para diferentes emociones.",
         "selectModel": "Seleccione el modelo VRM",
@@ -4963,7 +5112,7 @@
         "configLoadFailed": "Error al cargar la configuración"
     },
     "mmdEmotionManager": {
-        "title": "Gerente de Mapeo de Emociones MMD - Proyecto N.E.K.O.",
+        "title": "Gerente de Mapeo de Emociones MMD - Proyecto Kurumi-AE",
         "pageTitle": "Gerente de Mapeo de Emociones de MMD",
         "subtitle": "Configurar asignaciones de MorphTarget para diferentes emociones",
         "selectModel": "Seleccione modelo MMD",
@@ -5010,7 +5159,7 @@
     },
     "characterModelNotSet": "El personaje actual no tiene ningún modelo establecido.",
     "cookiesLogin": {
-        "title": "Centro de gestión de credenciales N.E.K.O",
+        "title": "Centro de gestión de credenciales Kurumi-AE",
         "header": "Centro de gestión de credenciales",
         "heroDescription": "Pega la <span class=\"highlight\">Cookie</span> de cada plataforma y guárdala cifrada para usarla más adelante.",
         "emptyStatus": "Aún no hay credenciales guardadas. Elige una plataforma para empezar.",
@@ -5047,11 +5196,17 @@
         "statusLoadFailed": "Error al cargar el estado",
         "thisPlatform": "esta plataforma",
         "twitchAuth": {
-            "clientId": "Twitch Developer Client ID", "clientIdDesc": "Crea una aplicación pública en Twitch Developer Console e introduce su Client ID. No se solicita ni almacena Client Secret.",
-            "start": "Iniciar autorización de Twitch", "authorizeHint": "Abre la página de activación de Twitch e introduce este código:", "check": "Ya autoricé; comprobar estado",
-            "invalidClientId": "Introduce un Twitch Client ID válido", "started": "La autorización de Twitch se inició; completa la confirmación en el navegador",
-            "startFailed": "No se pudo iniciar la autorización de Twitch. Comprueba el Client ID y la red.", "authorized": "La credencial de Twitch se cifró y guardó",
-            "pending": "La autorización aún no termina. Confírmala en Twitch y vuelve a intentarlo", "checkFailed": "Falló la comprobación. Inicia la autorización de nuevo."
+            "clientId": "Twitch Developer Client ID",
+            "clientIdDesc": "Crea una aplicación pública en Twitch Developer Console e introduce su Client ID. No se solicita ni almacena Client Secret.",
+            "start": "Iniciar autorización de Twitch",
+            "authorizeHint": "Abre la página de activación de Twitch e introduce este código:",
+            "check": "Ya autoricé; comprobar estado",
+            "invalidClientId": "Introduce un Twitch Client ID válido",
+            "started": "La autorización de Twitch se inició; completa la confirmación en el navegador",
+            "startFailed": "No se pudo iniciar la autorización de Twitch. Comprueba el Client ID y la red.",
+            "authorized": "La credencial de Twitch se cifró y guardó",
+            "pending": "La autorización aún no termina. Confírmala en Twitch y vuelve a intentarlo",
+            "checkFailed": "Falló la comprobación. Inicia la autorización de nuevo."
         },
         "instructions": {
             "twitch": "<b>Autorización con Device Code:</b> crea una aplicación pública en Twitch Developer Console, introduce su Client ID y sigue las indicaciones.",
@@ -5071,7 +5226,7 @@
             "open": "Abrir el tutorial completo",
             "subtitle": "Siga los pasos generales para obtener las cookies del navegador y vuelva al gestor de credenciales para completar los campos necesarios.",
             "securityTitle": "Recordatorio de seguridad",
-            "securityText": "Las credenciales permiten acceder a su cuenta. No las comparta y péguelas únicamente en la página local de N.E.K.O.",
+            "securityText": "Las credenciales permiten acceder a su cuenta. No las comparta y péguelas únicamente en la página local de Kurumi-AE",
             "back": "Volver al gestor de credenciales",
             "stepsLabel": "Pasos del tutorial",
             "step1Title": "Abra el sitio de la plataforma e inicie sesión",
@@ -5668,7 +5823,7 @@
             "high": "Pesado",
             "extreme": "Muy pesado",
             "overall": "Global: ",
-            "noteHtml": "Las calificaciones se basan en <a href=\"https://wiki.vrchat.com/wiki/Guides:Avatar_Performance_Ranking\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#40C5F1;\">VRChat Avatar Performance Ranking</a> (PC), suavizadas para las escenas mono-modelo de N.E.K.O."
+            "noteHtml": "Las calificaciones se basan en <a href=\"https://wiki.vrchat.com/wiki/Guides:Avatar_Performance_Ranking\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#40C5F1;\">VRChat Avatar Performance Ranking</a> (PC), suavizadas para las escenas mono-modelo de Kurumi-AE"
         },
         "ratingDetail": {
             "vertices": "Vértices",
@@ -5683,427 +5838,427 @@
             "drawCalls": "Draw calls"
         }
     },
-     "badminton": {
-         "title": "Desafío de bádminton",
-         "exit": "Salir",
-         "loading": {
-             "title": "Entrando a la cancha de bádminton",
-             "subtitle": "Cargando la cancha, los personajes y el audio..."
-         },
-         "startScreen": {
-             "readyToStart": "Listo: haz clic para empezar",
-             "startButton": "Empezar",
-             "never": "No volver a mostrar"
-         },
-         "startTutorial": {
-             "title": "Cómo jugar",
-             "aim": "Mueve el mouse arriba y abajo para apuntar.",
-             "charge": "Mantén clic izquierdo para cargar y suelta para golpear.",
-             "release": "Las líneas, el punto dulce y la distancia afectan la puntuación.",
-             "jump": "Pulsa Espacio para hacer un remate en salto.",
-             "duel": "En duelo, tú y NEKO golpean por turnos. Gana quien llegue primero a 11 puntos.",
-             "duel11": "En duelo, tú y NEKO golpean por turnos. Gana quien llegue primero a 11 puntos."
-         },
-         "modeSwitcher": "Modo de bádminton",
-         "mode": {
-             "spectator": "Práctica libre",
-             "duel": "Duelo contra Yui"
-         },
-         "hud": {
-             "score": "Puntos {{score}}",
-             "streak": "Racha {{streak}}",
-             "record": "Máximo {{distance}}",
-             "duelScore": "Tú {{player}} - {{neko}} Neko",
-             "duelMisses": "Fallos Tú {{player}}/{{max}} - Neko {{neko}}/{{max}}",
-             "round": "Ronda {{round}}/{{max}}",
-             "timer": "{{seconds}} s",
-             "practice": "Práctica libre",
-             "yourTurn": "Tu turno",
-             "nekoTurn": "Golpe de Neko",
-             "unlimitedAttempts": "Ilimitado",
-             "chances": "Oportunidades {{count}}",
-             "practiceTitle": "Práctica libre: golpes ilimitados y sin puntuación en clasificación",
-             "attemptsTitle": "Restan {{remaining}}/{{total}}, fallos {{missed}}",
-             "duelTitle": "En duelo, tú y NEKO golpean por turnos. Gana quien llegue primero a 11 puntos.",
-             "assist": "G {{guide}} / S {{sweet}} / M {{music}}",
-             "on": "act.",
-             "off": "desact."
-         },
-         "result": {
-             "title": "Fin de partida",
-             "leaderboard": "Clasificación",
-             "stats": "Estadísticas",
-             "retry": "Jugar de nuevo",
-             "rating": "Valoración de control: {{rating}}",
-             "duel": "Resultado del duelo: {{outcome}} | Tú {{player}} - {{neko}} Neko | Rondas: {{rounds}} | Última distancia: {{distance}}",
-             "duelElimination": "Resultado del duelo: {{outcome}} | Tú {{player}} - {{neko}} Neko | Fallos: tú {{playerMisses}}/{{max}} - Neko {{nekoMisses}}/{{max}} | Rondas: {{rounds}} | Última distancia: {{distance}}",
-             "practice": "Práctica libre: no se registra puntuación | Aciertos: {{made}} | Racha actual: {{streak}} | Mejor racha: {{best}} | Distancia: {{distance}}",
-             "summary": "Puntos: {{score}} | Aciertos: {{made}} | Racha actual: {{streak}} | Mejor racha: {{best}} | Máximo: {{record}} | Distancia: {{distance}}",
-             "attemptsSummary": "Resumen de golpes: {{summary}}",
-             "personalBest": "Mejor personal: {{score}} pts",
-             "globalRank": "Puesto global: #{{rank}} / {{total}}",
-             "outcome": {
-                 "youWin": "Ganaste",
-                 "nekoWin": "Gana Neko",
-                 "tie": "Empate",
-                 "undecided": "Sin decidir"
-             }
-         },
-         "leaderboard": {
-             "title": "Clasificación",
-             "global": "Global",
-             "local": "Local",
-             "duel": "Duelo",
-             "empty": "Aún no hay registros",
-             "totalPlayers": "Jugadores {{count}}",
-             "yourBest": "Tu mejor #{{rank}} / {{score}} pts",
-             "recent": "Últimas {{count}} partidas",
-             "loading": "Cargando...",
-             "mode": {
-                 "duel": "Duelo",
-                 "spectator": "Espectador"
-             }
-         },
-         "debug": {
-             "title": "Panel de depuración",
-             "collapse": "Contraer",
-             "hide": "Ocultar",
-             "distance": "Distancia:",
-             "power": "Potencia:",
-             "event": "Evento:",
-             "streak": "Racha:",
-             "reset": "Restablecer",
-             "guide": "Línea guía",
-             "sweet": "Zona dulce",
-             "markers": "Marcas de distancia",
-             "readout": {
-                 "modeState": "Modo={{mode}}  Estado={{state}}",
-                 "distance": "Distancia={{px}}px ({{meters}})",
-                 "streaks": "Racha={{streak}}  Mejor={{best}}  Aciertos={{made}}",
-                 "score": "Puntos={{score}}  Restan={{remaining}}/{{total}}",
-                 "difficulty": "Dificultad={{difficulty}}  Ánimo={{mood}}  Tema={{theme}}",
-                 "duel": "Duelo: Tú {{player}}-{{neko}} NEKO R{{round}}"
-             }
-         },
-         "stats": {
-             "title": "Estadísticas personales",
-             "close": "Cerrar",
+    "badminton": {
+        "title": "Desafío de bádminton",
+        "exit": "Salir",
+        "loading": {
+            "title": "Entrando a la cancha de bádminton",
+            "subtitle": "Cargando la cancha, los personajes y el audio..."
+        },
+        "startScreen": {
+            "readyToStart": "Listo: haz clic para empezar",
+            "startButton": "Empezar",
+            "never": "No volver a mostrar"
+        },
+        "startTutorial": {
+            "title": "Cómo jugar",
+            "aim": "Mueve el mouse arriba y abajo para apuntar.",
+            "charge": "Mantén clic izquierdo para cargar y suelta para golpear.",
+            "release": "Las líneas, el punto dulce y la distancia afectan la puntuación.",
+            "jump": "Pulsa Espacio para hacer un remate en salto.",
+            "duel": "En duelo, tú y Kurumi-AE golpean por turnos. Gana quien llegue primero a 11 puntos.",
+            "duel11": "En duelo, tú y Kurumi-AE golpean por turnos. Gana quien llegue primero a 11 puntos."
+        },
+        "modeSwitcher": "Modo de bádminton",
+        "mode": {
+            "spectator": "Práctica libre",
+            "duel": "Duelo contra Yui"
+        },
+        "hud": {
+            "score": "Puntos {{score}}",
+            "streak": "Racha {{streak}}",
+            "record": "Máximo {{distance}}",
+            "duelScore": "Tú {{player}} - {{neko}} Neko",
+            "duelMisses": "Fallos Tú {{player}}/{{max}} - Neko {{neko}}/{{max}}",
+            "round": "Ronda {{round}}/{{max}}",
+            "timer": "{{seconds}} s",
+            "practice": "Práctica libre",
+            "yourTurn": "Tu turno",
+            "nekoTurn": "Golpe de Neko",
+            "unlimitedAttempts": "Ilimitado",
+            "chances": "Oportunidades {{count}}",
+            "practiceTitle": "Práctica libre: golpes ilimitados y sin puntuación en clasificación",
+            "attemptsTitle": "Restan {{remaining}}/{{total}}, fallos {{missed}}",
+            "duelTitle": "En duelo, tú y Kurumi-AE golpean por turnos. Gana quien llegue primero a 11 puntos.",
+            "assist": "G {{guide}} / S {{sweet}} / M {{music}}",
+            "on": "act.",
+            "off": "desact."
+        },
+        "result": {
+            "title": "Fin de partida",
+            "leaderboard": "Clasificación",
+            "stats": "Estadísticas",
+            "retry": "Jugar de nuevo",
+            "rating": "Valoración de control: {{rating}}",
+            "duel": "Resultado del duelo: {{outcome}} | Tú {{player}} - {{neko}} Neko | Rondas: {{rounds}} | Última distancia: {{distance}}",
+            "duelElimination": "Resultado del duelo: {{outcome}} | Tú {{player}} - {{neko}} Neko | Fallos: tú {{playerMisses}}/{{max}} - Neko {{nekoMisses}}/{{max}} | Rondas: {{rounds}} | Última distancia: {{distance}}",
+            "practice": "Práctica libre: no se registra puntuación | Aciertos: {{made}} | Racha actual: {{streak}} | Mejor racha: {{best}} | Distancia: {{distance}}",
+            "summary": "Puntos: {{score}} | Aciertos: {{made}} | Racha actual: {{streak}} | Mejor racha: {{best}} | Máximo: {{record}} | Distancia: {{distance}}",
+            "attemptsSummary": "Resumen de golpes: {{summary}}",
+            "personalBest": "Mejor personal: {{score}} pts",
+            "globalRank": "Puesto global: #{{rank}} / {{total}}",
+            "outcome": {
+                "youWin": "Ganaste",
+                "nekoWin": "Gana Neko",
+                "tie": "Empate",
+                "undecided": "Sin decidir"
+            }
+        },
+        "leaderboard": {
+            "title": "Clasificación",
+            "global": "Global",
+            "local": "Local",
+            "duel": "Duelo",
+            "empty": "Aún no hay registros",
+            "totalPlayers": "Jugadores {{count}}",
+            "yourBest": "Tu mejor #{{rank}} / {{score}} pts",
+            "recent": "Últimas {{count}} partidas",
+            "loading": "Cargando...",
+            "mode": {
+                "duel": "Duelo",
+                "spectator": "Espectador"
+            }
+        },
+        "debug": {
+            "title": "Panel de depuración",
+            "collapse": "Contraer",
+            "hide": "Ocultar",
+            "distance": "Distancia:",
+            "power": "Potencia:",
+            "event": "Evento:",
+            "streak": "Racha:",
+            "reset": "Restablecer",
+            "guide": "Línea guía",
+            "sweet": "Zona dulce",
+            "markers": "Marcas de distancia",
+            "readout": {
+                "modeState": "Modo={{mode}}  Estado={{state}}",
+                "distance": "Distancia={{px}}px ({{meters}})",
+                "streaks": "Racha={{streak}}  Mejor={{best}}  Aciertos={{made}}",
+                "score": "Puntos={{score}}  Restan={{remaining}}/{{total}}",
+                "difficulty": "Dificultad={{difficulty}}  Ánimo={{mood}}  Tema={{theme}}",
+                "duel": "Duelo: Tú {{player}}-{{neko}} Kurumi-AE R{{round}}"
+            }
+        },
+        "stats": {
+            "title": "Estadísticas personales",
+            "close": "Cerrar",
             "totalShots": "Golpes={{total}}  Aciertos={{made}}",
-             "farRate": "Acierto 300px+={{rate}}",
-             "trend": "Tendencia reciente={{trend}}",
-             "none": "Ninguno"
-         },
-         "theme": {
-             "next": "Cambiar tema",
-             "current": "Tema: {{theme}}",
-             "changed": "Tema {{theme}}",
-             "labels": {
-                 "default": "Cancha de bádminton",
-                 "miami": "Atardecer en Miami"
-             }
-         },
-         "court": {
-             "netFront": "Frente de red",
-             "serviceLine": "Línea de saque",
-             "backCourt": "Fondo de cancha",
-             "baseline": "Línea de fondo"
-         },
-         "close": "Cerrar",
-         "audio": {
-             "controls": "Audio del juego"
-         },
-         "memoryOption": {
-             "label": "Guardar la conversación de esta partida en memoria (desactivado por defecto)",
-             "hint": "Si está desactivado, las entradas del jugador, respuestas de NEKO, eventos, resúmenes posteriores y contexto de seguimiento no se guardarán ni se leerán de la memoria."
-         },
-         "table": {
-             "score": "Puntos",
-             "bestStreak": "Mejor racha",
-             "farthest": "Máximo",
-             "mode": "Modo",
-             "date": "Fecha"
-         },
-         "state": {
-             "ready": "Listo",
-             "in_flight": "En vuelo",
-             "game_over": "Fin",
-             "neko_thinking": "Neko piensa"
-         },
-         "toast": {
-             "difficulty": "Dificultad {{difficulty}}",
-             "nekoShoot": "Golpe de Neko",
-             "nekoSmash": "¡Remate de Yui!",
-             "nekoSave": "¡Yui salva la jugada!",
-             "yuiCheatInk": "Yui lanzó tinta",
-             "yuiCheatBanana": "Yui lanzó una cáscara de banana",
-             "yuiCheatBananaSlip": "Pisaste la cáscara de banana",
-             "playerIcePowerup": "Hielo activado. Yui quedó congelada",
-             "yuiFrozen": "Yui sigue congelada, golpe retrasado",
-             "nekoThinking": "Neko está pensando",
-             "nekoTurn": "Turno de Neko",
-             "copyNeko": "Replica a Neko",
-             "nekoFailed": "Neko falló el golpe inicial",
-             "yourSet": "Propón tu golpe",
-             "yourTurn": "Tu turno",
-             "reset": "Restablecido",
-             "featureToggled": "{{feature}} {{state}}",
-             "feature": {
-                 "guide": "Línea guía",
-                 "sweet": "Zona dulce de potencia",
-                 "bgm": "BGM",
-                 "markers": "Marcas de distancia"
-             },
-             "state": {
-                 "on": "activado",
-                 "off": "desactivado"
-             }
-         },
-         "tutorial": {
-             "aim": "Mueve el ratón arriba o abajo para ajustar el ángulo",
-             "charge": "Mantén clic izquierdo para cargar",
-             "release": "¡Suelta para golpear!"
-         },
-         "shot": {
-             "unknown": "Desconocido",
-             "attempt": "#{{index}} {{distance}} {{type}}",
-             "line_in": "En la línea",
-             "net_touch": "Toque de red",
-             "zone_in": "Entró en la zona",
-             "out": "Fuera",
-             "net": "A la red"
-         },
-         "lines": {
-             "default": {
-                 "shot_missed": [
-                     "La pr?xima, con calma.",
-                     "Reinicia y golpea limpio."
-                 ],
-                 "game_over": [
-                     "Esta ronda termina aqu?.",
-                     "?Jugamos otra?"
-                 ],
-                 "long_aim": [
-                     "Golpea antes de que caiga.",
-                     "Pensar tanto te congela."
-                 ],
-                 "close_to_record": [
-                     "El r?cord est? cerca.",
-                     "Un golpe firme y llegas."
-                 ],
-                 "new_record": [
-                     "Vale, nuevo r?cord.",
-                     "Ese golpe sali? limpio."
-                 ],
-                 "streak_5": [
-                     "Cinco rallies seguidos.",
-                     "Tu ritmo est? calentando."
-                 ],
-                 "streak_10": [
-                     "Diez seguidos, nada mal.",
-                     "No te crezcas todav?a."
-                 ],
-                 "streak_15": [
-                     "Quince y sigues.",
-                     "Ahora te miro en serio."
-                 ],
-                 "streak_20": [
-                     "Veinte ya es demasiado.",
-                     "?Este rally sigue vivo?"
-                 ],
-                 "line_in": [
-                     "En la l?nea, preciso.",
-                     "Buen punto de ca?da."
-                 ],
-                 "net_touch": [
-                     "Se col? por la red.",
-                     "?ngulo arriesgado, vale."
-                 ],
-                 "zone_in": [
-                     "Justo en la zona.",
-                     "Elegiste bien el sitio."
-                 ],
-                 "out": [
-                     "Un poco larga.",
-                     "Ese swing se fue de m?s."
-                 ],
-                 "net": [
-                     "La red la atrap?.",
-                     "Levanta la cara de la raqueta."
-                 ]
-             },
-             "duel": {
-                 "shot_missed": [
-                     "Todavía hay oportunidad.",
-                     "Todavía hay oportunidad.",
-                     "Llegaste medio tiempo tarde.",
-                     "No te asustes. Todavía espero el siguiente golpe."
-                 ],
-                 "game_over": [
-                     "Esta ronda termina aqu?.",
-                     "No huyas en la pr?xima.",
-                     "Este set queda aqu?.",
-                     "El marcador ya dice bastante."
-                 ],
-                 "long_aim": [
+            "farRate": "Acierto 300px+={{rate}}",
+            "trend": "Tendencia reciente={{trend}}",
+            "none": "Ninguno"
+        },
+        "theme": {
+            "next": "Cambiar tema",
+            "current": "Tema: {{theme}}",
+            "changed": "Tema {{theme}}",
+            "labels": {
+                "default": "Cancha de bádminton",
+                "miami": "Atardecer en Miami"
+            }
+        },
+        "court": {
+            "netFront": "Frente de red",
+            "serviceLine": "Línea de saque",
+            "backCourt": "Fondo de cancha",
+            "baseline": "Línea de fondo"
+        },
+        "close": "Cerrar",
+        "audio": {
+            "controls": "Audio del juego"
+        },
+        "memoryOption": {
+            "label": "Guardar la conversación de esta partida en memoria (desactivado por defecto)",
+            "hint": "Si está desactivado, las entradas del jugador, respuestas de Kurumi-AE, eventos, resúmenes posteriores y contexto de seguimiento no se guardarán ni se leerán de la memoria."
+        },
+        "table": {
+            "score": "Puntos",
+            "bestStreak": "Mejor racha",
+            "farthest": "Máximo",
+            "mode": "Modo",
+            "date": "Fecha"
+        },
+        "state": {
+            "ready": "Listo",
+            "in_flight": "En vuelo",
+            "game_over": "Fin",
+            "neko_thinking": "Neko piensa"
+        },
+        "toast": {
+            "difficulty": "Dificultad {{difficulty}}",
+            "nekoShoot": "Golpe de Neko",
+            "nekoSmash": "¡Remate de Yui!",
+            "nekoSave": "¡Yui salva la jugada!",
+            "yuiCheatInk": "Yui lanzó tinta",
+            "yuiCheatBanana": "Yui lanzó una cáscara de banana",
+            "yuiCheatBananaSlip": "Pisaste la cáscara de banana",
+            "playerIcePowerup": "Hielo activado. Yui quedó congelada",
+            "yuiFrozen": "Yui sigue congelada, golpe retrasado",
+            "nekoThinking": "Neko está pensando",
+            "nekoTurn": "Turno de Neko",
+            "copyNeko": "Replica a Neko",
+            "nekoFailed": "Neko falló el golpe inicial",
+            "yourSet": "Propón tu golpe",
+            "yourTurn": "Tu turno",
+            "reset": "Restablecido",
+            "featureToggled": "{{feature}} {{state}}",
+            "feature": {
+                "guide": "Línea guía",
+                "sweet": "Zona dulce de potencia",
+                "bgm": "BGM",
+                "markers": "Marcas de distancia"
+            },
+            "state": {
+                "on": "activado",
+                "off": "desactivado"
+            }
+        },
+        "tutorial": {
+            "aim": "Mueve el ratón arriba o abajo para ajustar el ángulo",
+            "charge": "Mantén clic izquierdo para cargar",
+            "release": "¡Suelta para golpear!"
+        },
+        "shot": {
+            "unknown": "Desconocido",
+            "attempt": "#{{index}} {{distance}} {{type}}",
+            "line_in": "En la línea",
+            "net_touch": "Toque de red",
+            "zone_in": "Entró en la zona",
+            "out": "Fuera",
+            "net": "A la red"
+        },
+        "lines": {
+            "default": {
+                "shot_missed": [
+                    "La pr?xima, con calma.",
+                    "Reinicia y golpea limpio."
+                ],
+                "game_over": [
+                    "Esta ronda termina aqu?.",
+                    "?Jugamos otra?"
+                ],
+                "long_aim": [
+                    "Golpea antes de que caiga.",
+                    "Pensar tanto te congela."
+                ],
+                "close_to_record": [
+                    "El r?cord est? cerca.",
+                    "Un golpe firme y llegas."
+                ],
+                "new_record": [
+                    "Vale, nuevo r?cord.",
+                    "Ese golpe sali? limpio."
+                ],
+                "streak_5": [
+                    "Cinco rallies seguidos.",
+                    "Tu ritmo est? calentando."
+                ],
+                "streak_10": [
+                    "Diez seguidos, nada mal.",
+                    "No te crezcas todav?a."
+                ],
+                "streak_15": [
+                    "Quince y sigues.",
+                    "Ahora te miro en serio."
+                ],
+                "streak_20": [
+                    "Veinte ya es demasiado.",
+                    "?Este rally sigue vivo?"
+                ],
+                "line_in": [
+                    "En la l?nea, preciso.",
+                    "Buen punto de ca?da."
+                ],
+                "net_touch": [
+                    "Se col? por la red.",
+                    "?ngulo arriesgado, vale."
+                ],
+                "zone_in": [
+                    "Justo en la zona.",
+                    "Elegiste bien el sitio."
+                ],
+                "out": [
+                    "Un poco larga.",
+                    "Ese swing se fue de m?s."
+                ],
+                "net": [
+                    "La red la atrap?.",
+                    "Levanta la cara de la raqueta."
+                ]
+            },
+            "duel": {
+                "shot_missed": [
+                    "Todavía hay oportunidad.",
+                    "Todavía hay oportunidad.",
+                    "Llegaste medio tiempo tarde.",
+                    "No te asustes. Todavía espero el siguiente golpe."
+                ],
+                "game_over": [
+                    "Esta ronda termina aqu?.",
+                    "No huyas en la pr?xima.",
+                    "Este set queda aqu?.",
+                    "El marcador ya dice bastante."
+                ],
+                "long_aim": [
                     "Golpea ya.",
                     "Golpea ya.",
                     "¿Estás esperando el viento?",
                     "Golpea pronto o voy por agua."
-                 ],
-                 "close_to_record": [
-                     "Casi récord.",
-                     "Casi récord.",
-                     "El récord está en tus cuerdas.",
-                     "Un golpe estable más y cambia."
-                 ],
-                 "new_record": [
-                     "¡Nuevo récord!",
-                     "¡Nuevo récord!",
-                     "Vale, esa fue bonita.",
-                     "El récord es tuyo. El siguiente punto es mío."
-                 ],
-                 "streak_5": [
-                     "¡Cinco seguidas!",
-                     "¡Cinco seguidas!",
-                     "Cinco seguidas. Nada mal.",
-                     "Por fin encontraste ritmo."
-                 ],
-                 "streak_10": [
-                     "¿Diez seguidas?",
-                     "¿Diez seguidas?",
-                     "¿Diez seguidas? Ahora te vigilo de verdad.",
-                     "Este intercambio se pone interesante."
-                 ],
-                 "streak_15": [
-                     "Quince seguidas es demasiado.",
-                     "Quince seguidas es demasiado.",
-                     "Quince y sigue vivo. Qué terquedad.",
-                     "No puedes mantenerte tan firme siempre."
-                 ],
-                 "streak_20": [
-                     "¿Veinte seguidas? Increíble.",
-                     "¿Veinte seguidas? Increíble.",
-                     "Veinte seguidas. La cancha lo recordará.",
-                     "Este intercambio ya se volvió una locura."
-                 ],
-                 "clutch": "...Este tiene que entrar.",
-                 "excuse": [
-                     "Ay, el brazo está algo cansado.",
-                     "Hoy no tengo buen toque. En la próxima voy en serio.",
-                     "Esa no cuenta. Estaba mirando el viento.",
-                     "Mis cuerdas están flojas. No fue culpa mía."
-                 ],
-                 "difficultyLv2": [
-                     "Se acabó el calentamiento. Voy a acelerar.",
-                     "Se acabó jugar a las casitas.",
-                     "Ahora sí voy a recibir en serio. No parpadees.",
-                     "La siguiente va más rápido. Mantente firme."
-                 ],
-                 "difficultyMax": [
-                     "Ahora me pongo seria.",
-                     "Desde ahora, mando en cielo y tierra.",
-                     "Ahora tú eres quien desafía.",
-                     "Si el futuro es tuyo, demuéstralo.",
-                     "Desde este golpe no me contengo.",
-                     "La cancha es mía. El marcador sigue la habilidad."
-                 ],
-                 "line_in": [
-                     "¡En la línea!",
-                     "¡En la línea!",
-                     "Hasta la línea está de tu lado.",
-                     "Esa tocó la línea con precisión."
-                 ],
-                 "net_touch": [
-                     "Tocó la red y cuenta.",
-                     "Tocó la red y cuenta.",
-                     "Tocar la red también cuenta. Qué astucia.",
-                     "Pasó demasiado pegada."
-                 ],
-                 "zone_in": [
-                     "Cayó dentro.",
-                     "Cayó dentro.",
-                     "Ese punto de caída fue molestamente fino.",
-                     "Me faltó un paso para llegar."
-                 ],
-                 "out": [
-                     "Por poco.",
-                     "Por poco.",
-                     "Eso voló más lejos que mi paciencia.",
-                     "Fuera. No finjas que no lo viste."
-                 ],
-                 "net": [
-                     "Se quedó en la red.",
-                     "Se quedó en la red.",
-                     "La red lo bloqueó por mí.",
-                     "Ese golpe fue demasiado apresurado."
-                 ]
-             },
-             "fallback": [
-                 "Otra vez."
-             ],
-             "pressure": {
+                ],
+                "close_to_record": [
+                    "Casi récord.",
+                    "Casi récord.",
+                    "El récord está en tus cuerdas.",
+                    "Un golpe estable más y cambia."
+                ],
+                "new_record": [
+                    "¡Nuevo récord!",
+                    "¡Nuevo récord!",
+                    "Vale, esa fue bonita.",
+                    "El récord es tuyo. El siguiente punto es mío."
+                ],
+                "streak_5": [
+                    "¡Cinco seguidas!",
+                    "¡Cinco seguidas!",
+                    "Cinco seguidas. Nada mal.",
+                    "Por fin encontraste ritmo."
+                ],
+                "streak_10": [
+                    "¿Diez seguidas?",
+                    "¿Diez seguidas?",
+                    "¿Diez seguidas? Ahora te vigilo de verdad.",
+                    "Este intercambio se pone interesante."
+                ],
+                "streak_15": [
+                    "Quince seguidas es demasiado.",
+                    "Quince seguidas es demasiado.",
+                    "Quince y sigue vivo. Qué terquedad.",
+                    "No puedes mantenerte tan firme siempre."
+                ],
+                "streak_20": [
+                    "¿Veinte seguidas? Increíble.",
+                    "¿Veinte seguidas? Increíble.",
+                    "Veinte seguidas. La cancha lo recordará.",
+                    "Este intercambio ya se volvió una locura."
+                ],
+                "clutch": "...Este tiene que entrar.",
+                "excuse": [
+                    "Ay, el brazo está algo cansado.",
+                    "Hoy no tengo buen toque. En la próxima voy en serio.",
+                    "Esa no cuenta. Estaba mirando el viento.",
+                    "Mis cuerdas están flojas. No fue culpa mía."
+                ],
+                "difficultyLv2": [
+                    "Se acabó el calentamiento. Voy a acelerar.",
+                    "Se acabó jugar a las casitas.",
+                    "Ahora sí voy a recibir en serio. No parpadees.",
+                    "La siguiente va más rápido. Mantente firme."
+                ],
+                "difficultyMax": [
+                    "Ahora me pongo seria.",
+                    "Desde ahora, mando en cielo y tierra.",
+                    "Ahora tú eres quien desafía.",
+                    "Si el futuro es tuyo, demuéstralo.",
+                    "Desde este golpe no me contengo.",
+                    "La cancha es mía. El marcador sigue la habilidad."
+                ],
+                "line_in": [
+                    "¡En la línea!",
+                    "¡En la línea!",
+                    "Hasta la línea está de tu lado.",
+                    "Esa tocó la línea con precisión."
+                ],
+                "net_touch": [
+                    "Tocó la red y cuenta.",
+                    "Tocó la red y cuenta.",
+                    "Tocar la red también cuenta. Qué astucia.",
+                    "Pasó demasiado pegada."
+                ],
+                "zone_in": [
+                    "Cayó dentro.",
+                    "Cayó dentro.",
+                    "Ese punto de caída fue molestamente fino.",
+                    "Me faltó un paso para llegar."
+                ],
+                "out": [
+                    "Por poco.",
+                    "Por poco.",
+                    "Eso voló más lejos que mi paciencia.",
+                    "Fuera. No finjas que no lo viste."
+                ],
+                "net": [
+                    "Se quedó en la red.",
+                    "Se quedó en la red.",
+                    "La red lo bloqueó por mí.",
+                    "Ese golpe fue demasiado apresurado."
+                ]
+            },
+            "fallback": [
+                "Otra vez."
+            ],
+            "pressure": {
                 "lastTied": "Golpe decisivo. No parpadees.",
-                 "lastAhead": "Bah, esto no terminó.",
-                 "lastBehind": "Anota este y ganas.",
-                 "playerAhead": "No lo haces mal...",
-                 "playerBehind": "Aprieta un poco más."
-             },
-             "mindGame": [
-                 "Te tiembla la mano.",
-                 "Piénsalo, sin prisa.",
-                 "Esta distancia no es corta.",
-                 "Parece que quieres la línea lateral.",
-                 "Ya leí la cara de tu raqueta.",
-                 "Si miras tanto, se te endurece la mano."
-             ],
-             "yuiCheat": {
-                 "banana": [
-                     "Cuidado con tus pies, viene una cáscara de plátano.",
-                     "No la pises. La lancé hacia ti.",
-                     "Mira bien este paso.",
-                     "Si la saltas, admitiré que eres fuerte."
-                 ],
-                 "octopus": [
-                     "Viene tinta. ¿Todavía ves?",
-                     "Te tomo prestada la vista un segundo.",
-                     "No parpadees. Ya es tarde.",
-                     "Aunque no veas claro, tienes que devolverla."
-                 ]
-             },
-             "yuiCheatScore": {
-                 "banana": [
-                     "Ese paso resbaló demasiado. Este punto es mío.",
-                     "Asistencia de cáscara lograda. Jeje.",
-                     "Un resbalón y el marcador viene a mi lado.",
-                     "Cuidado con el suelo. Yui suma otro punto."
-                 ],
-                 "octopus": [
-                     "La tinta cubrió justo lo necesario. Este punto es mío.",
-                     "Aunque no veas, igual hay que devolverla.",
-                     "Mientras tu vista estaba bloqueada, ya marqué.",
-                     "La táctica de tinta funcionó bastante bien."
-                 ]
-             },
-             "playerIceScore": [
-                 "Mmm, eso no cuenta. ¡Otra vez!",
-                 "Espera, estaba congelada. ¡Ese punto se repite!",
-                 "Ese hielo ayudó demasiado. ¡Otra vez!",
-                 "No vale, no podía moverme."
-             ],
-             "easterEgg": {
-                 "lateNight": "¿Sigues golpeando tan tarde?",
-                 "xmas": "Ya están las campanas, ¿y aún quieres golpear?",
-                 "newYear": "¡Feliz Año Nuevo!",
-                 "lineIn3": "¿Estás usando trucos?",
-                 "lineIn5": "...Tengo que revisar la línea.",
-                 "net3": "...Quizá toma un descanso."
-             }
-         },
-         "mood": {
-             "happySuffix": " ♪",
-             "sadPrefix": "...",
-             "surprisedPrefix": "¿Eh?! "
-         }
+                "lastAhead": "Bah, esto no terminó.",
+                "lastBehind": "Anota este y ganas.",
+                "playerAhead": "No lo haces mal...",
+                "playerBehind": "Aprieta un poco más."
+            },
+            "mindGame": [
+                "Te tiembla la mano.",
+                "Piénsalo, sin prisa.",
+                "Esta distancia no es corta.",
+                "Parece que quieres la línea lateral.",
+                "Ya leí la cara de tu raqueta.",
+                "Si miras tanto, se te endurece la mano."
+            ],
+            "yuiCheat": {
+                "banana": [
+                    "Cuidado con tus pies, viene una cáscara de plátano.",
+                    "No la pises. La lancé hacia ti.",
+                    "Mira bien este paso.",
+                    "Si la saltas, admitiré que eres fuerte."
+                ],
+                "octopus": [
+                    "Viene tinta. ¿Todavía ves?",
+                    "Te tomo prestada la vista un segundo.",
+                    "No parpadees. Ya es tarde.",
+                    "Aunque no veas claro, tienes que devolverla."
+                ]
+            },
+            "yuiCheatScore": {
+                "banana": [
+                    "Ese paso resbaló demasiado. Este punto es mío.",
+                    "Asistencia de cáscara lograda. Jeje.",
+                    "Un resbalón y el marcador viene a mi lado.",
+                    "Cuidado con el suelo. Yui suma otro punto."
+                ],
+                "octopus": [
+                    "La tinta cubrió justo lo necesario. Este punto es mío.",
+                    "Aunque no veas, igual hay que devolverla.",
+                    "Mientras tu vista estaba bloqueada, ya marqué.",
+                    "La táctica de tinta funcionó bastante bien."
+                ]
+            },
+            "playerIceScore": [
+                "Mmm, eso no cuenta. ¡Otra vez!",
+                "Espera, estaba congelada. ¡Ese punto se repite!",
+                "Ese hielo ayudó demasiado. ¡Otra vez!",
+                "No vale, no podía moverme."
+            ],
+            "easterEgg": {
+                "lateNight": "¿Sigues golpeando tan tarde?",
+                "xmas": "Ya están las campanas, ¿y aún quieres golpear?",
+                "newYear": "¡Feliz Año Nuevo!",
+                "lineIn3": "¿Estás usando trucos?",
+                "lineIn5": "...Tengo que revisar la línea.",
+                "net3": "...Quizá toma un descanso."
+            }
+        },
+        "mood": {
+            "happySuffix": " ♪",
+            "sadPrefix": "...",
+            "surprisedPrefix": "¿Eh?! "
+        }
     },
     "airBasketball": {
         "title": "Baloncesto aéreo",
@@ -6163,13 +6318,27 @@
         "mouseStealEscaped": "¡Te soltaste!",
         "mouseStealReleased": "{name} lo soltó",
         "mouseStealStatus": "{name} está robando el cursor",
-        "voiceOpening": ["¿Lista? No voy a contenerme."],
-        "voiceChaos": ["¡Atrapa esta!"],
-        "voiceScore": ["Qué fácil."],
-        "voiceHit": ["¡Oye, golpea el balón!"],
-        "voiceMouseSteal": ["¡Préstame ese cursor!"],
-        "voiceWin": ["Esta ronda es mía."],
-        "voiceLose": ["Vale, esta vez ganaste."],
+        "voiceOpening": [
+            "¿Lista? No voy a contenerme."
+        ],
+        "voiceChaos": [
+            "¡Atrapa esta!"
+        ],
+        "voiceScore": [
+            "Qué fácil."
+        ],
+        "voiceHit": [
+            "¡Oye, golpea el balón!"
+        ],
+        "voiceMouseSteal": [
+            "¡Préstame ese cursor!"
+        ],
+        "voiceWin": [
+            "Esta ronda es mía."
+        ],
+        "voiceLose": [
+            "Vale, esta vez ganaste."
+        ],
         "arenaLabel": "Cancha de baloncesto para dos",
         "playerArcadeLabel": "Máquina de baloncesto del jugador",
         "opponentArcadeLabel": "Máquina de baloncesto del rival",
@@ -6178,7 +6347,7 @@
         "sdkUnavailable": "No se pudo cargar el minijuego. Cierra esta página e inténtalo de nuevo.",
         "runtimeStartFailed": "No se pudo iniciar la partida. Inténtalo de nuevo en un momento."
     },
-   "soccer": {
+    "soccer": {
         "settings": {
             "button": "Ajustes",
             "title": "Ajustes del juego",
@@ -6205,11 +6374,11 @@
             "charge": "Cerca del balón, mantén clic izquierdo para cargar y suelta para disparar.",
             "range": "El disparo solo se activa a {{distance}} o menos del balón.",
             "reset": "Pulsa R para reiniciar el balón y las posiciones.",
-            "ai": "El ánimo y la dificultad de NEKO cambian según el partido."
+            "ai": "El ánimo y la dificultad de Kurumi-AE cambian según el partido."
         },
         "hint": {
             "controls": "Ratón = guiar al jugador · Mantén clic izquierdo = cargar, suelta = disparo (se activa a ≤{{distance}} del balón) · R = reset",
-            "aiMood": "El ánimo y la dificultad de NEKO cambian según el partido"
+            "aiMood": "El ánimo y la dificultad de Kurumi-AE cambian según el partido"
         },
         "debugControls": {
             "bounds": "Activar límites (regla de fuera)",
@@ -6242,7 +6411,7 @@
             "stayLonger": "Quedarse un poco más",
             "rest": "Descansar",
             "neverAgain": "No volver a recordar",
-            "neverAgainNote": "No mostrar automáticamente avisos de rendición o descanso de NEKO. Puedes volver a activar el Recordatorio de rendición en la esquina superior derecha. Si NEKO parece decaída, puedes animarla por voz o texto.",
+            "neverAgainNote": "No mostrar automáticamente avisos de rendición o descanso de Kurumi-AE. Puedes volver a activar el Recordatorio de rendición en la esquina superior derecha. Si Kurumi-AE parece decaída, puedes animarla por voz o texto.",
             "surrenderFallback": "Miau.. me rindo...",
             "restFallback": "Miau... estoy un poco cansada y quiero estar tranquila un rato."
         },
@@ -6309,59 +6478,59 @@
         },
         "memoryOption": {
             "label": "Guardar este partido en la memoria (desactivado por defecto)",
-            "hint": "Cuando está desactivado, las entradas del jugador, las respuestas directas de NEKO, las reacciones a eventos, el resumen del partido y las conversaciones posteriores no se guardan ni se consultan en la memoria."
+            "hint": "Cuando está desactivado, las entradas del jugador, las respuestas directas de Kurumi-AE, las reacciones a eventos, el resumen del partido y las conversaciones posteriores no se guardan ni se consultan en la memoria."
         }
     },
-  "watchTogether": {
+    "watchTogether": {
         "automatic": "Ver automáticamente",
         "stopWatching": "Dejar de ver",
         "resizeAvatar": "Cambiar tamaño del personaje",
-    "previousPage": "Página anterior",
-    "nextPage": "Página siguiente",
-    "prefetchEnabled": "Preparar el siguiente vídeo mientras miras",
-    "nextVideo": "Ver siguiente",
-    "nextIdle": "El siguiente vídeo aún no está preparado.",
-    "nextSearching": "Buscando el siguiente vídeo…",
-    "nextPreparing": "Preparando el siguiente vídeo…",
-    "nextReady": "El siguiente vídeo está listo.",
-    "nextFailed": "No se pudo preparar el siguiente vídeo.",
-    "readingVideo": "Leyendo metadatos…",
-    "downloading": "Descargando vídeo…",
-    "extractingFrames": "Extrayendo fotogramas…",
-    "extractingHotspots": "Extrayendo fotogramas de momentos destacados…",
-    "analyzing": "Analizando vídeo…",
-    "synthesizing": "Preparando audio de reacciones…",
-    "noSubtitles": "Sin subtítulos; pueden perderse bromas habladas.",
-    "noDanmaku": "Danmaku no disponible.",
-    "noCover": "Portada no disponible.",
-    "prepareFailed": "La preparación del vídeo falló.",
-    "saveFailed": "No se pudo guardar la preparación.",
-    "topic": "Tema (opcional)",
-    "discover": "Que la compañera elija",
-    "discoveryRule": "Solo vídeos de menos de 3 minutos y más de 100 comentarios danmaku/min. En blanco: tema del vídeo actual, o vídeos populares si no hay ninguno seleccionado.",
-    "checking": "Comprobando el vídeo…",
-    "longWarning": "Este vídeo dura más de 5 minutos. La preparación puede tardar más y consumir más tokens y síntesis de voz. ¿Continuar?",
-    "cancelled": "Cancelado; la preparación no ha comenzado.",
-    "searching": "Buscando vídeos populares relacionados…",
-    "noCandidates": "No se encontró ningún vídeo apto. Prueba otro tema; los límites no se relajarán.",
-    "density": "danmaku/min",
-    "usageNote": "Uso real informado por la API, incluidos reintentos de formato. Caché y razonamiento están incluidos; TTS va aparte. Los valores ausentes no se registraron.",
-    "savedAudio": "Audio original conservado",
-    "title": "Ver juntos",
-    "exit": "Salir",
-    "analyses": "Historial de análisis",
-    "play": "Ver juntos",
-    "speed": "Velocidad",
-    "usage": "Uso de API",
-    "watches": "Historial de visualización",
-    "unrecorded": "Sin registrar",
-    "unknown": "Desconocido",
-    "noWatches": "No hay visualizaciones registradas",
-    "ready": "Listo. Pulsa Ver juntos.",
-    "playing": "Viendo juntos",
-    "choose": "Elige un vídeo analizado o pega un enlace de Bilibili.",
-    "prepare": "Analizar vídeo"
-  },
+        "previousPage": "Página anterior",
+        "nextPage": "Página siguiente",
+        "prefetchEnabled": "Preparar el siguiente vídeo mientras miras",
+        "nextVideo": "Ver siguiente",
+        "nextIdle": "El siguiente vídeo aún no está preparado.",
+        "nextSearching": "Buscando el siguiente vídeo…",
+        "nextPreparing": "Preparando el siguiente vídeo…",
+        "nextReady": "El siguiente vídeo está listo.",
+        "nextFailed": "No se pudo preparar el siguiente vídeo.",
+        "readingVideo": "Leyendo metadatos…",
+        "downloading": "Descargando vídeo…",
+        "extractingFrames": "Extrayendo fotogramas…",
+        "extractingHotspots": "Extrayendo fotogramas de momentos destacados…",
+        "analyzing": "Analizando vídeo…",
+        "synthesizing": "Preparando audio de reacciones…",
+        "noSubtitles": "Sin subtítulos; pueden perderse bromas habladas.",
+        "noDanmaku": "Danmaku no disponible.",
+        "noCover": "Portada no disponible.",
+        "prepareFailed": "La preparación del vídeo falló.",
+        "saveFailed": "No se pudo guardar la preparación.",
+        "topic": "Tema (opcional)",
+        "discover": "Que la compañera elija",
+        "discoveryRule": "Solo vídeos de menos de 3 minutos y más de 100 comentarios danmaku/min. En blanco: tema del vídeo actual, o vídeos populares si no hay ninguno seleccionado.",
+        "checking": "Comprobando el vídeo…",
+        "longWarning": "Este vídeo dura más de 5 minutos. La preparación puede tardar más y consumir más tokens y síntesis de voz. ¿Continuar?",
+        "cancelled": "Cancelado; la preparación no ha comenzado.",
+        "searching": "Buscando vídeos populares relacionados…",
+        "noCandidates": "No se encontró ningún vídeo apto. Prueba otro tema; los límites no se relajarán.",
+        "density": "danmaku/min",
+        "usageNote": "Uso real informado por la API, incluidos reintentos de formato. Caché y razonamiento están incluidos; TTS va aparte. Los valores ausentes no se registraron.",
+        "savedAudio": "Audio original conservado",
+        "title": "Ver juntos",
+        "exit": "Salir",
+        "analyses": "Historial de análisis",
+        "play": "Ver juntos",
+        "speed": "Velocidad",
+        "usage": "Uso de API",
+        "watches": "Historial de visualización",
+        "unrecorded": "Sin registrar",
+        "unknown": "Desconocido",
+        "noWatches": "No hay visualizaciones registradas",
+        "ready": "Listo. Pulsa Ver juntos.",
+        "playing": "Viendo juntos",
+        "choose": "Elige un vídeo analizado o pega un enlace de Bilibili.",
+        "prepare": "Analizar vídeo"
+    },
     "drawingGuess": {
         "title": "Dibuja y adivina",
         "eyebrow": "Actividad de compañía",
@@ -6625,7 +6794,7 @@
         "floatingOverviewContinueHint": "Pulsa cualquier botón resaltado para seguir. La función no se abrirá.",
         "floatingOverview": {
             "title": "Botones junto al personaje",
-            "body": "Los botones junto al personaje abren voz, Agent, Neko Universe, ajustes y descanso."
+            "body": "Los botones junto al personaje abren voz, Agent, Dominio de Sombras, ajustes y descanso."
         },
         "mic": {
             "title": "Chat de voz",
@@ -6649,7 +6818,7 @@
         },
         "social": {
             "title": "Universo Miau",
-            "body": "Neko Universe se desbloquea para usuarios nuevos tras tres días naturales. Entra aquí cuando esté disponible."
+            "body": "Dominio de Sombras se desbloquea para usuarios nuevos tras tres días naturales. Entra aquí cuando esté disponible."
         },
         "settings": {
             "title": "Ajustes",

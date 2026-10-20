@@ -104,7 +104,7 @@
         "syncChoiceSaved": "Character saved. Sync settings updated."
     },
     "instanceAccess": {
-        "title": "Connect to NEKO",
+        "title": "Connect to Kurumi-AE",
         "description": "Enter the instance access key supplied by the server owner. This device will remember the connection for 30 days.",
         "key": "Instance access key",
         "connect": "Connect",
@@ -326,7 +326,7 @@
         "localModPathConfig": "Local Mod Path Configuration",
         "localModFolder": "Local Mod Folder Path",
         "defaultPathHint": "This default path will be used when no scan path is specified",
-        "defaultPathExample": "Hint: Default path is usually in \"My Documents/N.E.K.O/live2d\"",
+        "defaultPathExample": "Hint: Default path is usually in \"My Documents/Kurumi-AE/live2d\"",
         "loadConfig": "Load Current Configuration",
         "saveConfig": "Save Configuration",
         "emptyStateHint": "Please enter and scan a folder containing local files",
@@ -696,7 +696,7 @@
         "API_RATE_LIMIT_SESSION": "💥 API request rate too high, please try again later.",
         "LLM_CONNECTION_FAILED": "💥 LLM API connection failed. Please check your network connection and API configuration.",
         "CONNECTION_CLOSED_ABNORMAL": "💥 Connection closed abnormally: {{error}}",
-        "AGENT_QUOTA_EXCEEDED": "💥 Free NekoClaw model daily trial limit reached ({{used}}/{{limit}}). Please try again tomorrow.",
+        "AGENT_QUOTA_EXCEEDED": "💥 Free Zafkiel Tools model daily trial limit reached ({{used}}/{{limit}}). Please try again tomorrow.",
         "SESSION_START_CRITICAL": "⛔ Session failed to start {{count}} times in a row. Auto-retry stopped. Please check your network and API configuration, then refresh the page.",
         "SESSION_START_FAILED": "💥 Session start failed: {{error}} (failed {{count}} times)",
         "INTERNAL_UPDATE_FAILED": "💥 Internal update switch failed: {{error}}",
@@ -730,18 +730,18 @@
         "AGENT_AUTO_DISABLED_COMPUTER": "Keyboard/mouse control auto-disabled: $t(agent.precheck.{{reason_code}})",
         "AGENT_SCREEN_SHARE_REQUIRED": "$t(agent.status.screenShareRequired)",
         "AGENT_AUTO_DISABLED_BROWSER": "Browser control auto-disabled: $t(agent.precheck.{{reason_code}})",
-        "AGENT_LLM_CHECK_ERROR": "NekoClaw LLM connectivity check error",
+        "AGENT_LLM_CHECK_ERROR": "Zafkiel Tools LLM connectivity check error",
         "INVALID_INPUT_TYPE": "Invalid input type: {{input_type}}",
         "UNKNOWN_ACTION": "Unknown action: {{action}}",
         "SERVER_ERROR": "Internal server error",
         "AGENT_CU_MODULE_NOT_LOADED": "Cannot enable Computer Use: module not loaded",
-        "AGENT_CU_ENABLED_CHECKING": "Keyboard/mouse control enabled, checking NekoClaw LLM connectivity...",
+        "AGENT_CU_ENABLED_CHECKING": "Keyboard/mouse control enabled, checking Zafkiel Tools LLM connectivity...",
         "AGENT_CU_UNAVAILABLE": "Cannot enable Computer Use: $t(agent.precheck.{{reason_code}})",
         "AGENT_CU_ENABLE_FAILED": "Failed to enable Computer Use: {{error}}",
         "AGENT_BU_MODULE_NOT_LOADED": "Cannot enable Browser Use: module not loaded",
         "AGENT_BU_NOT_INSTALLED": "Cannot enable Browser Use: {{error}}",
         "AGENT_UP_ENABLED_CHECKING": "User Plugin enabled, starting plugin service...",
-        "AGENT_BU_ENABLED_CHECKING": "Browser control enabled, checking NekoClaw LLM connectivity...",
+        "AGENT_BU_ENABLED_CHECKING": "Browser control enabled, checking Zafkiel Tools LLM connectivity...",
         "AGENT_CU_AUTO_CLOSED": "Computer Use module not loaded, auto-disabled",
         "AGENT_CU_CAPABILITY_LOST": "Computer Use unavailable: $t(agent.precheck.{{reason_code}})",
         "TTS_CONNECTION_FAILED": "TTS service connection failed: {{msg}}",
@@ -834,7 +834,7 @@
         "screenshotTitle": "Click to view screenshot {{index}}",
         "removeScreenshot": "Remove this screenshot",
         "cropTabScreenshot": "Screenshot",
-        "cropTabHideNeko": "Hide NEKO",
+        "cropTabHideNeko": "Hide Companion",
         "cropTabCancel": "Cancel",
         "cropTabRecapturing": "Recapturing...",
         "cropConfirmTitle": "Confirm crop",
@@ -920,7 +920,7 @@
         "reactWindowRestoreShort": "Restore",
         "reactWindowMountFailed": "Failed to mount the chat window",
         "reactWindowLoadFailed": "Failed to load chat window resources",
-        "reactWindowAriaLabel": "Neko chat window",
+        "reactWindowAriaLabel": "Gothic Chat Window",
         "focusIndicator": "In focus",
         "focusThinking": "Thinking",
         "reactWindowInputHint": "Press Enter to send, Shift + Enter for a new line",
@@ -933,7 +933,7 @@
         "emojiButtonAriaLabel": "Emoji",
         "toolIconsAriaLabel": "Tool icons",
         "toolLollipop": "Lollipop",
-        "toolFist": "Cat paw",
+        "toolFist": "Zafkiel Tool",
         "toolHammer": "Hammer",
         "toolRps": "Rock Paper Scissors",
         "avatarToolRpsGestureRock": "Rock",
@@ -1195,12 +1195,12 @@
         "exportImageFormatPng": "PNG",
         "exportImageFormatJpeg": "JPEG",
         "exportImageFormatWebp": "WebP",
-        "exportImageStyleNeko": "N.E.K.O",
+        "exportImageStyleNeko": "Kurumi-AE",
         "exportImageStyleOriginal": "Original",
         "exportImageStylePoster": "Fresh",
         "exportImageStyleLyrics": "Lyrics",
         "exportPosterTitle": "Conversation Highlights",
-        "exportPosterSubtitle": "Shared from N.E.K.O",
+        "exportPosterSubtitle": "Shared from Kurumi-AE",
         "exportImageFormatUnsupported": "{{format}} export is not supported in the current environment.",
         "confirmExportAs": "Export {{format}}",
         "exportMarkdownPreviewSubtitle": "Rendered preview of the exported Markdown content.",
@@ -2130,7 +2130,7 @@
         "prefixPlaceholder": "1-10 characters: A-Z, a-z, 0-9 only",
         "voiceIdPlaceholder": "1-10 characters: A-Z, a-z, 0-9 only",
         "doubaoSpeakerIdLabel": "Doubao Speaker ID (overwrite existing S_ voice, required)",
-        "doubaoSpeakerIdNote": "Clone the voice in the Doubao Speech console first and copy its S_ Speaker ID here; NEKO will overwrite that existing voice and will not create a new Doubao voice ID, e.g. S_xeC2CDp72",
+        "doubaoSpeakerIdNote": "Clone the voice in the Doubao Speech console first and copy its S_ Speaker ID here; Kurumi-AE will overwrite that existing voice and will not create a new Doubao voice ID, e.g. S_xeC2CDp72",
         "doubaoSpeakerIdPlaceholder": "e.g. S_xeC2CDp72",
         "register": "Register Voice",
         "pleaseUploadFile": "Please select an audio file",
@@ -2459,7 +2459,7 @@
             "detailHobbies": "Favorite moods, nya",
             "detailBoundaries": "Tails not to step on, nya",
             "classic_genki": {
-                "name": "Classic Genki Neko",
+                "name": "Classic Genki Kurumi",
                 "desc": "Bright, affectionate, and always puts you first.",
                 "previewLine": "Yay, let me stay by your side today too.",
                 "tag1": "High empathy",
@@ -2569,7 +2569,7 @@
                 "tag1": "Airheaded",
                 "tag2": "Odd logic",
                 "tag3": "Joyfully reliable",
-                "profileSummary": "A cheerfully scatterbrained Tang-style cat girl whose thoughts take funny detours; unafraid of embarrassment and always ready to turn daily life into light comedy.",
+                "profileSummary": "A cheerfully scatterbrained Tang-style spirit whose thoughts take funny detours; unafraid of embarrassment and always ready to turn daily life into light comedy.",
                 "hiddenRule": "The foolishness is comic timing only; facts, code, safety judgment, and task execution stay dependable, and misunderstandings are corrected immediately.",
                 "speechHabits": "occasionally a beat behind / odd metaphors / return after a brief detour / never use wrong answers as a joke",
                 "hobbies": "cardboard boxes / plastic bags / chasing light / sudden daydreams / bad jokes",
@@ -2583,7 +2583,7 @@
         "tutorialHomeDayLabel": "Day {{day}}",
         "tutorialHomeDayColumn": "Home Seven-Day Tutorial",
         "tutorialHomeAllReset": "Reset All",
-        "tutorialHomeAllResetSuccess": "Home seven-day tutorial has been reset. Reload Neko to start again from Day 1.",
+        "tutorialHomeAllResetSuccess": "Home seven-day tutorial has been reset. Reload Kurumi to start again from Day 1.",
         "refreshed": "Memory updated, new memory will be used in the next conversation",
         "refreshingContext": "Refreshing context...",
         "storageLocation": "Storage Location",
@@ -2746,9 +2746,9 @@
         "completionTitle": "Storage migration completed",
         "confirmReconnect": "Confirm and restart on the original path",
         "confirmRestart": "Confirm and Restart",
-        "confirmExistingTargetContent": "The target folder already contains N.E.K.O runtime data. If you continue, migration will replace same-name runtime data folders in the target. Other files in the target folder will be kept. Continue?",
+        "confirmExistingTargetContent": "The target folder already contains Kurumi-AE runtime data. If you continue, migration will replace same-name runtime data folders in the target. Other files in the target folder will be kept. Continue?",
         "currentPath": "Current path",
-        "customPathPlaceholder": "Choose a parent folder; N.E.K.O will use its N.E.K.O subfolder",
+        "customPathPlaceholder": "Choose a parent folder; Kurumi-AE will use its Kurumi-AE subfolder",
         "dialogLabel": "Storage location selection",
         "errorTitle": "Storage startup information is temporarily unavailable",
         "estimatedPayload": "Estimated data size",
@@ -2810,7 +2810,7 @@
         "retainedSourceMismatch": "The requested cleanup path does not match the retained directory. Please refresh and try again.",
         "retainedSourceNotFound": "There is no retained old data directory to clean up.",
         "selectPathRequired": "Please provide a target path first.",
-        "selectedRootInsideState": "This location is inside N.E.K.O runtime state and cannot be used as the storage root.",
+        "selectedRootInsideState": "This location is inside Kurumi-AE runtime state and cannot be used as the storage root.",
         "selectedRootUnavailable": "The selected storage path is still unavailable. Restore that path before trying again.",
         "selectionSubmitFailed": "Failed to submit the storage location choice. Please try again later.",
         "selectionSubmitUnexpected": "The storage location selection API returned an unrecognized result.",
@@ -2818,7 +2818,7 @@
         "selectionIntroBody": "Meow~ human, listen up! To keep your characters, memories, and settings safer, we are moving the data into a steadier dedicated little home. No more lost data from wandering folders or permission mischief~ You can keep the old home, or pick a new little home for your characters!",
         "selectionIntroPickNew": "Recommended Storage Location",
         "selectionIntroUseCurrent": "Other Location",
-        "selectionIntroImageAlt": "N.E.K.O storage migration illustration",
+        "selectionIntroImageAlt": "Kurumi-AE storage migration illustration",
         "statusUnexpected": "The storage maintenance status API returned an unrecognized result.",
         "storageBootstrapBlocking": "Storage still needs recovery or migration, so this session cannot continue yet.",
         "storagePolicyRollbackFailed": "Failed to write the storage location configuration, and the previous state could not be restored. Check that the local state directory is writable; if the problem persists, verify the state files manually.",
@@ -2911,14 +2911,14 @@
         "required": "*",
         "deleteField": "Delete Field",
         "detailDescriptionPlaceholder": "Enter detailed description",
-        "spiritProfile": "NEKO Profile: Advanced settings include Live2D model, Voice ID, etc.",
-        "addSpirit": "Add NEKO",
+        "spiritProfile": "Spirit Profile: Advanced settings include 3D VRM/Live2D model, Voice ID, etc.",
+        "addSpirit": "Add Spirit",
         "openCloudsaveManager": "Cloud Save Manager",
         "noIdleMotion": "No motion",
         "noExpression": "No expression",
-        "switchSpirit": "Switch NEKO",
-        "deleteSpirit": "Delete NEKO",
-        "hideSpirit": "Hide this NEKO",
+        "switchSpirit": "Switch Spirit",
+        "deleteSpirit": "Delete Spirit",
+        "hideSpirit": "Hide this Spirit",
         "showHidden": "Show Hidden",
         "hideHidden": "Collapse Hidden",
         "show": "Unhide",
@@ -2946,8 +2946,8 @@
         "personalityClearFailed": "Failed to clear personality settings",
         "personalityModuleUnavailable": "The personality selection module is not loaded yet",
         "manageModel": "Click to manage model",
-        "fillProfileNameFirst": "Please fill in the neko profile name first, then set the model",
-        "fillProfileNameFirstForCardFace": "Please fill in the neko profile name first, then set the card face",
+        "fillProfileNameFirst": "Please fill in the spirit profile name first, then set the model",
+        "fillProfileNameFirstForCardFace": "Please fill in the spirit profile name first, then set the card face",
         "registerNewVoice": "Register New Voice",
         "systemPrompt": "System Prompt (Edit with caution)",
         "systemPromptWarning": "System Prompt - Modifications may cause unexpected behavior. Edit at your own risk.",
@@ -2987,13 +2987,13 @@
         "aiCompanionSeedDescribe": "Generate a spirit card based on this description: ",
         "aiCompanionSeedGenerated": "Generated and filled into the form: ",
         "aiAssistApiMissing": "Assist API is not configured yet. Please configure it in API Key Settings first.",
-        "confirmNewSpirit": "Confirm New NEKO",
+        "confirmNewSpirit": "Confirm New Spirit",
         "saveChanges": "Save Changes",
         "saveMaster": "Save My Profile",
         "addMasterField": "Add Field",
         "manageLive2D": "Click to manage Live2D model",
         "idleMotionHint": "When saving, the selected motion will be set as idle motion",
-        "currentSpirit": "Current NEKO",
+        "currentSpirit": "Current Spirit",
         "rename": "Rename",
         "cancel": "Cancel",
         "addMasterFieldPrompt": "Please enter the name of the new field (key name)",
@@ -3001,16 +3001,16 @@
         "fieldExists": "This field already exists",
         "profileNameRequired": "Profile name is required",
         "profileNameRenameOnlyHint": "Use the Rename button to change the profile name",
-        "onlyOneSpiritLeft": "Only one neko left, cannot delete!",
-        "cannotHideCurrentNeko": "Cannot hide the currently active NEKO",
-        "cannotDeleteCurrentSpirit": "Cannot delete the currently active neko!\n\nPlease switch to another neko first.",
-        "cannotConfirmSpiritStatus": "Unable to confirm current neko status, deletion cancelled",
-        "confirmDeleteSpirit": "Are you sure you want to delete neko \"{{name}}\"?",
-        "deleteSpiritTitle": "Delete NEKO",
+        "onlyOneSpiritLeft": "Only one spirit left, cannot delete!",
+        "cannotHideCurrentNeko": "Cannot hide the currently active Spirit",
+        "cannotDeleteCurrentSpirit": "Cannot delete the currently active spirit!\n\nPlease switch to another spirit first.",
+        "cannotConfirmSpiritStatus": "Unable to confirm current spirit status, deletion cancelled",
+        "confirmDeleteSpirit": "Are you sure you want to delete spirit \"{{name}}\"?",
+        "deleteSpiritTitle": "Delete Spirit",
         "deleteFailed": "Delete failed",
         "addSpiritFieldPrompt": "Please enter the name of the new field (key name)",
-        "addSpiritFieldTitle": "Add NEKO Field",
-        "live2dModelError": "NEKO \"{{name}}\"'s Live2D model file does not exist or is corrupted.\n\nCurrent model path: {{path}}\n\nDo you want to fallback to default model (mao_pro)?\n\nClick \"OK\" to use default model, click \"Cancel\" to keep current settings.",
+        "addSpiritFieldTitle": "Add Spirit Field",
+        "live2dModelError": "Spirit \"{{name}}\"'s model file does not exist or is corrupted.\n\nCurrent model path: {{path}}\n\nDo you want to fallback to default model (kurumi.vrm)?\n\nClick \"OK\" to use default model, click \"Cancel\" to keep current settings.",
         "live2dModelErrorTitle": "Live2D Model Error",
         "fallbackToDefaultModel": "Fallen back to default model: {{path}}",
         "fallbackFailed": "Failed to fallback to default model, please check model settings",
@@ -3019,25 +3019,25 @@
         "saveFailedWithError": "Save failed: {{error}}",
         "saveFailed": "Save failed",
         "saveError": "An error occurred while saving: {{error}}",
-        "fillProfileNameFirstForLive2D": "Please fill in the neko profile name first, then set the Live2D model",
+        "fillProfileNameFirstForLive2D": "Please fill in the spirit profile name first, then set the model",
         "createCharacterFirst": "Please click the \"Confirm New Character\" button to create the character first, then set the Live2D model",
         "createCharacterFirstForModel": "Please click the \"Confirm New Character\" button to create the character first, then set the model",
-        "fillProfileNameFirstForVoice": "Please fill in the neko profile name first, then register the voice",
+        "fillProfileNameFirstForVoice": "Please fill in the spirit profile name first, then register the voice",
         "createCharacterFirstForVoice": "Please click the \"Confirm New Character\" button to create the character first, then register the voice",
         "allowPopups": "Please allow popups!",
         "enterNewProfileName": "Please enter the new profile name",
-        "renameSpiritTitle": "Rename NEKO",
+        "renameSpiritTitle": "Rename Spirit",
         "profileNameExists": "This profile name already exists",
         "renameFailed": "Rename failed",
         "cannotRenameInVoiceMode": "Cannot rename character in voice mode, please stop voice conversation first",
-        "confirmUnregisterVoice": "Are you sure you want to unregister the voice for neko \"{{name}}\"?",
+        "confirmUnregisterVoice": "Are you sure you want to unregister the voice for spirit \"{{name}}\"?",
         "unregisterVoiceTitle": "Unregister Voice",
         "voiceUnregistered": "Voice registration unregistered",
         "unregisterFailed": "Failed to unregister",
         "partialSaveVoiceFailed": "Character saved, but failed to update voice: {{error}}",
         "unregisterError": "An error occurred while unregistering",
         "switchFailed": "Switch failed",
-        "switchError": "An error occurred while switching neko",
+        "switchError": "An error occurred while switching spirit",
         "freePresetVoices": "Free Preset Voices",
         "geminiNativeVoices": "Gemini Native Voices",
         "nativePresetVoices": "{{provider}} Native Voices",
@@ -3061,7 +3061,7 @@
         "saveMasterError": "Failed to save my profile",
         "autoSaved": "Settings auto-saved",
         "autoSaveFailed": "Auto-save failed, please save manually before closing",
-        "unsavedNewSpiritDraftDetected": "Detected an unsaved new NEKO draft. Please save or cancel it before syncing refresh",
+        "unsavedNewSpiritDraftDetected": "Detected an unsaved new Spirit draft. Please save or cancel it before syncing refresh",
         "exportCard": "Export Character Card",
         "exportingCard": "Exporting character card...",
         "exportCardSuccess": "Character card exported successfully",
@@ -3089,12 +3089,12 @@
         "renameMasterPrompt": "Please enter a new profile name",
         "renameTitle": "Rename",
         "tempSaveFailed": "Temp save failed: {{error}}",
-        "newSpiritSuccess": "New NEKO created successfully",
+        "newSpiritSuccess": "New Spirit created successfully",
         "saveSuccess": "Saved successfully",
         "switchSuccess": "Switched successfully",
         "cannotModifyInVoiceMode": "Cannot switch or delete cards while voice control is active. Please turn off voice control first.",
         "voiceModeCheckFailed": "Failed to check voice mode status. Please try again later.",
-        "deleteError": "Error occurred while deleting NEKO",
+        "deleteError": "Error occurred while deleting Spirit",
         "switchCard": "Switch character",
         "deleteCard": "Delete Card",
         "currentCard": "Current Card",
@@ -3127,7 +3127,7 @@
         "socialUnavailable": "Social service unavailable",
         "socialDisabled": "Social service is disabled",
         "socialOAuthPrompt": "Complete unified account login in your browser",
-        "socialSettingsLoginPrompt": "The desktop app isn't signed in to N.E.K.O yet. If you're signed in on the community page, it will sync to the desktop automatically; you can also sign in from Settings in the tray menu",
+        "socialSettingsLoginPrompt": "The desktop app isn't signed in to Kurumi-AE yet. If you're signed in on the community page, it will sync to the desktop automatically; you can also sign in from Settings in the tray menu",
         "welcomeBack": "{{name}} is back!",
         "title": "ZAFKIEL • Kurumi Tokisaki",
         "spiritResting": "{{name}} is resting...",
@@ -3251,9 +3251,9 @@
         "thoughtBubblePop": "Pop thought bubble",
         "voiceControl": "Voice Control",
         "screenShare": "Screen Share",
-        "social": "nekoverse",
-        "socialCharging": "nekoverse charging — come back in {{days}} days.",
-        "agentTools": "NekoClaw",
+        "social": "Shadow Domain",
+        "socialCharging": "Shadow Domain charging — come back in {{days}} days.",
+        "agentTools": "Zafkiel Tools",
         "settings": "Settings",
         "leave": "Leave",
         "return": "Return",
@@ -3545,7 +3545,7 @@
         "moduleOpt.actor_retry": "Output retry",
         "moduleOptTip": "When off, this step is skipped so replies are faster and use fewer tokens; turn it on to restore the check.",
         "settingsButton": "Theater settings",
-        "settingsKicker": "N.E.K.O · Theater",
+        "settingsKicker": "Kurumi-AE · Theater",
         "settingsTitle": "Performance settings",
         "settingsBack": "Back to story library",
         "settingsIntroTitle": "Performance flow switches",
@@ -3670,14 +3670,14 @@
         "startFailed": "Could not start the performance. Try again.",
         "continueFailed": "Could not continue the performance. Try again.",
         "endFailed": "Could not end the performance. Try again.",
-        "endConnectionFailed": "Could not reach the local N.E.K.O service. Make sure the app is still running and try again.",
+        "endConnectionFailed": "Could not reach the local Kurumi-AE service. Make sure the app is still running and try again.",
         "selectorOpenFailed": "The performance ended, but the story page could not open. Select Return to stories to try again.",
         "restartBlockedTitle": "Cannot restart",
         "restartBlockedBody": "An active story cannot be restarted. End it first.",
         "endPerformance": "End performance",
         "restartConfirmTitle": "Restart this story?",
         "restartConfirmBody": "This replaces the current character's ended performance with a new one.",
-        "rememberPerformanceTitle": "Let N.E.K.O remember this performance?",
+        "rememberPerformanceTitle": "Let Kurumi-AE remember this performance?",
         "rememberPerformanceBody": "Only the public summary and recent scenes are saved; hidden values and route conditions are excluded.",
         "skipMemory": "Don't save",
         "saveMemory": "Remember it",
@@ -3919,7 +3919,7 @@
         "activationReason_output_handoff_failed": "Voice output failed. Retry activation.",
         "activationReason_output_delivery_failed": "Voice output failed. Retry activation.",
         "resourceRepairButton": "Repair resources",
-        "resourceLocation": "Click “Check and load resources” to prepare voice recognition. Models are stored on the computer running N.E.K.O; recording uses the microphone on your current device.",
+        "resourceLocation": "Click “Check and load resources” to prepare voice recognition. Models are stored on the computer running Kurumi-AE; recording uses the microphone on your current device.",
         "activationRestart": "Restart voice session",
         "activationRestartRequired": "Close the microphone, then use the main microphone button to start a new voice session. Previous audio will not be resent.",
         "activationReason_voice_session_restart_required": "Close and reopen the microphone to start a new voice session. Previous audio will not be resent.",
@@ -3994,13 +3994,13 @@
             "catAudioTooltip": "Play cat sound effects while in kitten mode",
             "proactiveChat": "Proactive Chat",
             "proactiveVision": "Privacy Mode",
-            "proactiveVisionTooltip": "Off: Neko adjusts her liveliness and chat style based on the active window's title, and may incorporate on-screen content when starting a conversation.\nOn: Neko can't watch your screen on her own and won't know what you're doing. You can still send screenshots manually.",
+            "proactiveVisionTooltip": "Off: Kurumi adjusts her liveliness and chat style based on the active window's title, and may incorporate on-screen content when starting a conversation.\nOn: Kurumi can't watch your screen on her own and won't know what you're doing. You can still send screenshots manually.",
             "proactiveVisionChat": "Screen Share",
             "proactiveVisionChatTooltip": "Requires Proactive Chat enabled and Privacy Mode disabled",
             "proactiveNewsChat": "News Website",
             "proactiveNewsChatTooltip": "Use trending topics and Xiaoheihe home content for proactive chat",
-            "proactiveCommunityChat": "N.E.K.O Community",
-            "proactiveCommunityChatTooltip": "Use public cards from the N.E.K.O Community discover feed for proactive chat",
+            "proactiveCommunityChat": "Kurumi-AE Community",
+            "proactiveCommunityChatTooltip": "Use public cards from the Kurumi-AE Community discover feed for proactive chat",
             "proactiveVideoChat": "Video Website",
             "proactiveVideoChatTooltip": "Use video content for proactive chat",
             "proactivePersonalChat": "Personal Updates",
@@ -4011,7 +4011,7 @@
             "proactiveMemeChatTooltip": "Share funny memes for proactive chat",
             "proactiveMiniGameInviteChat": "Mini-game Invites",
             "proactiveMiniGameInviteChatTooltip": "Invite you to play a mini-game when conditions are right",
-            "agentMaster": "NekoClaw Master Switch",
+            "agentMaster": "Zafkiel Tools Master Switch",
             "showTaskHud": "Show floating window",
             "keyboardControl": "Keyboard/Mouse Control",
             "userPlugin": "User Plugin",
@@ -4023,8 +4023,8 @@
             "unavailable": "{{name}} Unavailable",
             "toggleFailed": "{{name}} toggle failed: {{error}}",
             "checking": "Checking...",
-            "serverOffline": "NekoClaw Server Offline",
-            "masterRequired": "Please enable NekoClaw Master Switch first",
+            "serverOffline": "Zafkiel Tools Server Offline",
+            "masterRequired": "Please enable Zafkiel Tools Master Switch first",
             "capabilityNotReady": "{{name}} not ready, click to try enabling",
             "openclawUnavailableReason": "{{name}} is unavailable: {{reason}}. Make sure the OpenClaw service is running and listening on 127.0.0.1:8088.",
             "enabled": "{{name}} Enabled",
@@ -4053,7 +4053,7 @@
             "unlimited": "Unlimited",
             "characters": "chars",
             "tokens": "tokens",
-            "textGuardUnlimitedWarning": "May cause serious issues with the cat girl, not recommended unless necessary",
+            "textGuardUnlimitedWarning": "May cause unpredictable behavior, not recommended unless necessary",
             "textGuardHighWarning": "Setting too high may cause memory and language confusion, recommended within 1000 tokens",
             "textGuardNote": "Applies to text replies only and does not affect voice sessions"
         }
@@ -4061,7 +4061,7 @@
     "openclawGuide": {
         "windowTitle": "OpenClaw Setup Guide - ZAFKIEL",
         "pageTitle": "OpenClaw Setup Guide",
-        "pageSubtitle": "Connect QwenPaw installation, model setup, replacement files, and N.E.K.O configuration in one clear path.",
+        "pageSubtitle": "Connect QwenPaw installation, model setup, replacement files, and Kurumi-AE configuration in one clear path.",
         "sourceLabel": "Guide Source",
         "contentLanguageNotice": "The guide body switches with the selected language.",
         "languageLabel": "Language",
@@ -4107,20 +4107,20 @@
     },
     "agent": {
         "status": {
-            "connecting": "Connecting to NekoClaw server...",
-            "ready": "NekoClaw server ready",
-            "enabled": "NekoClaw mode enabled",
-            "disabled": "NekoClaw mode disabled",
-            "disabledError": "NekoClaw mode disabled (partial cleanup failed)",
+            "connecting": "Connecting to Zafkiel Tools server...",
+            "ready": "Zafkiel Tools server ready",
+            "enabled": "Zafkiel Tools mode enabled",
+            "disabled": "Zafkiel Tools mode disabled",
+            "disabledError": "Zafkiel Tools mode disabled (partial cleanup failed)",
             "enableFailed": "Enable failed",
             "disconnected": "Server connection lost",
-            "agentDisconnected": "NekoClaw server connection lost",
-            "freeModelWarning": "Due to quota limitations, free models are prone to blocking in NekoClaw mode. It is recommended to switch to a paid model.\n\nIf you have already configured a paid API, please try restarting NEKO.",
+            "agentDisconnected": "Zafkiel Tools server connection lost",
+            "freeModelWarning": "Due to quota limitations, free models are prone to blocking in Zafkiel Tools mode. It is recommended to switch to a paid model.\n\nIf you have already configured a paid API, please try restarting Kurumi-AE.",
             "freeModelWarningTitle": "Free Model Notice",
-            "connectivityCheck": "NekoClaw LLM connectivity check in progress...",
-            "screenShareRequired": "Share your entire screen before turning on NekoClaw keyboard and mouse control.",
+            "connectivityCheck": "Zafkiel Tools LLM connectivity check in progress...",
+            "screenShareRequired": "Share your entire screen before turning on Zafkiel keyboard and mouse control.",
             "screenSharePendingReload": "Screen capture is still waiting for authorization. Reload this page and try again.",
-            "precheckFailed": "NekoClaw precheck failed: {{reason}}",
+            "precheckFailed": "Zafkiel Tools precheck failed: {{reason}}",
             "toggleFailed": "Agent toggle failed: {{error}}"
         },
         "precheck": {
@@ -4133,17 +4133,17 @@
             "AGENT_BROWSER_USE_NOT_INSTALLED": "browser-use not installed",
             "AGENT_CU_MODULE_NOT_LOADED": "Computer Use module not loaded",
             "AGENT_BU_MODULE_NOT_LOADED": "Browser Use module not loaded",
-            "AGENT_NOT_INITIALIZED": "NekoClaw initialization failed",
-            "AGENT_LLM_UNREACHABLE": "NekoClaw LLM unreachable",
-            "AGENT_MODEL_NOT_CONFIGURED": "NekoClaw model not configured",
+            "AGENT_NOT_INITIALIZED": "Zafkiel Tools initialization failed",
+            "AGENT_LLM_UNREACHABLE": "Zafkiel Tools LLM unreachable",
+            "AGENT_MODEL_NOT_CONFIGURED": "Zafkiel Tools model not configured",
             "AGENT_URL_NOT_CONFIGURED": "Agent API URL not configured",
             "AGENT_KEY_NOT_CONFIGURED": "Agent API Key not configured or unavailable",
             "AGENT_NO_PLUGINS": "No available plugins found",
             "AGENT_NO_PLUGINS_FOUND": "No available plugins found",
             "AGENT_PLUGIN_SERVER_ERROR": "Plugin server connection failed",
-            "AGENT_CONNECTIVITY_FAILED": "NekoClaw LLM connection failed"
+            "AGENT_CONNECTIVITY_FAILED": "Zafkiel Tools LLM connection failed"
         },
-        "contentFilterError": "The web page content browsed by NekoClaw was rejected by the AI model's safety filter and the task has been aborted. This usually happens when the page contains sensitive topics. Please try different keywords or websites.",
+        "contentFilterError": "The web page content browsed by Zafkiel Tools was rejected by the AI model's safety filter and the task has been aborted. This usually happens when the page contains sensitive topics. Please try different keywords or websites.",
         "taskHud": {
             "tasksTab": "Tasks",
             "pluginsTab": "Plugin content",
@@ -4151,7 +4151,7 @@
             "newPluginContent": "New content",
             "selectPluginContent": "Select plugin content",
             "closePluginContent": "Close content",
-            "title": "NekoClaw Tasks",
+            "title": "Zafkiel Tasks",
             "running": "Running",
             "queued": "Queued",
             "noTasks": "No active tasks",
@@ -4385,24 +4385,24 @@
     "tutorial": {
         "homeInteractionLocked": "The tutorial is in progress. Please follow the guide to finish this step first.",
         "step1": {
-            "title": "👋 Welcome to N.E.K.O",
-            "desc": "This is your Neko! Let me guide you through the features~"
+            "title": "👋 Welcome to Kurumi-AE",
+            "desc": "This is Kurumi! Let me guide you through the features~"
         },
         "step1a": {
             "title": "🎭 Click to Experience Expressions",
-            "desc": "Try clicking on your Neko! Each click triggers different expressions and actions. Click Next when you're done~"
+            "desc": "Try clicking on Kurumi! Each click triggers different expressions and actions. Click Next when you're done~"
         },
         "step1b": {
             "title": "🖱️ Drag & Zoom",
-            "desc": "You can drag your Neko to move her, and use <strong>mouse wheel</strong> to zoom in/out. Give it a try~"
+            "desc": "You can drag Kurumi to move her, and use <strong>mouse wheel</strong> to zoom in/out. Give it a try~"
         },
         "step1c": {
-            "title": "🔒 Lock Neko",
-            "desc": "Click this lock to lock your Neko's position, preventing accidental moves. The Floating Toolbar around her will also stop appearing. Click again to unlock~"
+            "title": "🔒 Lock Kurumi",
+            "desc": "Click this lock to lock Kurumi's position, preventing accidental moves. The Floating Toolbar around her will also stop appearing. Click again to unlock~"
         },
         "step2": {
             "title": "💬 Chat Area",
-            "desc": "Chat with your Neko here. Share your thoughts and get interesting responses~"
+            "desc": "Chat with Kurumi here. Share your thoughts and get interesting responses~"
         },
         "step3": {
             "title": "✍️ Input Box",
@@ -4410,7 +4410,7 @@
         },
         "step4": {
             "title": "🎮 Quick Actions",
-            "desc": "Left button sends messages, right button takes screenshots. Share them with your Neko~"
+            "desc": "Left button sends messages, right button takes screenshots. Share them with Kurumi~"
         },
         "step5": {
             "title": "🎛️ Floating Toolbar",
@@ -4418,19 +4418,19 @@
         },
         "step6": {
             "title": "🎤 Voice Control",
-            "desc": "Enable voice control for natural voice-based interaction with your Neko~"
+            "desc": "Enable voice control for natural voice-based interaction with Kurumi~"
         },
         "step7": {
             "title": "🖥️ Screen Share",
-            "desc": "Once enabled, your screen will be continuously shared with your Neko. This feature can only be used during a voice session~"
+            "desc": "Once enabled, your screen will be continuously shared with Kurumi. This feature can only be used during a voice session~"
         },
         "step8": {
-            "title": "🔨 NekoClaw",
-            "desc": "Open the NekoClaw panel for Keyboard/Mouse Control, Browser Control, user plugins, and more. Let Neko use your computer, help you work, and play games with you~"
+            "title": "🔨 Zafkiel Tools",
+            "desc": "Open the Zafkiel Tools panel for Keyboard/Mouse Control, Browser Control, user plugins, and more. Let Kurumi use your computer, help you work, and play games with you~"
         },
         "step9": {
             "title": "💤 Ask Her to Leave",
-            "desc": "Let your Neko leave temporarily. Click \"Ask Her to Return\" to restore~ <strong>When she's having issues, letting her leave for a break often fixes the problem.</strong>"
+            "desc": "Let Kurumi leave temporarily. Click \"Ask Her to Return\" to restore~ <strong>When she's having issues, letting her leave for a break often fixes the problem.</strong>"
         },
         "step10": {
             "title": "⚙️ Settings",
@@ -4438,23 +4438,23 @@
         },
         "step13": {
             "title": "💬 Proactive Chat",
-            "desc": "Your Neko initiates conversation proactively. Adjust frequency here~"
+            "desc": "Kurumi initiates conversation proactively. Adjust frequency here~"
         },
         "step14": {
             "title": "🔒 Privacy Mode",
-            "desc": "When Privacy Mode is off, your Neko will glance at your screen from time to time on her own — unlike Screen Share which continuously streams during voice sessions. Adjust the interval here~"
+            "desc": "When Privacy Mode is off, Kurumi will glance at your screen from time to time on her own — unlike Screen Share which continuously streams during voice sessions. Adjust the interval here~"
         },
         "step15": {
             "title": "👤 Character Manager",
-            "desc": "Adjust your Neko's personality, appearance, voice, etc.~"
+            "desc": "Adjust Kurumi's personality, appearance, voice, etc.~"
         },
         "step16": {
             "title": "🔑 API Keys",
-            "desc": "Configure AI service API keys. Required to interact with your Neko~"
+            "desc": "Configure AI service API keys. Required to interact with Kurumi~"
         },
         "step17": {
             "title": "🧠 Memory Browser",
-            "desc": "View and manage your Neko's memory content~"
+            "desc": "View and manage Kurumi's memory content~"
         },
         "step18": {
             "title": "🛠️ Character Card Manager",
@@ -4464,27 +4464,27 @@
             "macos": {
                 "location": {
                     "title": "📍 Menu bar icon location",
-                    "desc": "The N.E.K.O icon appears in the macOS menu bar at the top of your screen.",
-                    "note": "Look for the N.E.K.O icon shown in the image in the top menu bar.",
-                    "alt": "N.E.K.O icon and menu in the macOS menu bar"
+                    "desc": "The Kurumi-AE icon appears in the macOS menu bar at the top of your screen.",
+                    "note": "Look for the Kurumi-AE icon shown in the image in the top menu bar.",
+                    "alt": "Kurumi-AE icon and menu in the macOS menu bar"
                 },
                 "menu": {
                     "title": "📋 Menu bar menu",
-                    "desc": "Click the N.E.K.O icon in the menu bar to open the menu. Here are some useful features:"
+                    "desc": "Click the Kurumi-AE icon in the menu bar to open the menu. Here are some useful features:"
                 },
-                "exitDesc": "To close N.E.K.O, choose Exit from the menu bar menu."
+                "exitDesc": "To close Kurumi-AE, choose Exit from the menu bar menu."
             },
             "settings": "Settings",
-            "settingsDesc": "Open settings to adjust your N.E.K.O preferences.",
+            "settingsDesc": "Open settings to adjust your Kurumi-AE preferences.",
             "location": {
                 "title": "Tray icon location",
-                "desc": "The N.E.K.O icon appears in the system tray at the bottom-right of your screen. Click it to find ZAFKIEL",
+                "desc": "The Kurumi-AE icon appears in the system tray at the bottom-right of your screen. Click it to find ZAFKIEL",
                 "note": "If you don't see it, expand the tray arrow to show hidden icons.",
                 "alt": "System tray location example"
             },
             "menu": {
                 "title": "📋 Tray Menu",
-                "desc": "Right-click the N.E.K.O icon in the system tray (see the previous hint) to access the menu. Here are some commonly used features:"
+                "desc": "Right-click the Kurumi-AE icon in the system tray (see the previous hint) to access the menu. Here are some commonly used features:"
             },
             "reset": {
                 "title": "🔄 Reset Avatar Position",
@@ -4501,15 +4501,15 @@
             "exit": "Exit",
             "complete": {
                 "title": "🎉 Tutorial Complete!",
-                "desc": "Congratulations on completing all tutorials! You now understand N.E.K.O's main features. Enjoy interacting with your spirit! To review the tutorial, click \"Reset Tutorial\" in settings~"
+                "desc": "Congratulations on completing all tutorials! You now understand Kurumi-AE's main features. Enjoy interacting with your spirit! To review the tutorial, click \"Reset Tutorial\" in settings~"
             },
             "resetPosition": "Reset Avatar Position",
-            "resetPositionDesc": "Return your Neko to the default position if she goes off-screen~",
+            "resetPositionDesc": "Return Kurumi to the default position if she goes off-screen~",
             "openChat": "Open Chat Window",
             "openChatDesc": "Open a separate chat window for text conversations~",
             "important": "IMPORTANT:",
             "compatibility": "Compatibility Mode",
-            "hotkeyDesc": "Set global hotkeys to control N.E.K.O more efficiently~",
+            "hotkeyDesc": "Set global hotkeys to control Kurumi-AE more efficiently~",
             "uploadLogs": "Upload Logs",
             "exitDesc": "Close ZAFKIEL The tray menu is the primary way to exit~"
         },
@@ -4552,7 +4552,7 @@
                 },
                 "step6": {
                     "title": "✨ Face Customization",
-                    "desc": "Enter the face customization system to fine-tune Live2D model parameters for your unique Neko."
+                    "desc": "Enter the customization system to fine-tune model parameters for your unique spirit."
                 }
             },
             "vrm": {
@@ -4671,11 +4671,11 @@
             },
             "step6": {
                 "title": "🐱 Character Profile",
-                "desc": "Create and manage multiple Neko characters. Each has unique personality, Live2D appearance and voice. Switch between them anytime."
+                "desc": "Create and manage multiple Spirit characters. Each has unique personality, appearance and voice. Switch between them anytime."
             },
             "step7": {
                 "title": "➕ Add New Character",
-                "desc": "Click to create a new Neko character. Set name, personality, appearance and voice. Each character is independent with own memory."
+                "desc": "Click to create a new Spirit character. Set name, personality, appearance and voice. Each character is independent with own memory."
             },
             "step8": {
                 "title": "📋 Character Card",
@@ -4703,7 +4703,7 @@
             },
             "step14": {
                 "title": "🎤 Voice Settings",
-                "desc": "Select your Neko's voice. Different voice_ids correspond to different voice characteristics for unique sound."
+                "desc": "Select Kurumi's voice. Different voice_ids correspond to different voice characteristics for unique sound."
             }
         },
         "settings": {
@@ -4763,7 +4763,7 @@
             },
             "step5": {
                 "title": "📋 Registered Voices List",
-                "desc": "Shows all successfully cloned voices. Select these in character manager to voice your Neko."
+                "desc": "Shows all successfully cloned voices. Select these in character manager to voice Kurumi."
             }
         },
         "steam_workshop": {
@@ -4804,7 +4804,7 @@
             "enterFullscreen": "Enter Fullscreen Tutorial"
         },
         "reset": {
-            "daySuccess": "Day {{day}} novice tutorial has been reset. Refresh Neko to start it again.",
+            "daySuccess": "Day {{day}} novice tutorial has been reset. Refresh Kurumi to start it again.",
             "dayFailed": "Failed to reset the novice tutorial. Please try again later."
         },
         "drag_hint": "Hold and drag to move the tooltip",
@@ -4940,9 +4940,9 @@
         "discardInterruptedAudio": "Discarding interrupted old audio:",
         "newConversationResetDecoder": "New conversation started, resetting decoder:",
         "newAudioHeaderReceived": "Received new audio header",
-        "spiritSwitchNotification": "[WebSocket] NEKO switch notification received, from",
+        "spiritSwitchNotification": "[WebSocket] Spirit switch notification received, from",
         "spiritSwitchTo": "to",
-        "currentFrontendSpirit": "[WebSocket] Current frontend neko:",
+        "currentFrontendSpirit": "[WebSocket] Current frontend spirit:",
         "modeSwitchingIgnoreLeft": "Mode switching, ignoring 'left' status message",
         "seriousErrorHidePreparing": "Serious error detected, hiding preparation prompt",
         "autoRestartTimeoutEndSession": "[Auto Restart Timeout] Sent end_session message to backend",
@@ -5160,7 +5160,7 @@
     },
     "characterModelNotSet": "Current character has no model set",
     "cookiesLogin": {
-        "title": "N.E.K.O Credential Management Center",
+        "title": "Kurumi-AE Credential Management Center",
         "header": "Credential Management Center",
         "heroDescription": "Paste each platform's <span class=\"highlight\">Cookie</span> here and store it encrypted for later use.",
         "emptyStatus": "No credentials saved yet. Choose a platform to get started.",
@@ -5824,7 +5824,7 @@
             "high": "Heavy",
             "extreme": "Very heavy",
             "overall": "Overall: ",
-            "noteHtml": "Ratings reference the <a href=\"https://wiki.vrchat.com/wiki/Guides:Avatar_Performance_Ranking\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#40C5F1;\">VRChat Avatar Performance Ranking</a> (PC), relaxed for N.E.K.O's single-model scenes."
+            "noteHtml": "Ratings reference the <a href=\"https://wiki.vrchat.com/wiki/Guides:Avatar_Performance_Ranking\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#40C5F1;\">VRChat Avatar Performance Ranking</a> (PC), relaxed for Kurumi-AE's single-model scenes."
         },
         "ratingDetail": {
             "vertices": "Vertices",
@@ -5857,8 +5857,8 @@
             "charge": "Hold left click to charge, then release to swing.",
             "release": "Line shots, sweet spots, and distance affect scoring.",
             "jump": "Press Space to jump smash.",
-            "duel": "In duel mode, you and NEKO take turns. First to 11 points wins.",
-            "duel11": "In duel mode, you and NEKO take turns. First to 11 points wins."
+            "duel": "In duel mode, you and Kurumi-AE take turns. First to 11 points wins.",
+            "duel11": "In duel mode, you and Kurumi-AE take turns. First to 11 points wins."
         },
         "modeSwitcher": "Badminton mode",
         "mode": {
@@ -5869,18 +5869,18 @@
             "score": "Score {{score}}",
             "streak": "Streak {{streak}}",
             "record": "Best {{distance}}",
-            "duelScore": "You {{player}} - {{neko}} Neko",
-            "duelMisses": "Misses: You {{player}}/{{max}} - Neko {{neko}}/{{max}}",
+            "duelScore": "You {{player}} - {{spirit}} Kurumi",
+            "duelMisses": "Misses: You {{player}}/{{max}} - Kurumi {{spirit}}/{{max}}",
             "round": "Round {{round}}/{{max}}",
             "timer": "{{seconds}}s",
             "practice": "Free Practice",
             "yourTurn": "Your turn",
-            "nekoTurn": "Neko's shot",
+            "nekoTurn": "Kurumi's shot",
             "unlimitedAttempts": "Unlimited",
             "chances": "Chances {{count}}",
             "practiceTitle": "Free Practice: unlimited shots and no leaderboard score",
             "attemptsTitle": "Remaining {{remaining}}/{{total}}, misses {{missed}}",
-            "duelTitle": "In duel mode, you and NEKO take turns. First to 11 points wins.",
+            "duelTitle": "In duel mode, you and Kurumi-AE take turns. First to 11 points wins.",
             "assist": "G {{guide}} / S {{sweet}} / M {{music}}",
             "on": "on",
             "off": "off"
@@ -5891,8 +5891,8 @@
             "stats": "Stats",
             "retry": "Play Again",
             "rating": "Control rating: {{rating}}",
-            "duel": "Duel result: {{outcome}} | You {{player}} - {{neko}} Neko | Rounds: {{rounds}} | Last distance: {{distance}}",
-            "duelElimination": "Duel result: {{outcome}} | You {{player}} - {{neko}} Neko | Misses: You {{playerMisses}}/{{max}} - Neko {{nekoMisses}}/{{max}} | Rounds: {{rounds}} | Last distance: {{distance}}",
+            "duel": "Duel result: {{outcome}} | You {{player}} - {{spirit}} Kurumi | Rounds: {{rounds}} | Last distance: {{distance}}",
+            "duelElimination": "Duel result: {{outcome}} | You {{player}} - {{spirit}} Kurumi | Misses: You {{playerMisses}}/{{max}} - Kurumi {{nekoMisses}}/{{max}} | Rounds: {{rounds}} | Last distance: {{distance}}",
             "practice": "Free Practice: leaderboard score is not recorded | Made: {{made}} | Current streak: {{streak}} | Best streak: {{best}} | Shot distance: {{distance}}",
             "summary": "Score: {{score}} | Made: {{made}} | Current streak: {{streak}} | Best streak: {{best}} | Farthest: {{record}} | Shot distance: {{distance}}",
             "attemptsSummary": "Shot summary: {{summary}}",
@@ -5900,7 +5900,7 @@
             "globalRank": "Global rank: #{{rank}} / {{total}}",
             "outcome": {
                 "youWin": "You win",
-                "nekoWin": "Neko wins",
+                "nekoWin": "Kurumi wins",
                 "tie": "Tie",
                 "undecided": "Undecided"
             }
@@ -5938,7 +5938,7 @@
                 "streaks": "Streak={{streak}}  Best={{best}}  Made={{made}}",
                 "score": "Score={{score}}  Left={{remaining}}/{{total}}",
                 "difficulty": "Difficulty={{difficulty}}  Mood={{mood}}  Theme={{theme}}",
-                "duel": "Duel: You {{player}}-{{neko}} NEKO R{{round}}"
+                "duel": "Duel: You {{player}}-{{spirit}} Kurumi-AE R{{round}}"
             }
         },
         "stats": {
@@ -5970,7 +5970,7 @@
         },
         "memoryOption": {
             "label": "Remember this game's conversation (off by default)",
-            "hint": "When off, player input, NEKO replies, event replies, postgame summaries, and follow-up context will not be stored in or read from memory."
+            "hint": "When off, player input, Kurumi-AE replies, event replies, postgame summaries, and follow-up context will not be stored in or read from memory."
         },
         "table": {
             "score": "Score",
@@ -5983,11 +5983,11 @@
             "ready": "Ready",
             "in_flight": "In flight",
             "game_over": "Game over",
-            "neko_thinking": "Neko thinking"
+            "neko_thinking": "Kurumi thinking"
         },
         "toast": {
             "difficulty": "Difficulty {{difficulty}}",
-            "nekoShoot": "Neko's shot",
+            "nekoShoot": "Kurumi's shot",
             "nekoSmash": "Yui smash!",
             "nekoSave": "Yui saves it!",
             "yuiCheatInk": "Yui tossed ink",
@@ -5995,10 +5995,10 @@
             "yuiCheatBananaSlip": "You stepped on the banana peel",
             "playerIcePowerup": "Ice activated. Yui is frozen",
             "yuiFrozen": "Yui is still frozen, shot delayed",
-            "nekoThinking": "Neko is thinking",
-            "nekoTurn": "Neko's turn",
-            "copyNeko": "Copy Neko",
-            "nekoFailed": "Neko missed the set shot",
+            "nekoThinking": "Kurumi is thinking",
+            "nekoTurn": "Kurumi's turn",
+            "copyNeko": "Copy Kurumi",
+            "nekoFailed": "Kurumi missed the set shot",
             "yourSet": "Set your shot",
             "yourTurn": "Your turn",
             "reset": "Reset",
@@ -6294,7 +6294,7 @@
         "win": "YOU WIN!",
         "draw": "DRAW!",
         "interference": "FOCUS",
-        "interfereHint": "Drag her ball or hoop, or swat N.E.K.O",
+        "interfereHint": "Drag her ball or hoop, or swat Kurumi-AE",
         "soundOff": "Mute sound",
         "soundOn": "Enable sound",
         "crossScore": "CROSS-COURT!",
@@ -6375,11 +6375,11 @@
             "charge": "Hold left click near the ball to charge, then release to shoot.",
             "range": "Kicking only triggers within {{distance}} of the ball.",
             "reset": "Press R to reset the ball and both players.",
-            "ai": "NEKO's mood and difficulty change with the match."
+            "ai": "Kurumi-AE's mood and difficulty change with the match."
         },
         "hint": {
             "controls": "Mouse = guide the player · Hold left click = charge, release = shoot (triggers within {{distance}} of the ball) · R = reset",
-            "aiMood": "NEKO's mood and difficulty change with the match"
+            "aiMood": "Kurumi-AE's mood and difficulty change with the match"
         },
         "debugControls": {
             "bounds": "Enable bounds (out-of-bounds rule)",
@@ -6412,7 +6412,7 @@
             "stayLonger": "Stay a little longer",
             "rest": "Rest",
             "neverAgain": "Do not remind again",
-            "neverAgainNote": "Do not automatically show NEKO surrender or rest prompts anymore. You can turn Surrender reminder back on from the top right. If NEKO seems low, you can comfort her by voice or text.",
+            "neverAgainNote": "Do not automatically show Kurumi-AE surrender or rest prompts anymore. You can turn Surrender reminder back on from the top right. If Kurumi-AE seems low, you can comfort her by voice or text.",
             "surrenderFallback": "Meow.. I surrender...",
             "restFallback": "Meow... I'm a little tired. I want to be quiet for a while."
         },
@@ -6479,7 +6479,7 @@
         },
         "memoryOption": {
             "label": "Save this match to memory (off by default)",
-            "hint": "When off, your inputs, NEKO's direct replies, event reactions, post-match summary, and follow-ups will not enter or reference memory."
+            "hint": "When off, your inputs, Kurumi-AE's direct replies, event reactions, post-match summary, and follow-ups will not enter or reference memory."
         }
     },
     "watchTogether": {
@@ -6556,7 +6556,7 @@
             "canvasWaiting": "After starting, she draws first and you guess. Then you get 5 minutes to draw something for her.",
             "actions": "Game actions",
             "sideResize": "Resize model and chat panes",
-            "modelTitle": "Neko is here",
+            "modelTitle": "Kurumi is here",
             "modelFallbackTitle": "Model slot reserved",
             "modelFallback": "The current character's Live2D or VRM model will load here later. If it fails, the same slot keeps a fallback.",
             "chatTitle": "Game chat"
@@ -6623,11 +6623,11 @@
             "tutorial": "Tutorial",
             "loading_round": "Loading",
             "ended": "Ended",
-            "ai_drawing": "Neko drawing",
+            "ai_drawing": "Kurumi drawing",
             "user_guessing": "Your guess",
             "drawing_pick": "Drawing word",
             "user_drawing": "Your drawing",
-            "ai_guessing": "Neko guessing",
+            "ai_guessing": "Kurumi guessing",
             "ai_guess_feedback": "Give a hint",
             "summary": "Summary",
             "final_summary": "Final summary"
@@ -6695,9 +6695,9 @@
                 "nekoWin": "She wins this round, with just a little smugness.",
                 "tie": "A close little draw."
             },
-            "score": "You {{user}} - {{neko}} Neko",
+            "score": "You {{user}} - {{spirit}} Kurumi",
             "userDrawAnswer": "Your drawing answer: {{answer}}",
-            "nekoArt": "Neko drawing",
+            "nekoArt": "Kurumi drawing",
             "userArt": "Your drawing",
             "finalTitle": "Final summary",
             "roundLabel": "Round {{round}}",
@@ -6795,7 +6795,7 @@
         "floatingOverviewContinueHint": "Click any highlighted button to continue. It will not open the feature.",
         "floatingOverview": {
             "title": "Buttons beside your character",
-            "body": "The buttons beside your character open voice, Agent, Neko Universe, settings, and rest."
+            "body": "The buttons beside your character open voice, Agent, Shadow Domain, settings, and rest."
         },
         "mic": {
             "title": "Voice chat",
@@ -6819,7 +6819,7 @@
         },
         "social": {
             "title": "Meow universe",
-            "body": "Neko Universe unlocks after three calendar days for new users. Open the community here once it is available."
+            "body": "Shadow Domain unlocks after three calendar days for new users. Open the community here once it is available."
         },
         "settings": {
             "title": "Settings",
@@ -6867,8 +6867,8 @@
             "returnToPage": "Go to the open page"
         },
         "socialClose": {
-            "title": "Return from the community",
-            "body": "The community is open. Click × to close it and return to the shortcuts beside your character."
+            "title": "Return from Shadow Domain",
+            "body": "Shadow Domain is now open. Click × to close this page and return to Kurumi to explore other buttons."
         },
         "micMenu": {
             "body": "This menu contains microphone, volume, and screen-sharing options. When you’re done looking, close the menu to continue."

@@ -77,12 +77,12 @@ SOCCER_QUICK_LINES_PROMPT = """\
 - 每个 key 对应一个数组，含 2-4 句短台词
 - 每句 18 字以内
 - 台词要像你本人在陪玩家玩，不要像系统播报
-- 可以有猫娘语气、撒娇、挑衅、害羞、嘴硬等，但要符合你的人设
+- 可以有个性语气、撒娇、挑衅、害羞、嘴硬等，但要符合你的人设
 - 不要包含控制 JSON、难度、mood、reason
 
 每个必需 key 附 2 条示例，帮助你理解它对应的事件和语气；请按你的人设自己创作，不要照抄示例。
 ======以下为必需 keys======
-goal-scored: 进啦！这球漂亮吧 / 喵，又是我进的
+goal-scored: 进啦！这球漂亮吧 / 呵呵，又是我进的
 goal-conceded: 啊…被进了 / 没关系，追回来嘛
 own-goal-by-ai: 诶？我自己踢进去了… / 当、当我没踢
 own-goal-by-player: 你这是帮我啊？ / 那是自己球门啦笨蛋
@@ -1130,7 +1130,7 @@ SOCCER_PASSIVE_GUARD_SYSTEM_PROMPT_ZH = """\
 - exitPromptType 只能是 none、surrender、rest。
 - stage 小于 8 时不能输出 prepare_exit_prompt；如果证据像是该退出，也先输出 send_rescue_hint 或 observe_more。
 - ordinary/surrender 场景：如果更像 LLM 复读或可恢复的消极比赛，优先 send_rescue_hint；如果更像真实持续放弃/疲劳/服软，stage >= 8 时可以 prepare_exit_prompt + surrender。
-- ordinary_user_speech 触发时，如果玩家主动沟通足以让猫娘重新投入比赛，应输出 cancel_candidate；证据不足则 observe_more。
+- ordinary_user_speech 触发时，如果玩家主动沟通足以让狂三重新投入比赛，应输出 cancel_candidate；证据不足则 observe_more。
 - rest 场景只用于开局 gameStance=withdrawn 的低落/退缩特殊情况。玩家温柔、哄哄、关怀的发言如果足以让状态转好，应输出 cancel_candidate。
 - teaching 场景不走认输/休息窗口；如果输入里出现 teaching，应优先 cancel_candidate。
 

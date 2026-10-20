@@ -440,7 +440,7 @@
         toggle.setAttribute('aria-controls', detailsId);
         toggle.appendChild(createVisitElement('span', 'memory-visit-name', label.name));
         const metaParts = [label.code];
-        metaParts.push(visitText('catCount', '{{count}} 只猫娘', { count: visitPeerCatCount(peer) }));
+        metaParts.push(visitText('catCount', '{{count}} 个角色', { count: visitPeerCatCount(peer) }));
         const lastSeen = formatVisitDate(peer.last_seen);
         if (lastSeen) metaParts.push(visitText('lastSeen', '最近 {{date}}', { date: lastSeen }));
         toggle.appendChild(createVisitElement('span', 'memory-visit-meta', metaParts.filter(Boolean).join(' · ')));
@@ -467,7 +467,7 @@
         details.appendChild(createVisitElement('p', 'memory-visit-note', summaryParts.join(' · ')));
         const groups = visitPeerCatGroups(peer);
         if (!groups.length) {
-            details.appendChild(createVisitElement('p', 'memory-visit-note', visitText('charsEmpty', '还没有记下对方的猫娘。')));
+            details.appendChild(createVisitElement('p', 'memory-visit-note', visitText('charsEmpty', '还没有记下对方的角色。')));
         }
         groups.forEach(function (group, groupIndex) {
             if (groups.length > 1) {
@@ -569,7 +569,7 @@
         } else if (action.kind === 'block') {
             const label = visitPeerLabel(action.peer);
             message.textContent = visitText('blockConfirm',
-                '拉黑「{{name}} · {{code}}」后，对方不能再和这台电脑上的猫娘串门，正在进行的串门会立刻结束。拉黑不会清除串门记忆。',
+                '拉黑「{{name}} · {{code}}」后，对方不能再和这台电脑上的角色串门，正在进行的串门会立刻结束。拉黑不会清除串门记忆。',
                 { name: label.name, code: label.code });
             ok.textContent = visitText('confirmBlock', '确认拉黑');
         }
@@ -1048,7 +1048,7 @@
         if (!side) return visitText('speakerUnknown', '未知');
         const mine = side === requesterRole;
         if (kind === 'cat') {
-            return mine ? visitText('speakerOwnCat', '我方猫娘') : visitText('speakerPeerCat', '对方猫娘');
+            return mine ? visitText('speakerOwnCat', '我方角色') : visitText('speakerPeerCat', '对方角色');
         }
         return mine ? visitText('speakerOwnHuman', '我') : visitText('speakerPeerHuman', '对方');
     }
@@ -4950,7 +4950,7 @@
         hint.className = 'memory-empty-state-hint';
         hint.textContent = translate(
             'memory.tip1',
-            '刚刚结束的对话内容要稍等片刻才会载入，可以重新点击猫娘名称刷新。'
+            '刚刚结束的对话内容要稍等片刻才会载入，可以重新点击角色名称刷新。'
         );
         wrapper.appendChild(hint);
 

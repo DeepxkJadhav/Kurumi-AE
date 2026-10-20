@@ -2767,6 +2767,9 @@ def _link_matches_phase1_title(title: str, link: dict) -> bool:
 
 
 _NEKO_COMMUNITY_PHASE1_SOURCE_ALIASES = {
+    "暗影领域社区",
+    "暗影領域社群",
+    "shadow domain",
     "喵宇宙社区",
     "喵宇宙社群",
     "neko community",

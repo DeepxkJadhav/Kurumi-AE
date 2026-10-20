@@ -76,7 +76,7 @@
         const shouldStabilizeTutorialText = options
             && options.stabilizeTutorialText === true
             && isTutorialAgentStatusLocked();
-        const text = shouldStabilizeTutorialText ? 'NekoClaw server ready' : (msg || '');
+        const text = shouldStabilizeTutorialText ? 'Zafkiel server ready' : (msg || '');
         status.forEach(s => { if (s) s.textContent = text; });
     };
     const currentLanlanName = () => {
@@ -165,7 +165,7 @@
             const displayReason = translateAgentReasonCode(reasonText);
             return window.t
                 ? window.t('settings.toggles.openclawUnavailableReason', { name, reason: displayReason })
-                : `${name}不可用：${displayReason}。请确认猫爪连接服务已启动，并监听 127.0.0.1:8088。`;
+                : `${name}不可用：${displayReason}。请确认时之工坊连接服务已启动，并监听 127.0.0.1:8088。`;
         }
         return window.t
             ? window.t('settings.toggles.capabilityNotReady', { name })

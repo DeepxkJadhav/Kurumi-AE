@@ -157,7 +157,7 @@ def _extract_links_from_raw(
                 title = post.get("title", "")
                 url = post.get("url", "")
                 if title and url:
-                    link = {"title": title, "url": url, "source": "喵宇宙社区"}
+                    link = {"title": title, "url": url, "source": "暗影领域社区"}
                     post_id = str(post.get("id") or "").strip()
                     card_key = str(post.get("dedupe_key") or post_id).strip()
                     if not card_key:

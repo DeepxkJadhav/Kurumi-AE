@@ -130,16 +130,16 @@ _AVATAR_INTERACTION_REACTION_PROFILES = {
         "fist": {
             "poke": {
                 "normal": {
-                    "reaction_focus": "{actor}刚刚用猫爪轻轻碰了你一下。",
+                    "reaction_focus": "{actor}刚刚用时之印记轻轻触碰了你一下。",
                 },
                 "rapid": {
-                    "reaction_focus": "{actor}刚刚用猫爪连续轻轻碰了你几下。",
+                    "reaction_focus": "{actor}刚刚用时之印记连续轻轻触碰了你几下。",
                 },
                 "reward_drop": {
-                    "reaction_focus": "{actor}刚刚用猫爪轻轻碰你时掉出了奖励。",
+                    "reaction_focus": "{actor}刚刚用时之印记轻轻触碰你时掉出了奖励。",
                 },
                 "reward_drop_rapid": {
-                    "reaction_focus": "{actor}刚刚用猫爪连续轻轻碰了你几下时掉出了奖励。",
+                    "reaction_focus": "{actor}刚刚用时之印记连续轻轻触碰了你几下时掉出了奖励。",
                 },
             },
         },
@@ -184,16 +184,16 @@ _AVATAR_INTERACTION_REACTION_PROFILES = {
         "fist": {
             "poke": {
                 "normal": {
-                    "reaction_focus": "{actor} just lightly touched you once with the cat paw.",
+                    "reaction_focus": "{actor} just lightly touched you once with the Zafkiel seal.",
                 },
                 "rapid": {
-                    "reaction_focus": "{actor} just lightly touched you several times with the cat paw.",
+                    "reaction_focus": "{actor} just lightly touched you several times with the Zafkiel seal.",
                 },
                 "reward_drop": {
-                    "reaction_focus": "{actor} just lightly touched you with the cat paw, and a reward dropped.",
+                    "reaction_focus": "{actor} just lightly touched you with the Zafkiel seal, and a reward dropped.",
                 },
                 "reward_drop_rapid": {
-                    "reaction_focus": "{actor} just lightly touched you several times with the cat paw, and a reward dropped.",
+                    "reaction_focus": "{actor} just lightly touched you several times with the Zafkiel seal, and a reward dropped.",
                 },
             },
         },
@@ -238,16 +238,16 @@ _AVATAR_INTERACTION_REACTION_PROFILES = {
         "fist": {
             "poke": {
                 "normal": {
-                    "reaction_focus": "{actor}剛剛用貓爪輕輕碰了你一下。",
+                    "reaction_focus": "{actor}剛剛用時之印記輕輕碰了你一下。",
                 },
                 "rapid": {
-                    "reaction_focus": "{actor}剛剛用貓爪連續輕輕碰了你幾下。",
+                    "reaction_focus": "{actor}剛剛用時之印記連續輕輕碰了你幾下。",
                 },
                 "reward_drop": {
-                    "reaction_focus": "{actor}剛剛用貓爪輕輕碰你時掉出了獎勵。",
+                    "reaction_focus": "{actor}剛剛用時之印記輕輕碰你時掉出了獎勵。",
                 },
                 "reward_drop_rapid": {
-                    "reaction_focus": "{actor}剛剛用貓爪連續輕輕碰了你幾下時掉出了獎勵。",
+                    "reaction_focus": "{actor}剛剛用時之印記連續輕輕碰了你幾下時掉出了獎勵。",
                 },
             },
         },
@@ -292,16 +292,16 @@ _AVATAR_INTERACTION_REACTION_PROFILES = {
         "fist": {
             "poke": {
                 "normal": {
-                    "reaction_focus": "{actor}が今、猫の肉球で一度だけ軽く触れた。",
+                    "reaction_focus": "{actor}が今、刻々の印で一度だけ軽く触れた。",
                 },
                 "rapid": {
-                    "reaction_focus": "{actor}が今、猫の肉球で何度か続けて軽く触れた。",
+                    "reaction_focus": "{actor}が今、刻々の印で何度か続けて軽く触れた。",
                 },
                 "reward_drop": {
-                    "reaction_focus": "{actor}が今、猫の肉球で軽く触れた時に報酬が落ちた。",
+                    "reaction_focus": "{actor}が今、刻々の印で軽く触れた時に報酬が落ちた。",
                 },
                 "reward_drop_rapid": {
-                    "reaction_focus": "{actor}が今、猫の肉球で何度か続けて軽く触れた時に報酬が落ちた。",
+                    "reaction_focus": "{actor}が今、刻々の印で何度か続けて軽く触れた時に報酬が落ちた。",
                 },
             },
         },
@@ -346,16 +346,16 @@ _AVATAR_INTERACTION_REACTION_PROFILES = {
         "fist": {
             "poke": {
                 "normal": {
-                    "reaction_focus": "{actor} 방금 고양이 발로 한 번 가볍게 건드렸다.",
+                    "reaction_focus": "{actor} 방금 자프키엘의 인장으로 한 번 가볍게 건드렸다.",
                 },
                 "rapid": {
-                    "reaction_focus": "{actor} 방금 고양이 발로 여러 번 가볍게 건드렸다.",
+                    "reaction_focus": "{actor} 방금 자프키엘의 인장으로 여러 번 가볍게 건드렸다.",
                 },
                 "reward_drop": {
-                    "reaction_focus": "{actor} 방금 고양이 발로 가볍게 건드렸을 때 보상이 떨어졌다.",
+                    "reaction_focus": "{actor} 방금 자프키엘의 인장으로 가볍게 건드렸을 때 보상이 떨어졌다.",
                 },
                 "reward_drop_rapid": {
-                    "reaction_focus": "{actor} 방금 고양이 발로 여러 번 가볍게 건드렸을 때 보상이 떨어졌다.",
+                    "reaction_focus": "{actor} 방금 자프키엘의 인장으로 여러 번 가볍게 건드렸을 때 보상이 떨어졌다.",
                 },
             },
         },
@@ -400,16 +400,16 @@ _AVATAR_INTERACTION_REACTION_PROFILES = {
         "fist": {
             "poke": {
                 "normal": {
-                    "reaction_focus": "{actor} только что один раз легко коснулся тебя кошачьей лапкой.",
+                    "reaction_focus": "{actor} только что один раз легко коснулся тебя печатью Зафкиэль.",
                 },
                 "rapid": {
-                    "reaction_focus": "{actor} только что несколько раз легко коснулся тебя кошачьей лапкой.",
+                    "reaction_focus": "{actor} только что несколько раз легко коснулся тебя печатью Зафкиэль.",
                 },
                 "reward_drop": {
-                    "reaction_focus": "{actor} только что легко коснулся тебя кошачьей лапкой, и выпала награда.",
+                    "reaction_focus": "{actor} только что легко коснулся тебя печатью Зафкиэль, и выпала награда.",
                 },
                 "reward_drop_rapid": {
-                    "reaction_focus": "{actor} только что несколько раз легко коснулся тебя кошачьей лапкой, и выпала награда.",
+                    "reaction_focus": "{actor} только что несколько раз легко коснулся тебя печатью Зафкиэль, и выпала награда.",
                 },
             },
         },
@@ -454,16 +454,16 @@ _AVATAR_INTERACTION_REACTION_PROFILES = {
         "fist": {
             "poke": {
                 "normal": {
-                    "reaction_focus": "{actor} acaba de tocarte una vez con la patita de gato.",
+                    "reaction_focus": "{actor} acaba de tocarte una vez con el sello de Zafkiel.",
                 },
                 "rapid": {
-                    "reaction_focus": "{actor} acaba de tocarte varias veces con la patita de gato.",
+                    "reaction_focus": "{actor} acaba de tocarte varias veces con el sello de Zafkiel.",
                 },
                 "reward_drop": {
-                    "reaction_focus": "{actor} acaba de tocarte con la patita de gato y cayó una recompensa.",
+                    "reaction_focus": "{actor} acaba de tocarte con el sello de Zafkiel y cayó una recompensa.",
                 },
                 "reward_drop_rapid": {
-                    "reaction_focus": "{actor} acaba de tocarte varias veces con la patita de gato y cayó una recompensa.",
+                    "reaction_focus": "{actor} acaba de tocarte varias veces con el sello de Zafkiel y cayó una recompensa.",
                 },
             }
         },
@@ -508,16 +508,16 @@ _AVATAR_INTERACTION_REACTION_PROFILES = {
         "fist": {
             "poke": {
                 "normal": {
-                    "reaction_focus": "{actor} acabou de tocar em você uma vez com a patinha de gato.",
+                    "reaction_focus": "{actor} acabou de tocar em você uma vez com o selo de Zafkiel.",
                 },
                 "rapid": {
-                    "reaction_focus": "{actor} acabou de tocar em você várias vezes com a patinha de gato.",
+                    "reaction_focus": "{actor} acabou de tocar em você várias vezes com o selo de Zafkiel.",
                 },
                 "reward_drop": {
-                    "reaction_focus": "{actor} acabou de tocar em você com a patinha de gato e caiu uma recompensa.",
+                    "reaction_focus": "{actor} acabou de tocar em você com o selo de Zafkiel e caiu uma recompensa.",
                 },
                 "reward_drop_rapid": {
-                    "reaction_focus": "{actor} acabou de tocar em você várias vezes com a patinha de gato e caiu uma recompensa.",
+                    "reaction_focus": "{actor} acabou de tocar em você várias vezes com o selo de Zafkiel e caiu uma recompensa.",
                 },
             }
         },
@@ -664,8 +664,8 @@ _AVATAR_INTERACTION_MEMORY_NOTE_TEMPLATES = {
             "tap_soft": "[{master}连续拿棒棒糖喂你]",
         },
         "fist": {
-            "poke": "[{master}用猫爪轻轻碰了你]",
-            "rapid": "[{master}用猫爪连续轻轻碰了你几下]",
+            "poke": "[{master}用时之印记轻轻碰了你]",
+            "rapid": "[{master}用时之印记连续轻轻碰了你几下]",
         },
         "hammer": {
             "bonk": "[{master}用锤子敲了你一下]",
@@ -685,8 +685,8 @@ _AVATAR_INTERACTION_MEMORY_NOTE_TEMPLATES = {
             "tap_soft": "[{master} kept feeding you the lollipop]",
         },
         "fist": {
-            "poke": "[{master} lightly touched you with the cat paw]",
-            "rapid": "[{master} lightly touched you several times with the cat paw]",
+            "poke": "[{master} lightly touched you with the Zafkiel seal]",
+            "rapid": "[{master} lightly touched you several times with the Zafkiel seal]",
         },
         "hammer": {
             "bonk": "[{master} bonked you once with a hammer]",
@@ -706,8 +706,8 @@ _AVATAR_INTERACTION_MEMORY_NOTE_TEMPLATES = {
             "tap_soft": "[{master}連續拿棒棒糖餵你]",
         },
         "fist": {
-            "poke": "[{master}用貓爪輕輕碰了你]",
-            "rapid": "[{master}用貓爪連續輕輕碰了你幾下]",
+            "poke": "[{master}用時之印記輕輕碰了你]",
+            "rapid": "[{master}用時之印記連續輕輕碰了你幾下]",
         },
         "hammer": {
             "bonk": "[{master}用槌子敲了你一下]",
@@ -727,8 +727,8 @@ _AVATAR_INTERACTION_MEMORY_NOTE_TEMPLATES = {
             "tap_soft": "[{master}がペロペロキャンディを続けて食べさせた]",
         },
         "fist": {
-            "poke": "[{master}が猫の手であなたにそっと触れた]",
-            "rapid": "[{master}が猫の手であなたに続けて軽く触れた]",
+            "poke": "[{master}が刻々の印であなたにそっと触れた]",
+            "rapid": "[{master}が刻々の印であなたに続けて軽く触れた]",
         },
         "hammer": {
             "bonk": "[{master}がハンマーであなたを一度叩いた]",
@@ -751,8 +751,8 @@ _AVATAR_INTERACTION_MEMORY_NOTE_TEMPLATES = {
             "tap_soft": "[{master}이 막대사탕을 계속 먹여 줬다]",
         },
         "fist": {
-            "poke": "[{master}이 고양이 발로 너를 살짝 건드렸다]",
-            "rapid": "[{master}이 고양이 발로 너를 여러 번 연달아 건드렸다]",
+            "poke": "[{master}이 자프키엘의 인장으로 너를 살짝 건드렸다]",
+            "rapid": "[{master}이 자프키엘의 인장으로 너를 여러 번 연달아 건드렸다]",
         },
         "hammer": {
             "bonk": "[{master}이 망치로 너를 한 번 쳤다]",
@@ -774,8 +774,8 @@ _AVATAR_INTERACTION_MEMORY_NOTE_TEMPLATES = {
             "tap_soft": "[{master} продолжал кормить тебя леденцом]",
         },
         "fist": {
-            "poke": "[{master} слегка коснулся тебя кошачьей лапкой]",
-            "rapid": "[{master} несколько раз подряд слегка коснулся тебя кошачьей лапкой]",
+            "poke": "[{master} слегка коснулся тебя печатью Зафкиэль]",
+            "rapid": "[{master} несколько раз подряд слегка коснулся тебя печатью Зафкиэль]",
         },
         "hammer": {
             "bonk": "[{master} один раз стукнул тебя молотком]",
@@ -795,8 +795,8 @@ _AVATAR_INTERACTION_MEMORY_NOTE_TEMPLATES = {
             "tap_soft": "[{master} siguió dándote la piruleta]",
         },
         "fist": {
-            "poke": "[{master} te tocó suavemente con la pata de gato]",
-            "rapid": "[{master} te tocó suavemente varias veces con la pata de gato]",
+            "poke": "[{master} te tocó suavemente con el sello de Zafkiel]",
+            "rapid": "[{master} te tocó suavemente varias veces con el sello de Zafkiel]",
         },
         "hammer": {
             "bonk": "[{master} te dio un golpe con un martillo]",
@@ -816,8 +816,8 @@ _AVATAR_INTERACTION_MEMORY_NOTE_TEMPLATES = {
             "tap_soft": "[{master} continuou te dando o pirulito]",
         },
         "fist": {
-            "poke": "[{master} tocou você de leve com a patinha de gato]",
-            "rapid": "[{master} tocou você de leve várias vezes com a patinha de gato]",
+            "poke": "[{master} tocou você de leve com o selo de Zafkiel]",
+            "rapid": "[{master} tocou você de leve várias vezes com o selo de Zafkiel]",
         },
         "hammer": {
             "bonk": "[{master} bateu em você uma vez com um martelo]",

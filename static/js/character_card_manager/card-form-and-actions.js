@@ -669,7 +669,7 @@ function buildCatgirlDetailForm(name, rawData, isNew, container) {
             key = await showPrompt(
                 window.t ? window.t('character.addCatgirlFieldPrompt') : '请输入新设定的名称（键名）',
                 '',
-                window.t ? window.t('character.addCatgirlFieldTitle') : '新增猫娘设定'
+                window.t ? window.t('character.addCatgirlFieldTitle') : '新增角色设定'
             );
         } else {
             key = prompt(window.t ? window.t('character.addCatgirlFieldPrompt') : '请输入新设定的名称（键名）');
@@ -944,7 +944,7 @@ function buildCatgirlDetailForm(name, rawData, isNew, container) {
         const catgirlName = form.querySelector('[name="档案名"]').value;
         if (!catgirlName) {
             if (typeof showAlert === 'function') {
-                await showAlert(window.t ? window.t('character.fillProfileNameFirstForVoice') : '请先填写猫娘档案名，然后再注册音色');
+                await showAlert(window.t ? window.t('character.fillProfileNameFirstForVoice') : '请先填写角色档案名，然后再注册音色');
             }
             return;
         }
@@ -1033,7 +1033,7 @@ function buildCatgirlDetailForm(name, rawData, isNew, container) {
     const saveButtonI18nKey = isNew ? 'character.confirmNewCatgirl' : 'character.saveChanges';
     saveButton.innerHTML = '<img src="/static/icons/set_on.png" alt="" class="save-icon"> <span data-i18n="' + saveButtonI18nKey + '">'
         + (isNew
-            ? (window.t ? window.t('character.confirmNewCatgirl') : '确认新猫娘')
+            ? (window.t ? window.t('character.confirmNewCatgirl') : '确认新角色')
             : (window.t ? window.t('character.saveChanges') : '保存修改'))
         + '</span>';
     saveButton.onclick = function () { saveCatgirlFromPanel(form, name, isNew); };
@@ -2251,7 +2251,7 @@ async function saveCatgirlFromPanel(form, originalName, isNew) {
             } catch (switchError) {
                 console.warn('[角色面板] 新建角色已保存，但自动切换当前角色失败:', switchError);
                 showMessage(
-                    window.t ? window.t('character.switchError') : '切换猫娘时发生错误',
+                    window.t ? window.t('character.switchError') : '切换角色时发生错误',
                     'warning'
                 );
             }
@@ -2259,7 +2259,7 @@ async function saveCatgirlFromPanel(form, originalName, isNew) {
 
         if (!shouldSelectAfterSave || selectedAfterSave) {
             showMessage(isNew
-                ? (window.t ? window.t('character.newCatgirlSuccess') : '新猫娘创建成功')
+                ? (window.t ? window.t('character.newCatgirlSuccess') : '新角色创建成功')
                 : (window.t ? window.t('character.saveSuccess') : '保存成功'), 'success');
         }
         if (isNew) {
@@ -2501,12 +2501,12 @@ async function workshopSwitchCatgirl(name) {
             showMessage(window.t ? window.t('character.switchSuccess') : '切换成功', 'success');
         }
     } catch (error) {
-        console.error('切换猫娘失败:', error);
-        showMessage(window.t ? window.t('character.switchError') : '切换猫娘时发生错误', 'error');
+        console.error('切换角色失败:', error);
+        showMessage(window.t ? window.t('character.switchError') : '切换角色时发生错误', 'error');
     }
 }
 
-// 删除猫娘
+// 删除角色
 // 返回值约定：成功删除返回 true；任何早退/失败/用户取消都返回 false——给调用方据此决定是否关面板
 async function workshopDeleteCatgirl(name, options = {}) {
     const shouldReload = options && options.skipReload ? false : true;
@@ -2525,14 +2525,14 @@ async function workshopDeleteCatgirl(name, options = {}) {
         return false;
     }
 
-    // 检查是否只剩一只猫娘
+    // 检查是否只剩一个角色
     try {
         const resp = await fetch('/api/characters', { cache: 'no-store' });
         if (resp.ok) {
             const allData = await resp.json();
             const catgirls = allData?.['猫娘'] || {};
             if (Object.keys(catgirls).length <= 1) {
-                showMessage(window.t ? window.t('character.onlyOneCatgirlLeft') : '只剩一只猫娘，无法删除！', 'error');
+                showMessage(window.t ? window.t('character.onlyOneCatgirlLeft') : '只剩一个角色，无法删除！', 'error');
                 return false;
             }
         }
@@ -2545,10 +2545,10 @@ async function workshopDeleteCatgirl(name, options = {}) {
     if (window.t) {
         const translated = window.t('character.confirmDeleteCard', { name: name });
         confirmMsg = (translated && translated.includes('{name}'))
-            ? `确定要删除猫娘"${name}"？`
-            : (translated || `确定要删除猫娘"${name}"？`);
+            ? `确定要删除角色"${name}"？`
+            : (translated || `确定要删除角色"${name}"？`);
     } else {
-        confirmMsg = `确定要删除猫娘"${name}"？`;
+        confirmMsg = `确定要删除角色"${name}"？`;
     }
 
     // 统一使用与「导出角色卡」同款风格的 Confirm 弹窗
@@ -2581,7 +2581,7 @@ async function workshopDeleteCatgirl(name, options = {}) {
                 const data = await resp.json();
                 serverMsg = data?.error || data?.message || '';
             } catch (_) { /* 响应不是 JSON 就退回到默认文案 */ }
-            const msg = serverMsg || (window.t ? window.t('character.deleteError') : '删除猫娘时发生错误');
+            const msg = serverMsg || (window.t ? window.t('character.deleteError') : '删除角色时发生错误');
             showMessage(msg, 'error', 6000);
             await showAlertDialog(msg, { type: 'error' });
             return false;
@@ -2595,8 +2595,8 @@ async function workshopDeleteCatgirl(name, options = {}) {
         }
         return true;
     } catch (error) {
-        console.error('删除猫娘失败:', error);
-        showMessage(window.t ? window.t('character.deleteError') : '删除猫娘时发生错误', 'error');
+        console.error('删除角色失败:', error);
+        showMessage(window.t ? window.t('character.deleteError') : '删除角色时发生错误', 'error');
         return false;
     }
 }

@@ -775,7 +775,7 @@
         var targetCharacterEpoch = characterEpoch;
         var confirmed = await showModal({
             title: t('theater.forgetStoryMemoryTitle', '忘记该剧本？'),
-            body: t('theater.forgetStoryMemoryBody', '这会删除当前猫娘对该剧本的摘要、时间索引和完整演绎档案，但不会删除剧本或当前进度。'),
+            body: t('theater.forgetStoryMemoryBody', '这会删除当前角色对该剧本的摘要、时间索引和完整演绎档案，但不会删除剧本或当前进度。'),
             cancelLabel: t('common.cancel', '取消'),
             confirmLabel: t('theater.forgetStoryMemory', '忘记该剧本'),
             danger: true
@@ -822,8 +822,8 @@
         try {
             while (state.pendingEnd === receipt) {
                 var remember = await showModal({
-                    title: t('theater.rememberPerformanceTitle', '是否让 N.E.K.O 记下本次演绎内容？'),
-                    body: t('theater.rememberPerformanceRetentionBody', '猫娘的日常记忆只保留公开摘要，完整公开演绎保存在小剧场档案中；隐藏数值与路线条件不会写入。'),
+                    title: t('theater.rememberPerformanceTitle', '是否让 Kurumi 记下本次演绎内容？'),
+                    body: t('theater.rememberPerformanceRetentionBody', '角色的日常记忆只保留公开摘要，完整公开演绎保存在小剧场档案中；隐藏数值与路线条件不会写入。'),
                     cancelLabel: t('theater.skipMemory', '暂不记录'), confirmLabel: t('theater.saveMemory', '记下本次演绎'),
                     persistent: true, keepError: archiveFailed
                 });

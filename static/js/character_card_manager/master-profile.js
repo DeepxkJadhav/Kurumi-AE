@@ -615,7 +615,7 @@ function getHiddenCatgirlKeys() {
 
 async function workshopHideCatgirl(name) {
     if (name === window._workshopCurrentCatgirl) {
-        showMessage(window.t ? window.t('character.cannotHideCurrentNeko') : '不能隐藏当前正在使用的猫娘', 'error');
+        showMessage(window.t ? window.t('character.cannotHideCurrentNeko') : '不能隐藏当前正在使用的角色', 'error');
         return;
     }
     const hiddenKeys = getHiddenCatgirlKeys();
@@ -662,7 +662,7 @@ function renderHiddenCatgirls() {
     }
 
     area.style.display = 'block';
-    const hiddenText = window.t ? window.t('character.hiddenCatgirls') : '已隐藏猫娘';
+    const hiddenText = window.t ? window.t('character.hiddenCatgirls') : '已隐藏角色';
     if (countSpan) countSpan.textContent = hiddenText + ' (' + hiddenKeys.length + ')';
 
     list.innerHTML = '';

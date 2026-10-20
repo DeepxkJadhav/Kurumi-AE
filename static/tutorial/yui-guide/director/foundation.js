@@ -570,7 +570,7 @@
     const DAY6_PLUGIN_DASHBOARD_DONE_GRACE_MS = 120;
     const INTRO_GREETING_REPLY_TEXT = '微风、阳光，还有刚刚好出现的你。初次见面，我是林悠怡，未来的日子请多关照喵！我把关于这里的一切都写进新手指南里啦！就当作是我们相遇的第一份小礼物，请查收吧！';
     const INTRO_GREETING_REPLY_TEXT_KEY = 'tutorial.yuiGuide.lines.introGreetingReply';
-    const TAKEOVER_PLUGIN_DASHBOARD_TEXT = '有了它们，我不光能看 B 站弹幕，还能帮你关灯开空调…… 本喵就是无所不能的超级猫猫神！哼哼！';
+    const TAKEOVER_PLUGIN_DASHBOARD_TEXT = '有了它们，我不光能看 B 站弹幕，还能帮你关灯开空调…… 狂三可是无所不能的掌控时间之精灵哦~ 呵呵呵。';
     const TAKEOVER_PLUGIN_DASHBOARD_TEXT_KEY = 'tutorial.yuiGuide.lines.takeoverPluginPreviewDashboard';
     const PLUGIN_DASHBOARD_POPUP_BLOCKED_TEXT = '浏览器需要你亲自点一下这里打开插件面板。点一下这个“管理面板”，我就继续带你看。';
     const PLUGIN_DASHBOARD_POPUP_BLOCKED_TEXT_KEY = 'tutorial.yuiGuide.lines.pluginDashboardPopupBlocked';
@@ -657,7 +657,7 @@
 
     const TAKEOVER_CAPTURE_SELECTORS = Object.freeze({
         voiceControl: '[alt="语音控制"]',
-        catPaw: '[alt="猫爪"]',
+        catPaw: '[alt="时之工坊"], [alt="猫爪"], [data-button-id="agent"]',
         agentMaster: '#${p}-toggle-agent-master',
         keyboardControl: '#${p}-toggle-agent-keyboard',
         userPlugin: '#${p}-toggle-agent-user-plugin',

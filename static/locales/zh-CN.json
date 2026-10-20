@@ -104,7 +104,7 @@
         "syncChoiceSaved": "角色已保存，同步设置已更新。"
     },
     "instanceAccess": {
-        "title": "连接 NEKO 实例",
+        "title": "连接 Kurumi-AE 实例",
         "description": "输入服务器所有者提供的实例访问凭证，此设备将记住连接 30 天。",
         "key": "实例访问凭证",
         "connect": "连接",
@@ -326,7 +326,7 @@
         "localModPathConfig": "本地mod路径配置",
         "localModFolder": "本地mod文件夹路径",
         "defaultPathHint": "未指定扫描路径时将使用此默认路径",
-        "defaultPathExample": "提示：默认路径通常在 \"我的文档/N.E.K.O/live2d\"",
+        "defaultPathExample": "提示：默认路径通常在 \"我的文档/Kurumi-AE/live2d\"",
         "loadConfig": "加载当前配置",
         "saveConfig": "保存配置",
         "emptyStateHint": "请输入并扫描一个包含本地文件的文件夹",
@@ -696,7 +696,7 @@
         "API_RATE_LIMIT_SESSION": "💥 API请求频率过高，请稍后再试。",
         "LLM_CONNECTION_FAILED": "💥 LLM API 连接失败。请检查网络连接和API配置。",
         "CONNECTION_CLOSED_ABNORMAL": "💥 连接异常关闭: {{error}}",
-        "AGENT_QUOTA_EXCEEDED": "💥 免费猫爪模型今日试用次数已达上限 ({{used}}/{{limit}})，请明日再试。",
+        "AGENT_QUOTA_EXCEEDED": "💥 免费时之工坊模型今日试用次数已达上限 ({{used}}/{{limit}})，请明日再试。",
         "SESSION_START_CRITICAL": "⛔ Session启动连续失败{{count}}次，已停止自动重试。请检查网络连接和API配置，然后刷新页面重试。",
         "SESSION_START_FAILED": "💥 Session启动失败: {{error}} (失败{{count}}次)",
         "INTERNAL_UPDATE_FAILED": "💥 内部更新切换失败: {{error}}",
@@ -730,18 +730,18 @@
         "AGENT_AUTO_DISABLED_COMPUTER": "已自动关闭键鼠控制: $t(agent.precheck.{{reason_code}})",
         "AGENT_SCREEN_SHARE_REQUIRED": "$t(agent.status.screenShareRequired)",
         "AGENT_AUTO_DISABLED_BROWSER": "已自动关闭浏览器控制: $t(agent.precheck.{{reason_code}})",
-        "AGENT_LLM_CHECK_ERROR": "猫爪 LLM 连接检查异常",
+        "AGENT_LLM_CHECK_ERROR": "时之工坊 LLM 连接检查异常",
         "INVALID_INPUT_TYPE": "无效的输入类型: {{input_type}}",
         "UNKNOWN_ACTION": "未知操作: {{action}}",
         "SERVER_ERROR": "服务器内部错误",
         "AGENT_CU_MODULE_NOT_LOADED": "无法开启 Computer Use：模块未加载",
-        "AGENT_CU_ENABLED_CHECKING": "键鼠控制已开启，猫爪 LLM 连接确认中...",
+        "AGENT_CU_ENABLED_CHECKING": "键鼠控制已开启，时之工坊 LLM 连接确认中...",
         "AGENT_CU_UNAVAILABLE": "无法开启 Computer Use：$t(agent.precheck.{{reason_code}})",
         "AGENT_CU_ENABLE_FAILED": "开启 Computer Use 失败：{{error}}",
         "AGENT_BU_MODULE_NOT_LOADED": "无法开启 Browser Use：模块未加载",
         "AGENT_BU_NOT_INSTALLED": "无法开启 Browser Use：{{error}}",
         "AGENT_UP_ENABLED_CHECKING": "用户插件已开启，正在启动插件服务...",
-        "AGENT_BU_ENABLED_CHECKING": "浏览器控制已开启，猫爪 LLM 连接确认中...",
+        "AGENT_BU_ENABLED_CHECKING": "浏览器控制已开启，时之工坊 LLM 连接确认中...",
         "AGENT_CU_AUTO_CLOSED": "Computer Use 模块未加载，已自动关闭",
         "AGENT_CU_CAPABILITY_LOST": "Computer Use 不可用：$t(agent.precheck.{{reason_code}})",
         "TTS_CONNECTION_FAILED": "TTS服务连接失败: {{msg}}",
@@ -757,7 +757,7 @@
         "TTS_GPT_SOVITS_URL_INVALID": "无效的 GPT-SoVITS API URL",
         "AGENT_NO_PLUGINS_FOUND": "未找到任何用户插件",
         "AGENT_OPENCLAW_CAPABILITY_LOST": "OpenClaw 不可用：{{reason}}",
-        "AGENT_OPENCLAW_ENABLED_CHECKING": "OpenClaw 已开启，正在等待猫爪连接服务就绪...",
+        "AGENT_OPENCLAW_ENABLED_CHECKING": "OpenClaw 已开启，正在等待时之工坊连接服务就绪...",
         "AGENT_OPENCLAW_MODULE_NOT_LOADED": "无法开启 OpenClaw：模块未加载",
         "AGENT_OPENCLAW_UNAVAILABLE": "无法开启 OpenClaw：{{reason}}",
         "OPENCLAW_COMMAND_DISPATCH_FAILED": "⚠️ 这条指令没能交给 OpenClaw，请稍后重试。",
@@ -834,7 +834,7 @@
         "screenshotTitle": "点击查看截图 {{index}}",
         "removeScreenshot": "移除此截图",
         "cropTabScreenshot": "截图",
-        "cropTabHideNeko": "隐藏NEKO",
+        "cropTabHideNeko": "隐藏Kurumi-AE",
         "cropTabCancel": "取消",
         "cropTabRecapturing": "正在重新截图...",
         "cropConfirmTitle": "确认截图",
@@ -933,7 +933,7 @@
         "emojiButtonAriaLabel": "表情",
         "toolIconsAriaLabel": "工具图标",
         "toolLollipop": "棒棒糖",
-        "toolFist": "猫爪",
+        "toolFist": "时之工坊",
         "toolHammer": "锤子",
         "toolRps": "猜拳",
         "avatarToolRpsGestureRock": "石头",
@@ -1097,7 +1097,7 @@
         "avatarToolCreateSpecial": "彩蛋",
         "avatarToolCreateSpecialProbability": "触发概率",
         "avatarToolCreateSpecialImage": "彩蛋图片",
-        "avatarToolCreateSpecialMeaningPlaceholder": "例如：“{{user}}”用猫爪轻轻碰“{{character}}”时掉出了奖励。",
+        "avatarToolCreateSpecialMeaningPlaceholder": "例如：“{{user}}”用时之工坊轻轻碰“{{character}}”时掉出了奖励。",
         "avatarToolCreateSpecialSound": "彩蛋音效（可选）",
         "avatarToolCreatePrivacy": "图片和音效仅存本机；互动时，当前图片或彩蛋对应的提示词会发送给模型，道具名称会记入角色的记忆，之后的对话中可能会用到。",
         "avatarToolCreateName": "道具名称",
@@ -1195,12 +1195,12 @@
         "exportImageFormatPng": "PNG",
         "exportImageFormatJpeg": "JPEG",
         "exportImageFormatWebp": "WebP",
-        "exportImageStyleNeko": "N.E.K.O",
+        "exportImageStyleNeko": "Kurumi-AE",
         "exportImageStyleOriginal": "原生",
         "exportImageStylePoster": "清新",
         "exportImageStyleLyrics": "歌词",
         "exportPosterTitle": "对话精华",
-        "exportPosterSubtitle": "来自 N.E.K.O 的分享",
+        "exportPosterSubtitle": "来自 Kurumi-AE 的分享",
         "exportImageFormatUnsupported": "当前环境不支持 {{format}} 格式",
         "confirmExportAs": "导出 {{format}}",
         "exportMarkdownPreviewSubtitle": "导出 Markdown 的渲染预览",
@@ -2746,9 +2746,9 @@
         "completionTitle": "存储迁移已完成",
         "confirmReconnect": "确认并重启到原路径",
         "confirmRestart": "确认并重启",
-        "confirmExistingTargetContent": "目标文件夹已经包含 N.E.K.O 运行时数据。继续后，迁移会覆盖目标中的同名运行时数据目录，目标目录里的其他文件会保留。确认继续吗？",
+        "confirmExistingTargetContent": "目标文件夹已经包含 Kurumi-AE 运行时数据。继续后，迁移会覆盖目标中的同名运行时数据目录，目标目录里的其他文件会保留。确认继续吗？",
         "currentPath": "当前路径",
-        "customPathPlaceholder": "选择一个父目录，应用会使用其中的 N.E.K.O 子文件夹",
+        "customPathPlaceholder": "选择一个父目录，应用会使用其中的 Kurumi-AE 子文件夹",
         "dialogLabel": "存储位置选择",
         "errorTitle": "暂时无法读取存储位置引导信息",
         "estimatedPayload": "预计迁移体量",
@@ -2810,7 +2810,7 @@
         "retainedSourceMismatch": "请求的清理路径与当前保留目录不一致，请刷新后重试。",
         "retainedSourceNotFound": "当前没有可清理的旧数据保留目录。",
         "selectPathRequired": "请先提供目标路径。",
-        "selectedRootInsideState": "该位置位于 N.E.K.O 运行时状态目录内，不能作为存储根目录。",
+        "selectedRootInsideState": "该位置位于 Kurumi-AE 运行时状态目录内，不能作为存储根目录。",
         "selectedRootUnavailable": "原始数据路径当前仍不可用，请先恢复该路径后再重试。",
         "selectionSubmitFailed": "提交存储位置选择失败，请稍后重试。",
         "selectionSubmitUnexpected": "存储位置选择接口返回了未识别的结果。",
@@ -2818,7 +2818,7 @@
         "selectionIntroBody": "喵呜～人类注意啦！为了让你的角色、记忆和设定更安全，我们把数据搬到更稳的专属小窝啦！再也不怕目录乱跑、权限捣乱弄丢数据咯～你可以继续用原来的窝，也可以给她们选个新的小窝哦！",
         "selectionIntroPickNew": "推荐存储位置",
         "selectionIntroUseCurrent": "其他位置",
-        "selectionIntroImageAlt": "N.E.K.O 存储位置迁移插图",
+        "selectionIntroImageAlt": "Kurumi-AE 存储位置迁移插图",
         "statusUnexpected": "存储维护状态接口返回了未识别的结果。",
         "storageBootstrapBlocking": "当前存储状态仍需恢复或迁移，暂时不能继续当前会话。",
         "storagePolicyRollbackFailed": "写入存储位置配置失败，且未能恢复原有状态，请检查本机状态目录是否可写；若仍异常请手动确认状态文件。",
@@ -3002,7 +3002,7 @@
         "profileNameRequired": "档案名为必填项",
         "profileNameRenameOnlyHint": "请通过“修改名称”按钮修改档案名",
         "onlyOneSpiritLeft": "只剩一只狂三/精灵，无法删除！",
-        "cannotHideCurrentNeko": "不能隐藏当前正在使用的 NEKO",
+        "cannotHideCurrentNeko": "不能隐藏当前正在使用的 Kurumi-AE",
         "cannotDeleteCurrentSpirit": "不能删除当前正在使用的狂三/精灵！\n\n请先切换到其他狂三/精灵后再删除。",
         "cannotConfirmSpiritStatus": "无法确认当前狂三/精灵状态，删除操作已取消",
         "confirmDeleteSpirit": "确定要删除狂三/精灵\"{{name}}\"？",
@@ -3127,7 +3127,7 @@
         "socialUnavailable": "社交服务不可用",
         "socialDisabled": "社交服务已禁用",
         "socialOAuthPrompt": "请在浏览器完成统一账号登录",
-        "socialSettingsLoginPrompt": "桌面端还没有登录 N.E.K.O 账号。已在社区页登录的话会自动同步到桌面，也可以从托盘菜单打开设置登录",
+        "socialSettingsLoginPrompt": "桌面端还没有登录 Kurumi-AE 账号。已在社区页登录的话会自动同步到桌面，也可以从托盘菜单打开设置登录",
         "welcomeBack": "{{name}}回来了！",
         "title": "ZAFKIEL • Kurumi Tokisaki",
         "spiritResting": "{{name}}正在打盹...",
@@ -3251,9 +3251,9 @@
         "thoughtBubblePop": "戳破想法气泡",
         "voiceControl": "语音控制",
         "screenShare": "屏幕分享",
-        "social": "喵宇宙",
-        "socialCharging": "喵宇宙充能中 {{days}}天后再回来看看吧",
-        "agentTools": "猫爪",
+        "social": "暗影领域",
+        "socialCharging": "暗影领域充能中 {{days}}天后再回来看看吧",
+        "agentTools": "时之工坊",
         "settings": "设置",
         "leave": "请她离开",
         "return": "请她回来",
@@ -3545,7 +3545,7 @@
         "moduleOpt.actor_retry": "输出重试",
         "moduleOptTip": "关闭后这一步不再执行，回复更快、更省 token；开启则恢复该检查。",
         "settingsButton": "剧场设置",
-        "settingsKicker": "N.E.K.O · 小剧场",
+        "settingsKicker": "Kurumi-AE · 小剧场",
         "settingsTitle": "演绎设置",
         "settingsBack": "返回剧本库",
         "settingsIntroTitle": "演绎流程开关",
@@ -3665,19 +3665,19 @@
         "sessionHintEnded": "本次演绎已结束，点击“开始”创建新的演绎。",
         "loadingSession": "正在读取演绎进度...",
         "sessionLoadFailed": "演绎进度读取失败，请重试。",
-        "connectingNeko": "演出已准备好，正在连接 N.E.K.O 本体",
-        "connectNekoFailed": "无法连接 N.E.K.O 本体，请保持本体开启后重试。",
+        "connectingNeko": "演出已准备好，正在连接 Kurumi-AE 本体",
+        "connectNekoFailed": "无法连接 Kurumi-AE 本体，请保持本体开启后重试。",
         "startFailed": "启动演出失败，请重试。",
         "continueFailed": "继续演出失败，请重试。",
         "endFailed": "结束演绎失败，请重试。",
-        "endConnectionFailed": "无法连接 N.E.K.O 本地服务，请确认程序仍在运行后重试。",
+        "endConnectionFailed": "无法连接 Kurumi-AE 本地服务，请确认程序仍在运行后重试。",
         "selectorOpenFailed": "演绎已结束，但剧本页面打开失败。请点击“返回剧本页”重试。",
         "restartBlockedTitle": "无法重新开始",
         "restartBlockedBody": "正在进行中的剧本无法重新开始，请先结束",
         "endPerformance": "结束演绎",
         "restartConfirmTitle": "重新开始这个剧本？",
         "restartConfirmBody": "这会用新的演绎替换当前角色的已结束记录。",
-        "rememberPerformanceTitle": "是否让 N.E.K.O 记下本次演绎内容？",
+        "rememberPerformanceTitle": "是否让 Kurumi-AE 记下本次演绎内容？",
         "rememberPerformanceBody": "只会记录公开的演绎摘要和最近片段，不包含隐藏数值与路线条件。",
         "skipMemory": "暂不记录",
         "saveMemory": "记下本次演绎",
@@ -3999,8 +3999,8 @@
             "proactiveVisionChatTooltip": "需开启主动搭话且关闭隐私模式",
             "proactiveNewsChat": "新闻网站",
             "proactiveNewsChatTooltip": "使用微博热议和小黑盒首页内容进行搭话",
-            "proactiveCommunityChat": "喵宇宙社区",
-            "proactiveCommunityChatTooltip": "使用喵宇宙社区发现页的公开卡牌进行搭话",
+            "proactiveCommunityChat": "暗影领域社区",
+            "proactiveCommunityChatTooltip": "使用暗影领域探索页的公开卡牌进行搭话",
             "proactiveVideoChat": "视频网站",
             "proactiveVideoChatTooltip": "使用视频内容进行搭话",
             "proactivePersonalChat": "个人动态",
@@ -4011,7 +4011,7 @@
             "proactiveMemeChatTooltip": "使用有趣表情包进行搭话",
             "proactiveMiniGameInviteChat": "小游戏邀请",
             "proactiveMiniGameInviteChatTooltip": "符合条件时邀请你一起玩小游戏",
-            "agentMaster": "猫爪总开关",
+            "agentMaster": "时之工坊总开关",
             "showTaskHud": "显示悬浮窗",
             "keyboardControl": "键鼠控制",
             "userPlugin": "用户插件",
@@ -4023,10 +4023,10 @@
             "unavailable": "{{name}}不可用",
             "toggleFailed": "{{name}}切换失败: {{error}}",
             "checking": "查询中...",
-            "serverOffline": "猫爪服务器未启动",
-            "masterRequired": "请先开启猫爪总开关",
+            "serverOffline": "时之工坊服务器未启动",
+            "masterRequired": "请先开启时之工坊总开关",
             "capabilityNotReady": "{{name}}尚未就绪，点击尝试启用",
-            "openclawUnavailableReason": "{{name}}不可用：{{reason}}。请确认猫爪连接服务已启动，并监听 127.0.0.1:8088。",
+            "openclawUnavailableReason": "{{name}}不可用：{{reason}}。请确认时之工坊连接服务已启动，并监听 127.0.0.1:8088。",
             "enabled": "{{name}}已开启",
             "disabled": "{{name}}已关闭",
             "enableFailed": "{{name}}开启失败",
@@ -4061,7 +4061,7 @@
     "openclawGuide": {
         "windowTitle": "OpenClaw 接入教程 - ZAFKIEL",
         "pageTitle": "OpenClaw 接入教程",
-        "pageSubtitle": "把 QwenPaw 安装、模型配置、替换文件与 N.E.K.O 配置串起来，按一条路径接通。",
+        "pageSubtitle": "把 QwenPaw 安装、模型配置、替换文件与 Kurumi-AE 配置串起来，按一条路径接通。",
         "sourceLabel": "教程来源",
         "contentLanguageNotice": "语言切换会同时更新页面控件文案和正文内容。",
         "languageLabel": "语言",
@@ -4107,20 +4107,20 @@
     },
     "agent": {
         "status": {
-            "connecting": "猫爪服务器连接中...",
-            "ready": "猫爪服务器就绪",
-            "enabled": "猫爪模式已开启",
-            "disabled": "猫爪模式已关闭",
-            "disabledError": "猫爪模式已关闭（部分清理失败）",
+            "connecting": "时之工坊服务器连接中...",
+            "ready": "时之工坊服务器就绪",
+            "enabled": "时之工坊模式已开启",
+            "disabled": "时之工坊模式已关闭",
+            "disabledError": "时之工坊模式已关闭（部分清理失败）",
             "enableFailed": "开启失败",
             "disconnected": "服务器连接已断开",
-            "agentDisconnected": "猫爪服务器连接已断开",
-            "freeModelWarning": "由于限额问题，免费模型使用猫爪模式容易阻塞，建议您切换至自费模型。\n\n如果您已经配置好自费API，请尝试重启NEKO。",
+            "agentDisconnected": "时之工坊服务器连接已断开",
+            "freeModelWarning": "由于限额问题，免费模型使用时之工坊模式容易阻塞，建议您切换至自费模型。\n\n如果您已经配置好自费API，请尝试重启Kurumi-AE。",
             "freeModelWarningTitle": "免费模型提示",
-            "connectivityCheck": "猫爪 LLM 连接检查中...",
-            "screenShareRequired": "开启猫爪键鼠控制前，请先授权共享整个屏幕。",
+            "connectivityCheck": "时之工坊 LLM 连接检查中...",
+            "screenShareRequired": "开启时之工坊键鼠控制前，请先授权共享整个屏幕。",
             "screenSharePendingReload": "屏幕捕获授权请求仍在等待，请刷新页面后重试。",
-            "precheckFailed": "猫爪预检失败：{{reason}}",
+            "precheckFailed": "时之工坊预检失败：{{reason}}",
             "toggleFailed": "Agent切换失败: {{error}}"
         },
         "precheck": {
@@ -4133,17 +4133,17 @@
             "AGENT_BROWSER_USE_NOT_INSTALLED": "browser-use 未安装",
             "AGENT_CU_MODULE_NOT_LOADED": "Computer Use 模块未加载",
             "AGENT_BU_MODULE_NOT_LOADED": "Browser Use 模块未加载",
-            "AGENT_NOT_INITIALIZED": "猫爪初始化失败",
-            "AGENT_LLM_UNREACHABLE": "猫爪 LLM 连接失败",
-            "AGENT_MODEL_NOT_CONFIGURED": "猫爪模型未配置",
+            "AGENT_NOT_INITIALIZED": "时之工坊初始化失败",
+            "AGENT_LLM_UNREACHABLE": "时之工坊 LLM 连接失败",
+            "AGENT_MODEL_NOT_CONFIGURED": "时之工坊模型未配置",
             "AGENT_URL_NOT_CONFIGURED": "Agent API URL 未配置",
             "AGENT_KEY_NOT_CONFIGURED": "Agent API Key 未配置或不可用",
             "AGENT_NO_PLUGINS": "未发现可用插件",
             "AGENT_NO_PLUGINS_FOUND": "未发现可用插件",
             "AGENT_PLUGIN_SERVER_ERROR": "插件服务器连接失败",
-            "AGENT_CONNECTIVITY_FAILED": "猫爪 LLM 连接失败"
+            "AGENT_CONNECTIVITY_FAILED": "时之工坊 LLM 连接失败"
         },
-        "contentFilterError": "猫爪浏览的网页内容触发了 AI 模型的安全审查过滤，任务已中止。这通常发生在页面包含敏感话题时，请尝试其他关键词或网站。",
+        "contentFilterError": "时之工坊浏览的网页内容触发了 AI 模型的安全审查过滤，任务已中止。这通常发生在页面包含敏感话题时，请尝试其他关键词或网站。",
         "taskHud": {
             "tasksTab": "任务",
             "pluginsTab": "插件内容",
@@ -4151,7 +4151,7 @@
             "newPluginContent": "新内容",
             "selectPluginContent": "选择插件内容",
             "closePluginContent": "关闭内容",
-            "title": "猫爪任务",
+            "title": "时之工坊任务",
             "running": "运行中",
             "queued": "队列中",
             "noTasks": "暂无活动任务",
@@ -4385,7 +4385,7 @@
     "tutorial": {
         "homeInteractionLocked": "新手引导进行中，请先按引导完成当前步骤",
         "step1": {
-            "title": "👋 欢迎来到 N.E.K.O",
+            "title": "👋 欢迎来到 Kurumi-AE",
             "desc": "这是你的狂三/精灵！接下来我会带你熟悉各项功能~"
         },
         "step1a": {
@@ -4425,8 +4425,8 @@
             "desc": "开启后会持续地将屏幕分享给狂三/精灵，只能在语音对话期间使用~"
         },
         "step8": {
-            "title": "🔨 猫爪",
-            "desc": "打开猫爪面板，使用键鼠控制、浏览器控制和用户插件等功能。让狂三/精灵使用你的电脑、帮你工作、陪你游戏~"
+            "title": "🔨 时之工坊",
+            "desc": "打开时之工坊面板，使用键盘鼠标控制、浏览器控制、用户插件等功能。让狂三帮你操控电脑、协助工作、陪你玩耍~"
         },
         "step9": {
             "title": "💤 请她离开",
@@ -4464,27 +4464,27 @@
             "macos": {
                 "location": {
                     "title": "📍 菜单栏图标位置",
-                    "desc": "N.E.K.O 的图标位于屏幕顶部的 macOS 菜单栏。",
-                    "note": "在顶部菜单栏找到图中的 N.E.K.O 图标。",
+                    "desc": "Kurumi-AE 的图标位于屏幕顶部的 macOS 菜单栏。",
+                    "note": "在顶部菜单栏找到图中的 Kurumi-AE 图标。",
                     "alt": "macOS 菜单栏图标和菜单示意图"
                 },
                 "menu": {
                     "title": "📋 菜单栏菜单",
-                    "desc": "点击菜单栏中的 N.E.K.O 图标即可打开菜单。以下是一些常用功能："
+                    "desc": "点击菜单栏中的 Kurumi-AE 图标即可打开菜单。以下是一些常用功能："
                 },
-                "exitDesc": "关闭 N.E.K.O，可从菜单栏菜单中选择退出。"
+                "exitDesc": "关闭 Kurumi-AE，可从菜单栏菜单中选择退出。"
             },
             "settings": "设置",
-            "settingsDesc": "打开设置，调整 N.E.K.O 的使用偏好~",
+            "settingsDesc": "打开设置，调整 Kurumi-AE 的使用偏好~",
             "location": {
                 "title": "📍 托盘图标位置",
-                "desc": "N.E.K.O 的图标会出现在屏幕右下角的系统托盘里，点击一下就能找到它。",
+                "desc": "Kurumi-AE 的图标会出现在屏幕右下角的系统托盘里，点击一下就能找到它。",
                 "note": "如果看不到，可以先展开托盘的小箭头，查看全部图标。",
                 "alt": "系统托盘位置示意图"
             },
             "menu": {
                 "title": "📋 托盘菜单",
-                "desc": "右键点击系统托盘（见上一步提示）中的 N.E.K.O 图标即可打开菜单。以下是一些常用功能："
+                "desc": "右键点击系统托盘（见上一步提示）中的 Kurumi-AE 图标即可打开菜单。以下是一些常用功能："
             },
             "reset": {
                 "title": "🔄 重置角色位置",
@@ -4501,7 +4501,7 @@
             "exit": "退出",
             "complete": {
                 "title": "🎉 引导完成！",
-                "desc": "恭喜你完成了所有引导！现在你已经了解了 N.E.K.O 的主要功能。开始享受和狂三/精灵的互动吧！如需重新查看引导，可以在设置中点击「重置引导」~"
+                "desc": "恭喜你完成了所有引导！现在你已经了解了 Kurumi-AE 的主要功能。开始享受和狂三/精灵的互动吧！如需重新查看引导，可以在设置中点击「重置引导」~"
             },
             "resetPosition": "重置角色位置",
             "resetPositionDesc": "狂三/精灵跑到屏幕外时，点此恢复默认位置~",
@@ -4509,9 +4509,9 @@
             "openChatDesc": "打开独立的对话框进行文字对话~",
             "important": "重要：",
             "compatibility": "兼容模式",
-            "hotkeyDesc": "设置全局快捷键，更高效地控制 N.E.K.O~",
+            "hotkeyDesc": "设置全局快捷键，更高效地控制 Kurumi-AE~",
             "uploadLogs": "上传日志",
-            "exitDesc": "关闭 N.E.K.O。托盘菜单是退出应用的主要方式~"
+            "exitDesc": "关闭 Kurumi-AE。托盘菜单是退出应用的主要方式~"
         },
         "completed": "✨ 引导完成！祝你使用愉快~",
         "resetHint": {
@@ -4894,11 +4894,11 @@
                 "wrap": "好啦好啦，快去试试这些好玩的定制功能吧！换上新衣服、调好新声音，让我变成全天下最懂你、只属于你一个人的专属狂三/精灵！我已经迫不及待想看到全新的自己啦！"
             },
             "day6": {
-                "intro": "噔噔噔噔！今天必须要打起精神，好好跟你聊聊咱们的【猫爪】啦！前两天虽然简单提过一下，但它里面藏着的厉害功能可多着呢。",
+                "intro": "噔噔噔噔！今天必须要打起精神，好好跟你聊聊咱们的【时之工坊】啦！前两天虽然简单提过一下，但它里面藏着的厉害功能可多着呢。",
                 "statusMaster": "快跟我老实交代，这两天你有没有点开它试用一下呀？",
                 "pluginSidePanel": "除了之前介绍的功能，这里还有超多好玩的插件呢。",
                 "pluginDashboard": "有了它们，我不光能看 B 站弹幕，还能帮你关灯开空调…… 本喵就是无所不能的超级猫猫神！哼哼！",
-                "taskHud": "看这里看这里！当我决定使用【猫爪】帮你干活的时候，这里就会咕噜咕噜的显示我的工作进度哦。",
+                "taskHud": "看这里看这里！当我决定使用【时之工坊】帮你干活的时候，这里就会咕噜咕噜的显示我的工作进度哦。",
                 "taskHudControl": "你要是计划有变，随时都可以戳一下让我停下来。嘿嘿，今天也是打起精神努力打工挣小鱼干的一天呢，冲呀！",
                 "wrapCleanup": "呼……把这些繁琐的界面都收起来，这样就不会打扰到你啦。",
                 "wrap": "你可以放心地继续做你自己的事情，不管是需要我用小爪子帮你忙，还是只想让我安安静静地陪着你，我都一直在守候着你，今天也要开开心心的呀。"
@@ -5160,7 +5160,7 @@
     },
     "characterModelNotSet": "当前角色未设置模型",
     "cookiesLogin": {
-        "title": "N.E.K.O 凭证管理中心",
+        "title": "Kurumi-AE 凭证管理中心",
         "header": "凭证管理中心",
         "heroDescription": "在各平台粘贴 <span class=\"highlight\">Cookie</span> 并加密存储，供后续调用。",
         "emptyStatus": "还没有保存的凭证呢，选个平台开始添加吧",
@@ -5824,7 +5824,7 @@
             "high": "较重",
             "extreme": "极重",
             "overall": "总评：",
-            "noteHtml": "评级参考 <a href=\"https://wiki.vrchat.com/wiki/Guides:Avatar_Performance_Ranking\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#40C5F1;\">VRChat Avatar Performance Ranking</a> (PC 端)，因 N.E.K.O 为单模型场景已适当放宽。"
+            "noteHtml": "评级参考 <a href=\"https://wiki.vrchat.com/wiki/Guides:Avatar_Performance_Ranking\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#40C5F1;\">VRChat Avatar Performance Ranking</a> (PC 端)，因 Kurumi-AE 为单模型场景已适当放宽。"
         },
         "ratingDetail": {
             "vertices": "顶点数",
@@ -5857,8 +5857,8 @@
             "charge": "按住左键蓄力，松开后挥拍。",
             "release": "压线、甜区和距离会影响得分。",
             "jump": "按空格可以起跳扣杀。",
-            "duel": "对拉模式下你和 NEKO 轮流挥拍，先得到 11 分的一方获胜。",
-            "duel11": "对拉模式下你和 NEKO 轮流挥拍，先得到 11 分的一方获胜。"
+            "duel": "对拉模式下你和 Kurumi-AE 轮流挥拍，先得到 11 分的一方获胜。",
+            "duel11": "对拉模式下你和 Kurumi-AE 轮流挥拍，先得到 11 分的一方获胜。"
         },
         "modeSwitcher": "羽毛球模式",
         "mode": {
@@ -5880,7 +5880,7 @@
             "chances": "机会 {{count}}",
             "practiceTitle": "自由练习：不限羽毛球次数，不记录排行榜分数",
             "attemptsTitle": "剩余机会 {{remaining}}/{{total}}，已失误 {{missed}}",
-            "duelTitle": "对拉模式下你和 NEKO 轮流挥拍，先得到 11 分的一方获胜。",
+            "duelTitle": "对拉模式下你和 Kurumi-AE 轮流挥拍，先得到 11 分的一方获胜。",
             "assist": "G{{guide}} / S{{sweet}} / M{{music}}",
             "on": "开",
             "off": "关"
@@ -5970,7 +5970,7 @@
         },
         "memoryOption": {
             "label": "本局对话进入记忆（默认不开启）",
-            "hint": "关闭后，玩家输入、NEKO直接回应、事件回应、赛后摘要和后续续接都不会进入或引用记忆。"
+            "hint": "关闭后，玩家输入、Kurumi-AE直接回应、事件回应、赛后摘要和后续续接都不会进入或引用记忆。"
         },
         "table": {
             "score": "分数",
@@ -6382,11 +6382,11 @@
             "charge": "靠近球时按住左键蓄力，松开射门。",
             "range": "离球 {{distance}} 内才会触发踢球。",
             "reset": "按 R 可以复位球和双方位置。",
-            "ai": "NEKO 的心情和难度会随局势变化。"
+            "ai": "Kurumi-AE 的心情和难度会随局势变化。"
         },
         "hint": {
             "controls": "鼠标 = 引导玩家 · 按住左键 = 蓄力，松开 = 射门（离球 ≤{{distance}} 触发）· R 复位",
-            "aiMood": "NEKO 的心情和难度会随局势变化"
+            "aiMood": "Kurumi-AE 的心情和难度会随局势变化"
         },
         "debugControls": {
             "bounds": "启用边界（出界规则）",
@@ -6486,7 +6486,7 @@
         },
         "memoryOption": {
             "label": "本局对话进入记忆（默认不开启）",
-            "hint": "关闭后，玩家输入、NEKO直接回应、事件回应、赛后摘要和后续续接都不会进入或引用记忆。"
+            "hint": "关闭后，玩家输入、Kurumi-AE直接回应、事件回应、赛后摘要和后续续接都不会进入或引用记忆。"
         }
     },
     "watchTogether": {
@@ -6777,7 +6777,7 @@
         },
         "avatarTools": {
             "title": "常用道具",
-            "body": "道具按你保存的顺序排列，末尾的编辑按钮可以调整常用道具。这里的猫爪是互动道具，与后面的 Agent 不同。"
+            "body": "道具按你保存的顺序排列，末尾的编辑按钮可以调整常用道具。这里的时之工坊是互动道具，与后面的 Agent 不同。"
         },
         "translate": {
             "title": "字幕翻译",
@@ -6802,7 +6802,7 @@
         "floatingOverviewContinueHint": "点任意高亮按钮继续，不会打开功能。",
         "floatingOverview": {
             "title": "模型旁的快捷按钮",
-            "body": "角色旁的按钮分别通向语音、Agent、喵宇宙、设置和回窝。"
+            "body": "角色旁的按钮分别通向语音、时之工坊、暗影领域、设置和休憩。"
         },
         "mic": {
             "title": "语音聊天",
@@ -6818,15 +6818,15 @@
         },
         "agent": {
             "title": "Agent 功能",
-            "body": "猫爪按钮里是 Agent 功能，可以让我帮你处理电脑、浏览器或插件里的任务。任务面板能查看进度，也能随时停止。"
+            "body": "时之工坊按钮里是 Agent 功能，可以让我帮你处理电脑、浏览器或插件里的任务。任务面板能查看进度，也能随时停止。"
         },
         "agentMaster": {
             "title": "Agent 总开关",
             "body": "这里控制 Agent 是否启用，任务面板可以查看进度和停止任务。不要求打开开关。"
         },
         "social": {
-            "title": "喵宇宙",
-            "body": "喵宇宙在新用户使用满三个自然日后解锁，届时可以从这里进入社区。"
+            "title": "暗影领域",
+            "body": "暗影领域在新用户使用满三个自然日后解锁，届时可以从这里进入社区。"
         },
         "settings": {
             "title": "设置",
@@ -6874,8 +6874,8 @@
             "returnToPage": "回到已打开的页面"
         },
         "socialClose": {
-            "title": "从喵宇宙回来",
-            "body": "喵宇宙已经打开了。点 × 关闭这个页面，就能回到角色旁边，继续认识快捷按钮。"
+            "title": "从暗影领域回来",
+            "body": "暗影领域已经打开了。点 × 关闭这个页面，就能回到角色旁边，继续认识快捷按钮。"
         },
         "micMenu": {
             "body": "这个菜单里可以选麦克风、调音量和设置屏幕分享。先认识这些入口就够了；看完点“收起菜单，继续”。"

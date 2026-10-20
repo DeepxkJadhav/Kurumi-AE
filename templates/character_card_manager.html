@@ -207,7 +207,7 @@
                 padding: 10px 16px 12px;
             }
         }
-        /* 已隐藏猫娘补充样式 */
+        /* 已隐藏角色补充样式 */
         .hidden-catgirl-area {
             margin-top: 8px;
             padding: 10px;
@@ -541,9 +541,9 @@
 </div>
 <div class="chara-cards-toggle-bar">
 <div class="chara-cards-toolbar-left">
-<button class="chara-add-btn" onclick="openNewCatgirlPanel()" title="新增猫娘" data-i18n-title="steam.addNewCatgirl">
+<button class="chara-add-btn" onclick="openNewCatgirlPanel()" title="新增角色" data-i18n-title="steam.addNewCatgirl">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-<span data-i18n="steam.addNewCatgirl">新增猫娘</span>
+<span data-i18n="steam.addNewCatgirl">新增角色</span>
 </button>
 <button class="chara-import-btn" id="chara-import-btn" type="button" title="导入角色卡" data-i18n-title="character.importCard">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><polyline points="7 8 12 3 17 8"/><path d="M5 21h14"/></svg>
@@ -582,11 +582,11 @@
 <p data-i18n="steam.loadingCharacterCards">正在加载角色卡...</p>
 </div>
 
-<!-- 已隐藏猫娘区域 -->
+<!-- 已隐藏角色区域 -->
 <div id="hidden-catgirl-area" class="hidden-catgirl-area" style="display:none;">
     <button type="button" class="hidden-catgirl-header-btn" onclick="toggleHiddenCatgirlsHeader()" aria-controls="hidden-catgirl-list" aria-expanded="false">
         <span class="hidden-catgirl-arrow" id="hidden-catgirl-arrow">▶</span>
-        <span id="hidden-catgirl-count" data-i18n="character.hiddenCatgirls">已隐藏猫娘</span>
+        <span id="hidden-catgirl-count" data-i18n="character.hiddenCatgirls">已隐藏角色</span>
     </button>
     <div id="hidden-catgirl-list" class="hidden-catgirl-list" style="display:none;"></div>
 </div>
@@ -672,7 +672,7 @@
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
 <div class="control-group" style="margin-bottom: 0;">
 <div class="control-label" data-i18n="steam.voiceReferenceDisplayName">参考语音展示名</div>
-<input type="text" id="voice-reference-display-name" class="control-input" placeholder="例如：猫娘柔和中文" data-i18n-placeholder="steam.voiceReferenceDisplayNamePlaceholder">
+<input type="text" id="voice-reference-display-name" class="control-input" placeholder="例如：狂三优雅声线" data-i18n-placeholder="steam.voiceReferenceDisplayNamePlaceholder">
 </div>
 <div class="control-group" style="margin-bottom: 0;">
 <div class="control-label" data-i18n="steam.voiceReferencePrefix">默认前缀</div>

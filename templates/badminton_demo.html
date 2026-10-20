@@ -559,7 +559,7 @@
         <li data-i18n="badminton.startTutorial.charge" data-i18n-fallback="按住左键蓄力，松开后挥拍。">按住左键蓄力，松开后挥拍。</li>
         <li data-i18n="badminton.startTutorial.release" data-i18n-fallback="压线、甜区和距离会影响得分。">压线、甜区和距离会影响得分。</li>
         <li data-i18n="badminton.startTutorial.jump" data-i18n-fallback="按空格可以起跳扣杀。">按空格可以起跳扣杀。</li>
-        <li data-i18n="badminton.startTutorial.duel11" data-i18n-fallback="对拉模式下你和 NEKO 轮流挥拍，先得到 11 分的一方获胜。">对拉模式下你和 NEKO 轮流挥拍，先得到 11 分的一方获胜。</li>
+        <li data-i18n="badminton.startTutorial.duel11" data-i18n-fallback="对拉模式下你和狂三轮流挥拍，先得到 11 分的一方获胜。">对拉模式下你和狂三轮流挥拍，先得到 11 分的一方获胜。</li>
       </ul>
     </div>
     <div class="badminton-start-options">
@@ -567,8 +567,8 @@
         <input type="checkbox" id="bd-game-memory-toggle">
         <span data-i18n="badminton.memoryOption.label" data-i18n-fallback="本局对话进入记忆（默认不开启）">本局对话进入记忆（默认不开启）</span>
       </label>
-      <div id="game-memory-hint" data-i18n="badminton.memoryOption.hint" data-i18n-fallback="关闭后，玩家输入、NEKO直接回应、事件回应、赛后摘要和后续续接都不会进入或引用记忆。">
-        关闭后，玩家输入、NEKO直接回应、事件回应、赛后摘要和后续续接都不会进入或引用记忆。
+      <div id="game-memory-hint" data-i18n="badminton.memoryOption.hint" data-i18n-fallback="关闭后，玩家输入、狂三直接回应、事件回应、赛后摘要和后续续接都不会进入或引用记忆。">
+        关闭后，玩家输入、狂三直接回应、事件回应、赛后摘要和后续续接都不会进入或引用记忆。
       </div>
       <label id="badminton-start-never-option">
         <input type="checkbox" id="bd-start-never-toggle">
@@ -9949,7 +9949,7 @@
       _i18n('debug.readout.streaks', '连中={{streak}}  最佳={{best}}  成功={{made}}', { streak: game.streak, best: game.bestStreak, made: game.madeCount }),
       _i18n('debug.readout.score', '分数={{score}}  剩余={{remaining}}/{{total}}', { score: game.totalScore, remaining: game.attemptsRemaining, total: game.attemptsTotal }),
       _i18n('debug.readout.difficulty', '难度={{difficulty}}  心情={{mood}}  主题={{theme}}', { difficulty: getDuelDifficultyName(), mood: currentMood, theme: getThemeLabel(currentThemeKey) }),
-      isDuelMode() ? _i18n('debug.readout.duel', '对拉: 你{{player}}-{{neko}} NEKO miss {{playerMisses}}/{{max}}-{{nekoMisses}}/{{max}} R{{round}}', {
+      isDuelMode() ? _i18n('debug.readout.duel', '对拉: 你{{player}}-{{neko}} KURUMI miss {{playerMisses}}/{{max}}-{{nekoMisses}}/{{max}} R{{round}}', {
         player: game.duel.playerScore,
         neko: game.duel.nekoScore,
         playerMisses: game.duel.playerMisses,

@@ -91,7 +91,7 @@
             window.dispatchEvent(new window.CustomEvent('neko-social-unlock-status', { detail }));
             lastPublishedUnlockStatus = signature;
         } catch (_) {
-            // Electron preload 同步只是共享门控的镜像；失败不能影响喵宇宙入口本身。
+            // Electron preload 同步只是共享门控的镜像；失败不能影响暗影领域入口本身。
         }
     }
 
@@ -148,9 +148,9 @@
         if (!status.unlocked) {
             return window.t
                 ? window.t('buttons.socialCharging', { days: status.remainingDays })
-                : `喵宇宙充能中 ${status.remainingDays}天后再回来看看吧`;
+                : `暗影领域充能中 ${status.remainingDays}天后再回来看看吧`;
         }
-        return window.t ? window.t('buttons.social') : '喵宇宙';
+        return window.t ? window.t('buttons.social') : 'Shadow Domain';
     }
 
     function applyButtonState(btn, imgOff, imgOn, status = getStatus()) {
@@ -277,7 +277,7 @@ Object.assign(AvatarButtonMixin.methods, {
                 {
                     id: 'agent',
                     emoji: '🔨',
-                    title: window.t ? window.t('buttons.agentTools') : 'Agent工具',
+                    title: window.t ? window.t('buttons.agentTools') : '时之工坊',
                     titleKey: 'buttons.agentTools',
                     hasPopup: true,
                     popupToggle: true,
@@ -286,9 +286,9 @@ Object.assign(AvatarButtonMixin.methods, {
                     iconOn: `/static/icons/Agent_on.png${iconVersion}`
                 },
                 {
-                    // N.E.K.O.Servers 社交平台入口（替代桌面 screen 槽位）。
+                    // Zafkiel Shadow Domain 平台入口（替代桌面 screen 槽位）。
                     id: 'social',
-                    title: window.t ? window.t('buttons.social') : '喵宇宙',
+                    title: window.t ? window.t('buttons.social') : 'Shadow Domain',
                     titleKey: 'buttons.social',
                     hasPopup: false,
                     iconOff: `/static/icons/neko_community_off.png${iconVersion}`,
