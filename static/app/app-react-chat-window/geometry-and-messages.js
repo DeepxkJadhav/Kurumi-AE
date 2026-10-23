@@ -1347,13 +1347,8 @@
         var titleNode = I.$('chat-title');
         var textSendButton = I.$('textSendButton');
         var sendButtonLabelNode = textSendButton ? textSendButton.querySelector('[data-i18n="chat.send"]') : null;
-        var title = getTextContent(titleNode)
-            || I.getI18nText('chat.title', '对话')
-            || '对话';
-        var inputPlaceholder = I.getI18nText('chat.textInputPlaceholderCompact', '')
-            || I.getI18nText('chat.textInputPlaceholderShort', '')
-            || I.getI18nText('chat.textInputPlaceholder', '')
-            || '输入消息...';
+        var title = 'KURUMI • 刻々帝 (ZAFKIEL)';
+        var inputPlaceholder = 'Whisper to Kurumi... (Press Enter to send)';
         var sendButtonLabel = getTextContent(sendButtonLabelNode)
             || I.getI18nText('chat.send', '发送')
             || '发送';

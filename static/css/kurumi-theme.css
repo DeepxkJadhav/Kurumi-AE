@@ -44,12 +44,12 @@ body {
   --neko-popup-text-sub: #d4af37 !important;
 
   /* Floating Buttons */
-  --neko-btn-bg: rgba(22, 14, 28, calc(0.9 * var(--neko-floating-menu-opacity-factor, 1))) !important;
-  --neko-btn-bg-hover: rgba(90, 14, 26, calc(0.96 * var(--neko-floating-menu-opacity-factor, 1))) !important;
-  --neko-btn-bg-active: rgba(138, 16, 30, 0.98) !important;
-  --neko-btn-border: 1.5px solid rgba(212, 175, 55, 0.5) !important;
-  --neko-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.7), 0 0 10px rgba(196, 30, 58, 0.35) !important;
-  --neko-btn-shadow-hover: 0 6px 22px rgba(196, 30, 58, 0.75), 0 0 15px rgba(255, 215, 0, 0.5) !important;
+  --neko-btn-bg: radial-gradient(circle at 35% 35%, #2a0b16 0%, #15060c 65%, #080204 100%) !important;
+  --neko-btn-bg-hover: radial-gradient(circle at 35% 35%, #640d1e 0%, #2e0811 65%, #0d0205 100%) !important;
+  --neko-btn-bg-active: radial-gradient(circle at 35% 35%, #92132b 0%, #440914 65%, #180307 100%) !important;
+  --neko-btn-border: 2px solid #d4af37 !important;
+  --neko-btn-shadow: 0 4px 18px rgba(0, 0, 0, 0.85), inset 0 0 10px rgba(196, 30, 58, 0.6), 0 0 10px rgba(212, 175, 55, 0.45) !important;
+  --neko-btn-shadow-hover: 0 6px 26px rgba(196, 30, 58, 0.95), inset 0 0 14px rgba(255, 215, 0, 0.85), 0 0 22px rgba(255, 215, 0, 0.7) !important;
 
   /* HUD */
   --neko-hud-header-bg: rgba(32, 16, 32, 0.95) !important;
@@ -74,10 +74,35 @@ h1, h2, h3, h4,
 }
 
 /* ==========================================================================
-   Global Atmosphere & Backgrounds
+   Global Atmosphere & Backgrounds (with Transparent Desktop Pet Mode)
    ========================================================================== */
-body {
+body:not(.lanlan-pet-mode):not(.desktop-pet-mode) {
   background: radial-gradient(ellipse at 50% 25%, #1f1224 0%, #0c0812 65%, #050408 100%) !important;
+}
+
+html.lanlan-pet-mode,
+html.lanlan-pet-mode body,
+html.desktop-pet-mode,
+html.desktop-pet-mode body,
+body.lanlan-pet-mode,
+body.desktop-pet-mode {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Ensure VRM / Live2D / 3D Canvas is 100% transparent over desktop */
+#live2d-container,
+#vrm-canvas,
+#canvas-container,
+#vrm-container,
+.vrm-canvas-container,
+.model-display-area,
+.live2d-wrapper {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+body {
   color: #f5eedc !important;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
@@ -471,20 +496,23 @@ body.jukebox-manager-page,
 /* ==========================================================================
    Floating Action Buttons & Lock Icon (Kurumi Gothic Edition)
    ========================================================================== */
+/* ==========================================================================
+   Floating Action Buttons & Lock Icon (Kurumi Zafkiel Master Dial Edition)
+   ========================================================================== */
 #live2d-floating-buttons,
 #vrm-floating-buttons,
 #mmd-floating-buttons,
 [id$="-floating-buttons"] {
-  gap: 14px !important;
+  gap: 16px !important;
 }
 
 .live2d-floating-btn,
 .vrm-floating-btn,
 .mmd-floating-btn,
 [class*="-floating-btn"] {
-  background: rgba(18, 12, 22, 0.88) !important;
-  border: 1.5px solid rgba(196, 30, 58, 0.75) !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7), 0 0 12px rgba(196, 30, 58, 0.45), inset 0 0 8px rgba(212, 175, 55, 0.25) !important;
+  background: radial-gradient(circle at 35% 35%, #2a0b16 0%, #15060c 65%, #080204 100%) !important;
+  border: 2px solid #d4af37 !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.85), inset 0 0 10px rgba(196, 30, 58, 0.6), 0 0 10px rgba(212, 175, 55, 0.45) !important;
   backdrop-filter: blur(16px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
@@ -494,10 +522,20 @@ body.jukebox-manager-page,
 .vrm-floating-btn:hover,
 .mmd-floating-btn:hover,
 [class*="-floating-btn"]:hover {
-  background: radial-gradient(circle at center, #520b18 0%, #1e0e1a 100%) !important;
+  background: radial-gradient(circle at 35% 35%, #640d1e 0%, #2e0811 65%, #0d0205 100%) !important;
   border-color: #ffd700 !important;
-  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.75), 0 0 16px rgba(255, 215, 0, 0.5), inset 0 0 10px rgba(212, 175, 55, 0.4) !important;
-  transform: scale(1.1) !important;
+  box-shadow: 0 6px 26px rgba(196, 30, 58, 0.95), inset 0 0 14px rgba(255, 215, 0, 0.85), 0 0 22px rgba(255, 215, 0, 0.7) !important;
+  transform: scale(1.12) !important;
+}
+
+/* Voice trigger badge beside microphone */
+.vrm-trigger-btn,
+.live2d-trigger-btn,
+.mmd-trigger-btn,
+[class*="-trigger-btn"] {
+  background: radial-gradient(circle at 35% 35%, #2a0b16 0%, #0d0205 100%) !important;
+  border: 1.5px solid #d4af37 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 8px rgba(196, 30, 58, 0.6) !important;
 }
 
 #live2d-lock-icon,
@@ -516,21 +554,35 @@ body.jukebox-manager-page,
   filter: drop-shadow(0 0 12px rgba(255, 20, 60, 1)) drop-shadow(0 0 20px rgba(255, 215, 0, 0.75)) !important;
 }
 
-/* Subtitle Container Kurumi Overrides */
+/* ==========================================================================
+   Subtitle / Caption Container Kurumi Overrides
+   100% Transparent Subtitles — Floating Text Only, Controls Reveal on Hover
+   ========================================================================== */
 #subtitle-display,
+#subtitle-container,
+.subtitle-container,
 body.subtitle-web-host #subtitle-display,
 body.subtitle-window-host #subtitle-display {
-  --subtitle-control-fg: #d4af37 !important;
-  --subtitle-corner-line: rgba(196, 30, 58, 0.95) !important;
+  --subtitle-control-fg: #ffd700 !important;
+  --subtitle-corner-line: transparent !important;
   --subtitle-settings-text: #ffd700 !important;
   --subtitle-settings-muted: rgba(212, 175, 55, 0.8) !important;
   --subtitle-focus-ring: rgba(196, 30, 58, 0.6) !important;
-  --subtitle-panel-text: #f5eedc !important;
-  --subtitle-text-fill: #f5eedc !important;
+  --subtitle-panel-text: #fff8e7 !important;
+  --subtitle-text-fill: #fff8e7 !important;
   --subtitle-placeholder-fill: rgba(212, 175, 55, 0.75) !important;
-  background: rgba(14, 10, 18, 0.92) !important;
-  border: 1.5px solid rgba(196, 30, 58, 0.55) !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.75), 0 0 20px rgba(196, 30, 58, 0.35) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+#subtitle-display::before,
+#subtitle-display::after {
+  display: none !important;
+  content: none !important;
 }
 
 #subtitle-display svg polygon,
@@ -540,31 +592,130 @@ body.subtitle-window-host #subtitle-display {
   fill: #c41e3a !important;
 }
 
+/* Floating Subtitle Text with Rich Multi-Layer Gothic Aura */
+#subtitle-display #subtitle-text,
+#subtitle-display .subtitle-text,
+#subtitle-display {
+  color: #fff8e7 !important;
+  font-family: 'Cinzel', 'Playfair Display', 'Segoe UI', serif !important;
+  font-weight: 700 !important;
+  font-size: 21px !important;
+  letter-spacing: 0.6px !important;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.95),
+    0 0 8px rgba(0, 0, 0, 0.95),
+    0 0 16px rgba(196, 30, 58, 0.85),
+    0 0 28px rgba(212, 175, 55, 0.6) !important;
+}
+
+/* Subtitle Options & Controls: Hidden by Default, Revealed ONLY on Hover */
+#subtitle-panel-controls,
+#subtitle-settings-btn,
+.subtitle-panel-control-btn {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease !important;
+  background: rgba(26, 8, 14, 0.9) !important;
+  border: 1.5px solid #d4af37 !important;
+  border-radius: 6px !important;
+  color: #ffd700 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 8px rgba(196, 30, 58, 0.6) !important;
+}
+
+#subtitle-display:hover #subtitle-panel-controls,
+#subtitle-display:hover #subtitle-settings-btn,
+#subtitle-display:hover .subtitle-panel-control-btn,
+#subtitle-display[data-subtitle-panel-state="settings"] #subtitle-panel-controls,
+#subtitle-display[data-subtitle-panel-state="settings"] #subtitle-settings-btn {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+#subtitle-settings-btn:hover,
+.subtitle-panel-control-btn:hover {
+  background: rgba(90, 14, 26, 0.96) !important;
+  border-color: #ffd700 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(196, 30, 58, 0.9), 0 0 14px rgba(255, 215, 0, 0.7) !important;
+  transform: scale(1.1) !important;
+}
+
 /* ==========================================================================
-   Composer & React Chat Overrides
+   Composer & React Chat Overrides — Victorian Gothic Timepiece Sanctum
    ========================================================================== */
 #react-chat-window-shell,
 .compact-chat-surface-frame,
 .chat-window-shell,
+.chat-window,
+.app-shell {
+  background: linear-gradient(180deg, rgba(24, 10, 20, 0.96) 0%, rgba(12, 5, 12, 0.98) 100%) !important;
+  color: #f5eedc !important;
+  border: 2px solid rgba(212, 175, 55, 0.85) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 18px 56px rgba(0, 0, 0, 0.9), 0 0 35px rgba(196, 30, 58, 0.45), inset 0 0 25px rgba(212, 175, 55, 0.12) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  position: relative;
+}
+
+/* Chat Topbar */
+.window-topbar {
+  background: linear-gradient(135deg, rgba(82, 12, 24, 0.98) 0%, rgba(32, 8, 16, 0.98) 60%, rgba(14, 4, 8, 0.98) 100%) !important;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.7) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 215, 0, 0.5), 0 4px 16px rgba(0, 0, 0, 0.6) !important;
+  padding: 10px 16px !important;
+}
+
+.window-title,
+#react-chat-window-title {
+  font-family: 'Cinzel', 'Playfair Display', serif !important;
+  color: #ffd700 !important;
+  letter-spacing: 2.2px !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 22px rgba(196, 30, 58, 0.55) !important;
+}
+
 .chat-body,
 .composer-panel {
-  background: rgba(14, 10, 18, 0.95) !important;
+  background: rgba(14, 8, 16, 0.96) !important;
   color: #f5eedc !important;
-  border-color: rgba(196, 30, 58, 0.6) !important;
+  border-color: rgba(196, 30, 58, 0.5) !important;
 }
 
 .composer-input-shell {
-  background: rgba(24, 16, 30, 0.92) !important;
-  border: 1.5px solid rgba(196, 30, 58, 0.55) !important;
-  box-shadow: 0 0 12px rgba(196, 30, 58, 0.25) !important;
+  background: rgba(10, 4, 10, 0.95) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.65) !important;
+  border-radius: 14px !important;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.85), 0 0 14px rgba(196, 30, 58, 0.25) !important;
+  transition: all 0.25s ease !important;
+}
+
+.composer-input-shell:focus-within {
+  border-color: #ffd700 !important;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.85), 0 0 20px rgba(255, 215, 0, 0.4), 0 0 30px rgba(196, 30, 58, 0.5) !important;
 }
 
 .composer-input {
-  color: #f5eedc !important;
+  color: #fff6e5 !important;
+  font-family: 'Segoe UI', system-ui, sans-serif !important;
 }
 
 .composer-input::placeholder {
-  color: rgba(212, 175, 55, 0.5) !important;
+  color: rgba(212, 175, 55, 0.55) !important;
+  font-family: 'Playfair Display', 'Cinzel', serif !important;
+  font-style: italic !important;
+}
+
+.composer-bottom-bar {
+  border-top: 1px solid rgba(212, 175, 55, 0.2) !important;
+  padding-top: 6px !important;
+}
+
+.composer-tool-divider {
+  color: rgba(212, 175, 55, 0.45) !important;
 }
 
 .composer-galgame-btn,
@@ -578,6 +729,11 @@ body.subtitle-window-host #subtitle-display {
   fill: #d4af37 !important;
 }
 
+.composer-tool-btn:hover {
+  transform: scale(1.1) !important;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7)) !important;
+}
+
 .composer-translate-btn.is-active::after,
 [data-theme="dark"] .composer-translate-btn.is-active::after,
 .composer-galgame-btn.is-active::after,
@@ -586,20 +742,165 @@ body.subtitle-window-host #subtitle-display {
   box-shadow: 0 0 8px rgba(196, 30, 58, 0.8) !important;
 }
 
+/* Chat Send Button — Replacing Cat Paw with Zafkiel Astral Arrow */
+.send-button-circle {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 50% !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8)) !important;
+}
+
+.send-button-circle:hover:not(:disabled) {
+  transform: scale(1.18) rotate(10deg) !important;
+  filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.95)) drop-shadow(0 0 20px rgba(196, 30, 58, 0.9)) !important;
+}
+
+.send-button-circle:active:not(:disabled) {
+  transform: scale(0.92) !important;
+}
+
 #react-chat-window-header-actions button,
 .window-topbar-actions button,
 .topbar-action-btn {
   color: #ffd700 !important;
-  border-color: rgba(212, 175, 55, 0.35) !important;
+  border-color: rgba(212, 175, 55, 0.45) !important;
   transition: all 0.2s ease !important;
 }
 
 #react-chat-window-header-actions button:hover,
 .window-topbar-actions button:hover,
 .topbar-action-btn:hover {
-  background: rgba(196, 30, 58, 0.4) !important;
+  background: rgba(196, 30, 58, 0.5) !important;
   color: #ffffff !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7) !important;
+}
+
+/* Ornate Victorian Gothic Corner Brackets on Chat Window */
+#react-chat-window-shell::before,
+#react-chat-window-shell::after,
+.chat-window::before,
+.chat-window::after {
+  content: "" !important;
+  position: absolute !important;
+  width: 26px !important;
+  height: 26px !important;
+  pointer-events: none !important;
+  z-index: 10 !important;
+}
+
+#react-chat-window-shell::before,
+.chat-window::before {
+  top: 5px !important;
+  left: 5px !important;
+  border-top: 2.5px solid #ffd700 !important;
+  border-left: 2.5px solid #ffd700 !important;
+  border-top-left-radius: 12px !important;
+  filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.8)) !important;
+}
+
+#react-chat-window-shell::after,
+.chat-window::after {
+  bottom: 5px !important;
+  right: 5px !important;
+  border-bottom: 2.5px solid #ffd700 !important;
+  border-right: 2.5px solid #ffd700 !important;
+  border-bottom-right-radius: 12px !important;
+  filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.8)) !important;
+}
+
+/* Close & Minimize buttons */
+#reactChatWindowCloseButton,
+.window-topbar-actions .topbar-close-btn,
+.window-topbar-actions button:last-child {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  background: rgba(138, 16, 30, 0.85) !important;
+  border: 1.5px solid #d4af37 !important;
+  color: #ffd700 !important;
+  font-weight: 700 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   box-shadow: 0 0 8px rgba(196, 30, 58, 0.6) !important;
+  transition: all 0.2s ease !important;
+}
+
+#reactChatWindowCloseButton:hover,
+.window-topbar-actions .topbar-close-btn:hover,
+.window-topbar-actions button:last-child:hover {
+  background: #c41e3a !important;
+  color: #ffffff !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 0 14px rgba(255, 30, 70, 0.95), 0 0 8px rgba(255, 215, 0, 0.8) !important;
+  transform: scale(1.1) !important;
+}
+
+/* ==========================================================================
+   Desktop Companion Floating Header Pill
+   ========================================================================== */
+.kurumi-desktop-pill {
+  position: fixed !important;
+  top: 14px !important;
+  right: 20px !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 6px 14px !important;
+  background: rgba(22, 8, 14, 0.88) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.7) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.85), 0 0 12px rgba(196, 30, 58, 0.45) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  opacity: 0.6 !important;
+  transition: opacity 0.25s ease, transform 0.25s ease !important;
+  user-select: none !important;
+}
+
+.kurumi-desktop-pill:hover {
+  opacity: 1 !important;
+  transform: translateY(-1px) !important;
+  border-color: #ffd700 !important;
+  box-shadow: 0 6px 22px rgba(196, 30, 58, 0.85), 0 0 16px rgba(255, 215, 0, 0.65) !important;
+}
+
+.kurumi-pill-drag-handle {
+  font-family: 'Cinzel', serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #ffd700 !important;
+  letter-spacing: 1.2px !important;
+  cursor: grab !important;
+}
+
+.kurumi-pill-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #d4af37 !important;
+  font-size: 12px !important;
+  width: 22px !important;
+  height: 22px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.kurumi-pill-btn:hover {
+  background: rgba(196, 30, 58, 0.45) !important;
+  color: #ffffff !important;
+}
+
+.kurumi-pill-btn.kurumi-pill-close:hover {
+  background: #c41e3a !important;
+  color: #ffffff !important;
 }
 
 /* ==========================================================================

@@ -13,11 +13,9 @@
     <title data-i18n="app.title">ZAFKIEL • Kurumi Tokisaki</title>
     <!-- VRM 光照默认值：从后端注入，保证在所有 JS 之前同步可用 -->
     <script>window.VRM_DEFAULT_LIGHTING=Object.freeze({{ vrm_defaults | tojson }});</script>
-    <!-- Electron Pet 窗口标记：必须在任何样式表之前同步执行，给 <html> 打上
-         lanlan-pet-mode，让 index.css 的 (max-width:768px) 手机端规则（黑背景、
-         窄布局）整段排除掉。Electron preload 在页面脚本之前注入这些全局，所以这里
-         能同步读到；同时兜底匹配 userAgent，避免首帧黑屏闪烁。dev 浏览器（无这些
-         信号）不打标记，窄宽手机版行为保持不变。 -->
+    <!-- Electron & Native Desktop Pet 窗口标记：必须在任何样式表之前同步执行，给 <html> 和 <body> 打上
+         lanlan-pet-mode 与 desktop-pet-mode，让 index.css 的 (max-width:768px) 手机端规则（黑背景、
+         窄布局）整段排除掉，并启用完全透明的桌面宠物悬浮背景。 -->
     <script>(function () {
         try {
             var w = window;
@@ -25,9 +23,20 @@
                 || w.__NEKO_MULTI_WINDOW__ === true
                 || /Electron/i.test(navigator.userAgent || '')
                 || !!(w.process && w.process.versions && w.process.versions.electron);
-            w.__LANLAN_IS_ELECTRON_PET__ = isElectronPet;
-            if (isElectronPet) {
-                document.documentElement.classList.add('lanlan-pet-mode');
+            var isDesktopPet = isElectronPet
+                || !!w.pywebview
+                || (typeof location !== 'undefined' && (location.search.indexOf('desktop=1') !== -1 || location.search.indexOf('pet=1') !== -1));
+            w.__LANLAN_IS_ELECTRON_PET__ = isDesktopPet;
+            w.__KURUMI_DESKTOP_PET__ = isDesktopPet;
+            if (isDesktopPet) {
+                document.documentElement.classList.add('lanlan-pet-mode', 'desktop-pet-mode');
+                if (document.body) {
+                    document.body.classList.add('lanlan-pet-mode', 'desktop-pet-mode');
+                } else {
+                    document.addEventListener('DOMContentLoaded', function () {
+                        if (document.body) document.body.classList.add('lanlan-pet-mode', 'desktop-pet-mode');
+                    });
+                }
             }
         } catch (e) { /* 检测失败按非 Electron 处理，退回浏览器行为 */ }
     })();</script>
@@ -68,13 +77,50 @@
 
 <body class="subtitle-web-host"{% if initial_chat_surface_mode is defined and initial_chat_surface_mode %}
       data-initial-chat-surface-mode="{{ initial_chat_surface_mode }}"{% endif %}>
-    <!-- 同步把 Electron Pet 标记补到 body（head 脚本执行时 body 尚不存在）；
-         在 chat-container 等内容解析之前执行，避免窄窗口下手机布局闪一帧。 -->
+    <!-- 同步把 Electron Pet & Native Desktop Pet 标记补到 body -->
     <script>(function () {
-        if (window.__LANLAN_IS_ELECTRON_PET__) {
-            document.body.classList.add('lanlan-pet-mode');
+        if (window.__LANLAN_IS_ELECTRON_PET__ || window.__KURUMI_DESKTOP_PET__) {
+            document.body.classList.add('lanlan-pet-mode', 'desktop-pet-mode');
         }
     })();</script>
+
+    <!-- Native Desktop Companion Floating Control Bar (visible in desktop pet mode) -->
+    <div id="kurumi-desktop-companion-bar" class="kurumi-desktop-pill" style="display: none;">
+        <span class="kurumi-pill-drag-handle" title="Drag to move companion">✥ 刻々帝 (Zafkiel)</span>
+        <button type="button" class="kurumi-pill-btn" id="kurumiPillMinimize" title="Minimize">─</button>
+        <button type="button" class="kurumi-pill-btn kurumi-pill-close" id="kurumiPillClose" title="Close">✕</button>
+    </div>
+    <script>
+    (function() {
+        function initPill() {
+            var isDesktop = window.__KURUMI_DESKTOP_PET__ || !!window.pywebview;
+            var pill = document.getElementById('kurumi-desktop-companion-bar');
+            if (!pill) return;
+            if (isDesktop) {
+                pill.style.display = 'flex';
+                var closeBtn = document.getElementById('kurumiPillClose');
+                var minBtn = document.getElementById('kurumiPillMinimize');
+                if (closeBtn) closeBtn.onclick = function() {
+                    if (window.pywebview && window.pywebview.api && window.pywebview.api.close_app) {
+                        window.pywebview.api.close_app();
+                    } else {
+                        window.close();
+                    }
+                };
+                if (minBtn) minBtn.onclick = function() {
+                    if (window.pywebview && window.pywebview.api && window.pywebview.api.minimize_app) {
+                        window.pywebview.api.minimize_app();
+                    }
+                };
+            }
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initPill);
+        } else {
+            initPill();
+        }
+    })();
+    </script>
 
     <!-- 旧的按钮面板已迁移到浮动按钮系统（live2d.js），保留隐藏的旧按钮元素供功能触发使用 -->
     <div id="sidebar" style="display: none;">

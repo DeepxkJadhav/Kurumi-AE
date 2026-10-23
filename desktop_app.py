@@ -41,6 +41,33 @@ def ensure_server():
             return
     print("[Kurumi-AE] Notice: Continuing to window launch...")
 
+class DesktopWindowApi:
+    def close_app(self):
+        try:
+            import webview
+            if webview.windows:
+                webview.windows[0].destroy()
+            else:
+                sys.exit(0)
+        except Exception:
+            sys.exit(0)
+
+    def minimize_app(self):
+        try:
+            import webview
+            if webview.windows:
+                webview.windows[0].minimize()
+        except Exception:
+            pass
+
+    def reload_app(self):
+        try:
+            import webview
+            if webview.windows:
+                webview.windows[0].load_url(f"{URL}?desktop=1&pet=1")
+        except Exception:
+            pass
+
 def run_desktop():
     ensure_server()
 
@@ -48,16 +75,20 @@ def run_desktop():
     try:
         import webview
         print(f"[Kurumi-AE] Summoning Native Desktop Window: {TITLE}")
+        api = DesktopWindowApi()
         webview.create_window(
             title=TITLE,
-            url=URL,
+            url=f"{URL}?desktop=1&pet=1",
             width=1380,
             height=890,
-            min_size=(960, 680),
-            background_color="#0a0507",
+            min_size=(800, 600),
+            transparent=True,
+            frameless=True,
+            easy_drag=True,
             text_select=True,
             zoomable=True,
-            focus=True
+            focus=True,
+            js_api=api
         )
         webview.start(debug=False)
         return
