@@ -3,10 +3,10 @@ requires = ["hatchling", "setuptools<70"]
 build-backend = "hatchling.build"
 
 [project]
-name = "N.E.K.O"
+name = "Kurumi-AE"
 dynamic = ["version"]
-description = "N.E.K.O. Desktop"
-readme = "README.MD"
+description = "Kurumi-AE • 刻々帝 (Zafkiel) — Autonomous 3D Desktop Spirit Companion"
+readme = "README.md"
 requires-python = "==3.11.*"
 dependencies = [
   "av==16.1.0",

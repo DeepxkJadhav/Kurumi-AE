@@ -51,26 +51,37 @@
        '---'                                     '---'
 ```
 
-### 1. ⏳ Permanent 3D VRM Astral Vessel
+### 1. 🪟 Native Transparent Desktop Companion (True Pet Mode)
+- **Frameless Alpha Windowing**: Native Windows companion window built on Edge WebView2 (`desktop_app.py`) featuring 100% desktop-level alpha transparency. Kurumi floats seamlessly over your desktop wallpaper, code editors, and games without any window borders or solid backgrounds.
+- **One-Click Launch**: Instant startup via `Launch_Kurumi_Desktop.bat` or the desktop shortcut `Kurumi-AE.lnk` with automatic backend process orchestration.
+- **Floating Companion Pill**: Discreet top-right control pill (`✥ 刻々帝 (Zafkiel) | ─ | ✕`) with effortless window dragging, minimization, and clean spirit dismissal.
+
+### 2. ⏳ Permanent 3D VRM Astral Vessel
 - **Immutably Bound Spirit**: Built-in permanent 3D VRM model (`kurumi.vrm`) featuring high-poly Gothic Lolita attire, astral clock left eye, dynamic spring-bone hair physics, and skeletal rigging.
 - **Direct glTF Blendshape Parsing**: Automated server-side binary glTF parser extracting 14 bespoke expressions (`Neutral`, `A`, `I`, `U`, `E`, `O`, `Blink`, `Blink_L`, `Blink_R`, `Angry`, `Fun`, `Joy`, `Sorrow`, `Surprised`).
 - **Real-Time Lip-Sync & Gaze Tracking**: Synchronous phoneme lip-sync coordinated with AI speech synthesis and responsive cursor gaze.
 
-### 2. 🩸 Bespoke Victorian Gothic Astral Interface
+### 3. 🩸 Bespoke Victorian Gothic Astral Interface & Iconography
 - **Complete Rebranding**: Completely purged of generic bubbly aesthetics. All windows and menus feature dark obsidian glass (`rgba(16, 10, 22, 0.98)`), antique gold filigree borders, and wine-crimson velvet accents.
-- **Architectural Clockwork Tabs**: Non-truncating beveled tabs (`#workshop-tabs`, `#panel-tabs`) with gold Cinzel serif typography, ruby velvet gradients, and active diamond markers (`✦`).
-- **Gothic Control Suites**: Custom Zafkiel Roman-clock window controls, ruby system icons, and gothic status badges.
+- **Zafkiel Master Action Dial**: Bespoke pocket-watch floating action buttons beside Kurumi:
+  - 🎙️ **Astral Voice**: Vintage Gothic Studio Microphone with acoustic resonance waves, Roman dial, and ruby jewel.
+  - ⚔️ **Guns of Time**: Kurumi's signature crossed Flintlock Pistol & Long Musket united by a golden clock gear.
+  - 🌀 **Shadow Domain**: Astral Clockwork Vortex with swirling crimson shadows and Roman numerals.
+  - ⚙️ **Chrono Config**: Master Zafkiel Gear crowned with Roman numeral XII.
+  - 🌹 **Velvet Rose**: Gothic Crimson Rose intertwined with gold thorn vines and stardust.
+- **Timepiece Sanctum Chat Box**: Ornate Victorian chat window with double gold borders, filigree corner brackets, and Kurumi's **Zafkiel Winged Time Arrow** send button (all cartoon paw icons completely banished).
+- **Floating Transparent Subtitle HUD**: 100% transparent subtitles floating cleanly across your desktop with multi-layer gold/crimson/black drop shadow for crystal readability. Controls remain hidden until hovered over.
 
-### 3. 🎙️ Multimodal Perception & Voice Intelligence
+### 4. 🎙️ Multimodal Perception & Voice Intelligence
 - **Real-Time Voice Streaming**: Ultra-low latency two-way audio conversations with continuous voice activity detection (VAD).
 - **Vision & Screen Awareness**: Ability to inspect the user's desktop, active windows, images, and live gaming sessions.
 - **Voice Synthesis & Cloning**: High-fidelity Japanese & English voice personas with custom pitch, cadence, and breath modulation.
 
-### 4. 🧠 Cognitive Memory Grimoire
+### 5. 🧠 Cognitive Memory Grimoire
 - **Episodic & Semantic Memory**: Long-term recall vector storage that preserves user interactions, personal preferences, shared jokes, and ongoing conversations across days.
 - **Character Personality Integrity**: Fully codified Kurumi Tokisaki persona prompts ensuring sophisticated, flirtatious, mysterious, and deeply loyal companion interactions.
 
-### 5. 🎵 Jukebox Grimoire & Spatial Studio
+### 6. 🎵 Jukebox Grimoire & Spatial Studio
 - **Integrated Dance & Audio Player**: Synchronized spatial audio and VMD/VRMA dance choreography.
 - **Card Face Maker Studio**: Bespoke card designer for generating, posing, and exporting custom character card portraits.
 
@@ -79,6 +90,11 @@
 ## ✦ VISUAL SHOWCASE
 
 <div align="center">
+
+### Bespoke Zafkiel Master Controls & Iconography
+<img src="assets/preview/kurumi_ui_showcase.png" alt="Zafkiel Master Controls" width="820" style="border-radius: 10px; border: 1.5px solid #d4af37; box-shadow: 0 8px 32px rgba(196, 30, 58, 0.4);" />
+
+<br/><br/>
 
 | 3D Model Manager | Character Card Grimoire |
 | :---: | :---: |
@@ -139,14 +155,25 @@ cd Kurumi-AE
 ```
 
 ### 2. Environment Setup & Launch
-Using Astral `uv`:
-```powershell
-# Launch directly (uv automatically resolves virtual environment and dependencies)
-uv run python launcher.py
-```
 
-Or using standard `pip`:
+#### 🌟 Option A: One-Click Native Desktop Companion (Recommended)
+Launches the standalone transparent desktop window with auto-bootstrap of the backend service:
 ```powershell
+# Using the Windows batch script:
+.\Launch_Kurumi_Desktop.bat
+
+# Or directly via uv:
+uv run python desktop_app.py
+```
+*Tip: You can also double-click the desktop shortcut `Kurumi-AE.lnk` to launch Kurumi directly on your desktop!*
+
+#### 🌐 Option B: Standard Browser / Web Mode
+Launches the FastAPI core server accessible via browser:
+```powershell
+# Using Astral uv (recommended):
+uv run python launcher.py
+
+# Or using standard python/pip:
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -155,7 +182,8 @@ python launcher.py
 
 ### 3. Accessing the Sanctum
 Once launched, Kurumi-AE runs locally on `http://127.0.0.1:48911`:
-- **Desktop Companion**: `http://127.0.0.1:48911/`
+- **Native Desktop Companion**: `desktop_app.py` (Frameless Alpha Window)
+- **Web Companion**: `http://127.0.0.1:48911/`
 - **3D Model & Lighting Sanctum**: `http://127.0.0.1:48911/model_manager`
 - **VRM Emotion Mapping Manager**: `http://127.0.0.1:48911/vrm_emotion_manager`
 - **Character Card Grimoire**: `http://127.0.0.1:48911/character_card_manager`
